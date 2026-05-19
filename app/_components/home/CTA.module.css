@@ -1,0 +1,31 @@
+.section {
+  background: linear-gradient(90deg, #0a0f2c 0%, #0f1f2f 50%, #3a5f1f 100%);
+  color: #ffffff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.title {
+  font-family: Urbanist;
+  font-size: clamp(28px, 5vw, 48px);
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.description {
+  color: #cbd3df;
+  font-size: clamp(14px, 2vw, 18px);
+  line-height: 1.7;
+  margin: 0;
+  max-width: 650px;
+}

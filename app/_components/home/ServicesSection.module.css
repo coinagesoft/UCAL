@@ -1,0 +1,43 @@
+.section {
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  padding: clamp(80px, 10vw, 40px) 20px;
+  width: 100%;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  max-width: 900px;
+  text-align: center;
+  width: 100%;
+}
+
+.eyebrow {
+  color: #7ec342;
+  font-family: var(--font-telex);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.title {
+  color: #2b2b2b;
+  font-family: var(--font-urbanist);
+  font-size: clamp(28px, 5vw, 56px);
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+  max-width: 100%;
+}
+
+.description {
+  color: #6b6f76;
+  font-family: var(--font-telex);
+  font-size: 15px;
+  line-height: 1.7;
+  max-width: 100%;
+}

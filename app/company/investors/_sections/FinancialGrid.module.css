@@ -1,0 +1,182 @@
+.section {
+  background-color: #ffffff;
+  font-family: "Urbanist", sans-serif;
+  padding-bottom: 100px;
+  width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 80px 79.5px;
+}
+
+.header {
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+.eyebrow {
+  color: #79b933;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.title {
+  color: #1f2937;
+  font-size: 48px;
+  font-weight: 600;
+  margin: 0 0 20px;
+}
+
+.description {
+  color: #6b7280;
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.tab {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 999px;
+  color: #6b7280;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 6px 20px;
+  transition: all 0.2s;
+}
+
+.tabActive {
+  background-color: #79b933;
+  color: #ffffff;
+}
+
+.divider {
+  align-items: center;
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.dividerLabel {
+  color: #9ca3af;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.dividerLine {
+  background-color: #e5e7eb;
+  flex: 1;
+  height: 1px;
+}
+
+.grid {
+  column-gap: 14px;
+  display: grid;
+  grid-template-columns: repeat(5, 245px);
+  margin: 0 auto;
+  row-gap: 14px;
+  width: 1281px;
+}
+
+.cardLink {
+  text-decoration: none;
+}
+
+.folderCard {
+  background-color: #ffffff;
+  border: 1px solid #e2e6f0;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: 155px;
+  padding: 17px;
+  transition: all 0.2s ease;
+  width: 250px;
+}
+
+.folderCard:hover {
+  border-color: #79b933;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.04);
+}
+
+.folderContent {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.folderIcon {
+  height: 42px;
+  object-fit: cover;
+  width: 42px;
+}
+
+.folderTitle {
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  color: #333333;
+  display: -webkit-box;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+  margin: 0;
+  overflow: hidden;
+}
+
+.category {
+  background-color: #f0f9eb;
+  border-radius: 6px;
+  color: #79b933;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 15px;
+  padding: 3px 10px;
+  width: fit-content;
+}
+
+@media (max-width: 1350px) {
+  .grid {
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    width: 100%;
+  }
+
+  .container {
+    padding: 60px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid {
+    gap: 16px;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
+
+  .folderCard {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,49 @@
+.section {
+  background-color: #ffffff;
+  padding: 80px 20px 20px 0;
+  text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1060px;
+}
+
+.eyebrow {
+  color: #7ec342;
+  font-family: var(--font-telex);
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.title {
+  color: #2b2b2b;
+  font-family: var(--font-urbanist);
+  font-size: 52px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+  margin-bottom: 16px;
+  margin-inline: auto;
+  max-width: 100%;
+}
+
+.description {
+  color: #6b6f76;
+  font-family: var(--font-telex);
+  font-size: 18px;
+  line-height: 1.7;
+  margin: 0 auto 40px;
+  max-width: 600px;
+}
+
+.logoWrap {
+  margin: 0 auto;
+  max-width: 1060px;
+}
+
+.logo {
+  display: block;
+  height: auto;
+  width: 100%;
+}

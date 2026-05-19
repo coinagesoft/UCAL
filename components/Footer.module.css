@@ -1,0 +1,92 @@
+.footer {
+  background-image: url("/media/img25.png");
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  position: relative;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.75);
+  inset: 0;
+  position: absolute;
+}
+
+.content {
+  padding: 80px 40px 40px;
+  position: relative;
+}
+
+.grid {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.logo {
+  margin-bottom: 20px;
+  width: 60px;
+}
+
+.description,
+.address,
+.link {
+  color: #cbd3df;
+}
+
+.description {
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+.heading {
+  color: #7ec342;
+  margin-bottom: 20px;
+}
+
+.link {
+  cursor: pointer;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.address {
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.socialList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.socialIcon {
+  align-items: center;
+  background: #1a1a3a;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  font-size: 14px;
+  height: 38px;
+  justify-content: center;
+  width: 38px;
+}
+
+.bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: #aaa;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 13px;
+  gap: 15px;
+  justify-content: space-between;
+  margin-top: 50px;
+  padding-top: 20px;
+}
+
+.legal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}

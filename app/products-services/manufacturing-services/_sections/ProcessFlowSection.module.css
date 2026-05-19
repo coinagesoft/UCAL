@@ -1,0 +1,71 @@
+.section {
+  background-image: url("/media/img65.png");
+  background-position: center;
+  background-size: cover;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.title {
+  max-width: 900px;
+}
+
+.layout {
+  align-items: flex-start;
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  padding: 0 80px;
+}
+
+.column {
+  max-width: 100%;
+  text-align: left;
+}
+
+.step {
+  margin-bottom: 35px;
+}
+
+.stepRow {
+  align-items: flex-start;
+  display: flex;
+  gap: 16px;
+}
+
+.stepNumber {
+  color: #7d8aa5;
+  font-size: 14px;
+  font-weight: 500;
+  min-width: 30px;
+}
+
+.stepTitle {
+  color: #222;
+  font-size: 20px;
+  margin: 0 0 6px;
+}
+
+.stepDescription {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.center {
+  text-align: center;
+}
+
+.image {
+  height: 455px;
+  object-fit: cover;
+  width: 347px;
+}
+
+.finalStep {
+  margin-left: 0;
+  margin-top: 20px;
+  text-align: left;
+  width: 90%;
+}

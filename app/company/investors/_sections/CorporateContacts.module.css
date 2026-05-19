@@ -1,0 +1,164 @@
+.section {
+  background-color: #fff;
+  font-family: "Urbanist", sans-serif;
+  padding: 60px 0;
+  width: 100%;
+}
+
+.panel {
+  border: 1px solid #e5e7eb;
+  margin: 0 auto;
+  overflow: hidden;
+  width: 1100px;
+}
+
+.header {
+  align-items: center;
+  background-color: #282270;
+  color: #fff;
+  display: flex;
+  height: 125px;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  margin-top: 8px;
+  opacity: 0.8;
+  text-transform: uppercase;
+}
+
+.cin {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  font-size: 14px;
+  opacity: 0.9;
+  padding: 8px 12px;
+}
+
+.grid {
+  background-color: #f3f4f6;
+  display: grid;
+  gap: 1px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.card {
+  background-color: #fff;
+  padding: 40px;
+}
+
+.cardTitle {
+  color: #282270;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+}
+
+.fields {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.label {
+  color: #6b7280;
+  display: block;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.value {
+  color: #333333;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.address {
+  line-height: 1.5;
+}
+
+.linkValue {
+  color: #79b933;
+  font-size: 14px;
+}
+
+.actions {
+  background-color: #ebebf5;
+  display: flex;
+  gap: 16px;
+  padding: 30px 40px;
+}
+
+.portalButton {
+  font-size: 14px;
+}
+
+.secondaryButton {
+  background-color: transparent;
+  border: 1px solid #79b933;
+  border-radius: 999px;
+  color: #79b933;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 12px 24px;
+}
+
+@media (max-width: 1150px) {
+  .panel {
+    width: 95%;
+  }
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    height: auto;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .subtitle {
+    font-size: 13px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+
+  .actions button {
+    text-align: center;
+    width: 100%;
+  }
+}

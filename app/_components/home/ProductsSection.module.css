@@ -1,0 +1,141 @@
+.section {
+  background-image: url("/media/img33.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  overflow: hidden;
+  padding: 80px 0;
+}
+
+.container {
+  margin: auto;
+  max-width: 1200px;
+}
+
+.wrapper {
+  display: flex;
+  gap: 100px;
+}
+
+.imageWrap {
+  height: 380px;
+  position: relative;
+  width: 600px;
+}
+
+.preview {
+  height: 260px;
+  left: -180px;
+  opacity: 0.8;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 200px;
+}
+
+.previewImg {
+  background-position: left center;
+  background-size: cover;
+  height: 100%;
+  width: 200%;
+}
+
+.mainImg {
+  background-position: center;
+  background-size: cover;
+  height: 380px;
+  left: 40px;
+  position: absolute;
+  transition: all 0.4s ease;
+  width: 560px;
+}
+
+.text {
+  margin-left: 40px;
+  margin-top: 0;
+}
+
+.text h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.text ul {
+  line-height: 1.8;
+  padding-left: 18px;
+}
+
+.text li {
+  color: #cfd5df;
+}
+
+.text li::marker {
+  color: #7ec342;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.tag {
+  background: transparent;
+  border-radius: 0;
+  color: #7ec342;
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+.heading {
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 25px;
+}
+
+.controls {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.controlButton {
+  background: transparent;
+  border: 3px solid #7ec342;
+  border-radius: 50%;
+  color: #7ec342;
+  cursor: pointer;
+  height: 45px;
+  transition: 0.3s;
+  width: 45px;
+}
+
+.controlButton:hover {
+  background: #7ec342;
+  color: #0a0f2c;
+}
+
+.cta {
+  width: fit-content;
+}
+
+@media (max-width: 1000px) {
+  .wrapper {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .imageWrap {
+    width: 100%;
+  }
+
+  .mainImg {
+    left: 0;
+    width: 100%;
+  }
+
+  .preview {
+    display: none;
+  }
+}

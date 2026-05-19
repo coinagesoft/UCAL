@@ -1,0 +1,271 @@
+.portal {
+  background-color: #f9fafb;
+  font-family: "Urbanist", sans-serif;
+  margin-top: 88px;
+  min-height: 100vh;
+}
+
+.header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 40px 0;
+}
+
+.container {
+  max-width: 100%;
+  padding: 0 110px;
+}
+
+.headerFlex {
+  align-items: flex-start;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.headerText {
+  flex: 1;
+}
+
+.eyebrowRow {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.eyebrowLine {
+  background-color: #79b933;
+  height: 2px;
+  width: 24px;
+}
+
+.eyebrow {
+  color: #79b933;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.title {
+  color: #111827;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0 16px;
+}
+
+.meta {
+  color: #555855;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 14px;
+  gap: 20px;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.button {
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 24px;
+  white-space: nowrap;
+}
+
+.buttonPrimary {
+  background-color: #79b933;
+  border: none;
+  color: #fff;
+}
+
+.buttonSecondary {
+  background-color: #fff;
+  border: 1px solid #d1d5db;
+  color: #374151;
+}
+
+.tabsContainer {
+  margin-top: 40px;
+  overflow-x: auto;
+  padding-bottom: 5px;
+  white-space: nowrap;
+}
+
+.tabs {
+  display: inline-flex;
+  gap: 12px;
+}
+
+.tab {
+  background-color: transparent;
+  border: 1px solid #e5e7eb;
+  border-radius: 20px;
+  color: #555855;
+  font-size: 13px;
+  padding: 8px 20px;
+}
+
+.tabActive {
+  background-color: #79b933;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+}
+
+.main {
+  max-width: 1200px;
+  padding: 40px 110px;
+}
+
+.breadcrumb {
+  align-items: center;
+  color: #6b7280;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 14px;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.breadcrumbLink {
+  align-items: center;
+  color: #6b7280;
+  display: flex;
+  gap: 6px;
+  text-decoration: none;
+}
+
+.backIcon {
+  height: 25px;
+  width: 25px;
+}
+
+.currentBreadcrumb {
+  color: #111827;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.tableWrapper {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+.table {
+  border-collapse: collapse;
+  min-width: 700px;
+  width: 100%;
+}
+
+.headRow {
+  background-color: #fafafa;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.th {
+  color: #9ca3af;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 16px 24px;
+  text-transform: uppercase;
+}
+
+.row {
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.td {
+  color: #555855cc;
+  font-size: 14px;
+  padding: 16px 24px;
+}
+
+.fileCell {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+}
+
+.pdfIcon {
+  width: 32px;
+}
+
+.fileName {
+  color: #111827;
+  font-weight: 600;
+}
+
+.fileType {
+  color: #6b7280;
+  font-size: 12px;
+}
+
+.downloadButton {
+  align-items: center;
+  background: none;
+  border: none;
+  color: #333333;
+  cursor: pointer;
+  display: flex;
+  font-weight: 600;
+  gap: 4px;
+}
+
+@media (max-width: 991px) {
+  .container,
+  .main {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .headerFlex {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .actions {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .title {
+    font-size: 26px;
+  }
+
+  .meta {
+    gap: 10px;
+  }
+
+  .hideMobile {
+    display: none;
+  }
+
+  .breadcrumb {
+    gap: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .actions {
+    gap: 8px;
+  }
+
+  .actions button {
+    flex: 1 1 auto;
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+
+  .currentBreadcrumb {
+    font-size: 14px;
+  }
+}

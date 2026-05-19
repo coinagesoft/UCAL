@@ -1,0 +1,54 @@
+.section {
+  align-items: center;
+  background-image: url("/media/img1.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding: 0 20px;
+  position: relative;
+}
+
+.overlay {
+  background: linear-gradient(
+    90deg,
+    rgba(5, 15, 30, 0.85) 0%,
+    rgba(5, 15, 30, 0.6) 40%,
+    rgba(5, 15, 30, 0.2) 70%,
+    transparent 100%
+  );
+  inset: 0;
+  position: absolute;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin-left: clamp(20px, 6vw, 80px);
+  max-width: 668px;
+  position: relative;
+  z-index: 2;
+}
+
+.title {
+  color: #ffffff;
+  font-size: clamp(32px, 5vw, 64px);
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.description {
+  color: #bfc9d4;
+  font-size: clamp(14px, 1.8vw, 18px);
+  line-height: 1.6;
+  margin: 0;
+  max-width: 520px;
+}
+
+.button {
+  width: fit-content;
+}

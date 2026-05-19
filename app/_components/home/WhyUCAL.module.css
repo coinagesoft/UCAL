@@ -1,0 +1,124 @@
+.section {
+  background-color: #f8f9fa;
+  font-family: Inter, sans-serif;
+  padding: clamp(60px, 8vw, 100px) clamp(20px, 6vw, 80px);
+}
+
+.container {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(40px, 6vw, 100px);
+}
+
+.left {
+  flex: 1;
+  min-width: 720px;
+}
+
+.eyebrow {
+  color: #7ec342;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.title {
+  color: #2b2b2b;
+  font-size: clamp(30px, 5vw, 58px);
+  font-weight: 600;
+  line-height: 1.15;
+  margin-bottom: 24px;
+}
+
+.description {
+  color: #6b6f76;
+  font-size: 16px;
+  margin-bottom: 30px;
+  max-width: 500px;
+}
+
+.imageWrap {
+  height: 300px;
+  margin-top: 40px;
+  position: relative;
+}
+
+.carImage {
+  bottom: 0;
+  height: 300px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  width: 724px;
+}
+
+.timeline {
+  flex: 1;
+  min-width: 280px;
+  position: relative;
+}
+
+.line {
+  background-color: #e0e0e0;
+  bottom: 0;
+  left: 20px;
+  position: absolute;
+  top: 0;
+  width: 2px;
+}
+
+.reason {
+  align-items: center;
+  display: flex;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.dot {
+  background-color: #7ec342;
+  border-radius: 50%;
+  height: 14px;
+  left: 13px;
+  position: absolute;
+  top: 30px;
+  width: 14px;
+}
+
+.reasonText {
+  flex-shrink: 0;
+  margin-left: 50px;
+  width: 186px;
+}
+
+.number {
+  color: #7ec342;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.reasonTitle {
+  font-weight: 700;
+  margin: 4px 0;
+}
+
+.reasonImage {
+  background-position: center;
+  background-size: cover;
+  height: 135px;
+  margin-left: 130px;
+  width: 164px;
+}
+
+@media (max-width: 768px) {
+  .container,
+  .reason {
+    flex-direction: column;
+  }
+
+  .line,
+  .dot,
+  .carImage {
+    display: none;
+  }
+}
