@@ -93,6 +93,15 @@
   width: 1281px;
 }
 
+.emptyState {
+  border: 1px dashed #d1d5db;
+  color: #6b7280;
+  font-size: 15px;
+  grid-column: 1 / -1;
+  padding: 36px 20px;
+  text-align: center;
+}
+
 .cardLink {
   text-decoration: none;
 }
