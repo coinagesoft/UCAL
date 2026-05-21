@@ -1,0 +1,28 @@
+/* TimelineSection.module.css */
+
+.timelineSection {
+  padding: 100px 0;
+  background: #ffffff;
+}
+
+.headingWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 24px;
+
+  margin-bottom: 80px;
+
+  text-align: center;
+}
+
+.headingWrap p {
+  max-width: 720px;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}

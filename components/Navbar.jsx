@@ -70,9 +70,8 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`navbar navbar-expand-lg p-0 ${styles.navbar} ${
-        isHome ? styles.homeNavbar : styles.solidNavbar
-      }`}
+      className={`navbar navbar-expand-lg p-0 ${styles.navbar} ${isHome ? styles.homeNavbar : styles.solidNavbar
+        }`}
     >
       <div className={`container-fluid h-100 ${styles.inner}`}>
         <Link className="navbar-brand d-flex align-items-center" href="/">

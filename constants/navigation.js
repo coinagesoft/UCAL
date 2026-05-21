@@ -1,5 +1,5 @@
 export const companyLinks = [
-  { label: "About Us", href: "#" },
+  { label: "About Us", href: "/company/aboutUs" },
   { label: "Management", href: "#management" },
   { label: "Careers", href: "/company/careers" },
   { label: "Job Details", href: "/company/jobdetails" },

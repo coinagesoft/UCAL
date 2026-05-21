@@ -1,0 +1,224 @@
+/* TimelineCard.module.css */
+
+.timelineRow {
+  display: flex;
+  align-items: stretch;
+  gap: 48px;
+
+  position: relative;
+}
+
+/* LEFT SIDE */
+
+.yearWrap {
+  width: 120px;
+
+  position: relative;
+
+  flex-shrink: 0;
+}
+
+/* CONTINUOUS LINE */
+.yearWrap::after {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  bottom: -60px;
+
+  left: 80px;
+
+  width: 2px;
+
+  background: #2D2385;
+}
+
+/* YEAR TEXT */
+.year {
+  position: absolute;
+
+  right: 50px;
+  top: -8px;
+
+  font-family: var(--font-urbanist);
+  font-size: 22px;
+  font-weight: 700;
+
+  color: #2D2385;
+
+  white-space: nowrap;
+}
+
+/* DOT */
+.dot {
+  width: 14px;
+  height: 14px;
+
+  border-radius: 50%;
+
+  background: #2D2385;
+  border: 3px solid #D9D6F5;
+
+  position: absolute;
+
+  top: 0;
+  left: 74px;
+
+  z-index: 2;
+}
+
+/* CARD */
+
+/* CARD */
+
+.card {
+  width: 1128px;
+  min-height: 333px;
+
+  border: 1px solid #E6E6E6;
+  background: #ffffff;
+
+  padding: 32px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  gap: 32px;
+}
+
+/* LEFT CONTENT */
+
+.content {
+  width: 736px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* IMAGE */
+
+.imageWrap {
+  width: 302px;
+  height: 305px;
+
+  flex-shrink: 0;
+
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+}
+.label {
+  font-family: var(--font-telex);
+  font-size: 14px;
+  font-weight: 400;
+
+  color: #73B33F;
+
+  text-transform: uppercase;
+}
+
+.title {
+  font-family: var(--font-urbanist);
+  font-size: 22px;
+  font-weight: 600;
+
+  color: #333333;
+
+  margin: 0;
+}
+
+.description {
+  font-family: var(--font-telex);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8;
+
+  color: #6B6B6B;
+
+  margin: 0;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tag {
+  padding: 8px 14px;
+
+  background: #F1EFFB;
+  border-radius: 50px;
+
+  font-family: var(--font-telex);
+  font-size: 12px;
+  font-weight: 400;
+
+  color: #5D52B5;
+}
+
+/* .imageWrap {
+  width: 320px;
+  height: 240px;
+
+  flex-shrink: 0;
+} */
+
+/* .image {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+} */
+
+/* RESPONSIVE */
+
+@media (max-width: 1200px) {
+  .card {
+    flex-direction: column;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .imageWrap {
+    width: 100%;
+    height: auto;
+  }
+
+  .image {
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .timelineRow {
+    gap: 24px;
+  }
+
+  .year {
+    font-size: 30px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .description {
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,145 @@
+/* AboutHero.module.css */
+
+.heroSection {
+  position: relative;
+  width: 100%;
+  height: 560px;
+
+ background-image: url("/media/a1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  overflow: hidden;
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    90deg,
+    rgba(40, 34, 112, 0.95) 0%,
+    rgba(40, 34, 112, 0.95) 20%,
+    rgba(40, 34, 112, 0.8) 45%,
+    rgba(40, 34, 112, 0.1) 75%,
+    rgba(40, 34, 112, 0.8) 100%
+  );
+
+  z-index: 1;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+
+  padding-left: 80px;
+}
+
+.textGroup {
+  width: 695px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 48px;
+}
+
+.heading {
+  font-family: "Urbanist";
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 1.05;
+
+  color: #ffffff;
+
+  margin: 0;
+}
+
+.description {
+  width: 620px;
+
+  font-family: "Telex";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.7;
+
+  color: #ffffff;
+
+  margin: 0;
+}
+
+.customBtn {
+  width: fit-content;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 14px 28px;
+  height: 47px;
+
+  background: #73b33f;
+  color: #ffffff;
+
+  border: none;
+  border-bottom: 3px solid #518626;
+  border-radius: 50px;
+
+  font-family: "Telex";
+  font-size: 14px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.customBtn:hover {
+  background: #6eb336;
+}
+
+@media (max-width: 992px) {
+  .heroSection {
+    height: auto;
+    padding: 80px 20px;
+  }
+
+  .content {
+    padding-left: 0;
+  }
+
+  .textGroup {
+    width: 100%;
+  }
+
+  .heading {
+    font-size: 46px;
+  }
+
+  .description {
+    width: 100%;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .heroSection {
+    padding: 60px 20px;
+  }
+
+  .heading {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+
+  .textGroup {
+    gap: 30px;
+  }
+}
