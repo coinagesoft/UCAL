@@ -15,11 +15,8 @@ const slides = [
       </>
     ),
 
-    description: (
-      <>
-        40 years of OE-grade innovation, now serving Aftermarkets globally.
-      </>
-    ),
+    description:
+      "40 years of OE-grade innovation, now serving Aftermarkets globally.",
 
     button: "Explore Our Products",
 
@@ -35,13 +32,8 @@ const slides = [
       </>
     ),
 
-    description: (
-      <>
-        We are a specialized rubber and plastic products manufacturer
-        <br />
-        for precision products using specialty polymers.
-      </>
-    ),
+    description:
+      "We are a specialized rubber and plastic products manufacturer for precision products using specialty polymers.",
 
     button: "View Polymer Website",
 

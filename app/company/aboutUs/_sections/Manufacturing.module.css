@@ -1,0 +1,30 @@
+.section {
+    
+    background-image: url("/media/img65.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 80px;
+
+    min-height: 662px;
+}
+
+
+.leftColumn{
+    background-image: url("/media/a14.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 535px;
+    height: 662px;
+    transform: scale(1);
+  transition: transform 1s ease;
+}
+
+.rightSection{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 50px 0px 0px 80px;
+    align-items: flex-start;
+}

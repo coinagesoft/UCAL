@@ -1,6 +1,5 @@
 .section {
   align-items: center;
-  background-image: url("/media/img1.png");
   background-position: center;
   background-size: cover;
   display: flex;
@@ -8,7 +7,9 @@
   min-height: 100vh;
   padding: 0 20px;
   position: relative;
-   transition: background-image 1s ease-in-out;
+  overflow: hidden;
+
+  transition: background-image 0.8s ease-in-out;
 }
 
 .overlay {
@@ -52,4 +53,23 @@
 
 .button {
   width: fit-content;
+}
+
+
+.slide {
+  position: absolute;
+  inset: 0;
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  transform: translateX(100%);
+  transition: transform 1s ease-in-out;
+
+  z-index: 0;
+}
+
+.active {
+  transform: translateX(0%);
 }

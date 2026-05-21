@@ -81,7 +81,7 @@ h6 {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  /* 👈 this gives equal spacing to ALL items */
+  /*  this gives equal spacing to ALL items */
 }
 
 /* HEADINGS → Urbanist */
@@ -122,11 +122,11 @@ p, li, span, a {
   color: inherit !important;
 }
 
-
+/* Hover effect */
 .hero-container {
   width: 100%;
   height: 400px;
-  overflow: hidden;          /* 🔥 this clips the zoom */
+  overflow: hidden;         
   border-radius: 0px;
 }
 
@@ -187,4 +187,34 @@ p, li, span, a {
   font-weight: 500;
 
   cursor: pointer;
+}
+
+
+.main-heading {
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 100%;
+  Font-family: "Urbanist";
+}
+
+.gHeading{
+  font-size: 18px;
+  font-weight: 400;
+  color: #73B33F;
+  Font-family: "Telex";
+}
+
+.para {
+  font-size: 16px;
+  font-weight: 400;
+  color: #555855;
+  Font-family: "Telex";
+  line-height: 22px;
+}
+
+.sub-heading{
+  font-family:"Telex";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 33px;
 }

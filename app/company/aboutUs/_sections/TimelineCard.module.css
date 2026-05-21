@@ -3,7 +3,7 @@
 .timelineRow {
   display: flex;
   align-items: stretch;
-  gap: 48px;
+  gap: 68px;
 
   position: relative;
 }

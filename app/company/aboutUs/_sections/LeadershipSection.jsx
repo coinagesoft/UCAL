@@ -63,8 +63,8 @@ export default function LeadershipSection() {
               the company through multiple cycles of industry transformation
               — from carburettors to fuel injection, from mechanical to
               mechatronic, and now into the EV era. They carry not just
-              the institutional knowledge of what we've built, but the
-              strategic clarity of where we're headed.
+              the institutional knowledge of what we&apos;ve built, but the
+              strategic clarity of where we&apos;re headed.
             </p>
           </div>
 

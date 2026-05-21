@@ -46,7 +46,7 @@ export default function LegacySection() {
               automotive, off-highway, aerospace, and defence sectors, with
               over 70 million carburetors and 10 million pumps supplied
               worldwide. Backed by 4,000 employees, 8 manufacturing facilities,
-              2 R&D centres, and 35+ OEM customers, UCAL's growth is driven by
+              2 R&D centres, and 35+ OEM customers, UCAL&apos;s growth is driven by
               strong engineering, consistent quality, and close collaboration
               across the product lifecycle.
             </p>

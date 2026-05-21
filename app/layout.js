@@ -3,10 +3,10 @@
 import { useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./globals.css";
+
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-// ✅ IMPORT FONTS
 import { Urbanist, Telex } from "next/font/google";
 
 const urbanist = Urbanist({

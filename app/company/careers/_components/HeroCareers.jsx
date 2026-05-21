@@ -28,10 +28,10 @@ export default function HeroCareers() {
       {/* CONTENT BLOCK */}
       <div
         style={{
-          width: "695px",             // ✅ exact Figma width
+          width: "695px",             //  exact Figma width
           display: "flex",
           flexDirection: "column",
-          gap: "48px",                // ✅ exact spacing between elements
+          gap: "48px",                //  exact spacing between elements
         }}
       >
         {/* TEXT GROUP */}
@@ -40,9 +40,9 @@ export default function HeroCareers() {
           {/* TITLE */}
           <h1
             style={{
-              fontSize: "52px",       // ✅ exact
+              fontSize: "52px",       //  exact
               fontWeight: "600",
-              lineHeight: "100%",     // ✅ tight
+              lineHeight: "100%",     //  tight
               margin: 0,
             }}
           >

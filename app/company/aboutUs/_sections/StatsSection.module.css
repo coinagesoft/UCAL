@@ -1,0 +1,85 @@
+.section {
+  background: #f7f7f7;
+  padding: 80px ;
+}
+
+.grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 50px 30px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.iconWrap {
+  width: 78px;
+  height: 78px;
+
+  border-radius: 50%;
+  background: #eceaf3;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+}
+
+.icon {
+  width: 60px;
+}
+
+.value {
+  color: #2d237c;
+
+  font-size: 40px;
+  font-weight: 700;
+
+  line-height: 100%;
+
+  margin: 0 0 10px;
+}
+
+.label {
+  color: #73b33f;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  margin: 0;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+
+  background: #d9d9d9;
+}
+
+@media (max-width: 1200px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .value {
+    font-size: 42px;
+  }
+}
