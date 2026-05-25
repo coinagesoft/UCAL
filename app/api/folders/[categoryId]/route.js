@@ -1,6 +1,4 @@
-import connectDB from "@/lib/db";
-
-import Folder from "@/models/Folders";
+import db from "@/lib/db";
 
 import { NextResponse } from "next/server";
 
@@ -10,15 +8,14 @@ export const runtime = "nodejs";
 export async function GET(request, context) {
 
     try {
+        const { categoryId } = await context.params;
 
-        await connectDB();
-
-       const { categoryId } = await context.params;
-
-        const folders = await Folder.find({
-            categoryId
-        });
-
+        const [folders] = await db.query(
+            `SELECT * 
+            FROM folders 
+            WHERE category_id = ?`,
+            [categoryId]
+        )
         return NextResponse.json(folders);
 
     } catch (error) {

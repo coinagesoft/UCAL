@@ -6,11 +6,12 @@
   color: white;
   overflow: hidden;
   padding: 80px 0;
+  min-height: 784px;
 }
 
 .container {
   margin: auto;
-  max-width: 1200px;
+  max-width: 80%;
 }
 
 .wrapper {
@@ -37,7 +38,7 @@
 .previewImg {
   background-position: left center;
   background-size: cover;
-  height: 100%;
+  height:272px;
   width: 200%;
 }
 
@@ -48,17 +49,21 @@
   left: 40px;
   position: absolute;
   transition: all 0.4s ease;
-  width: 560px;
+  width: 572px;
 }
 
 .text {
   margin-left: 40px;
-  margin-top: 0;
+  margin-top: 25px;
+  font-size: 18px;
+  
 }
 
 .text h3 {
-  font-size: 24px;
+  font-size: 30px;
   margin-bottom: 10px;
+  font-weight: 800;
+
 }
 
 .text ul {
@@ -78,6 +83,7 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
+  padding-left:   0px;
 }
 
 .tag {
@@ -106,9 +112,9 @@
   border-radius: 50%;
   color: #7ec342;
   cursor: pointer;
-  height: 45px;
+  height: 47px;
   transition: 0.3s;
-  width: 45px;
+  width: 47px;
 }
 
 .controlButton:hover {
@@ -138,4 +144,9 @@
   .preview {
     display: none;
   }
+}
+
+
+.controlButton i{
+  font-size: 30px;
 }

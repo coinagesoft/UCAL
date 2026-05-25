@@ -175,6 +175,7 @@ p, li, span, a {
 
   padding: 14px 24px;
   height: 47px;
+  /* width: 186px; */
 
   background: #73B33F;
   color: #ffffff;
@@ -183,8 +184,9 @@ p, li, span, a {
   border-bottom: 3px solid #518626; /* 🔥 Figma bottom border */
   border-radius: 50px;
 
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Telex";
 
   cursor: pointer;
 }
@@ -193,7 +195,7 @@ p, li, span, a {
 .main-heading {
   font-size: 52px;
   font-weight: 600;
-  line-height: 100%;
+  /* line-height: 100%; */
   Font-family: "Urbanist";
 }
 

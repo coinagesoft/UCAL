@@ -12,6 +12,7 @@
 .card {
   border-right: 1px solid rgba(123, 179, 63, 0.4);
   height: 400px;
+  /* width: 288px; */
   overflow: hidden;
   position: relative;
 }
@@ -28,24 +29,27 @@
 }
 
 .overlay {
-  background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.95),
-    rgba(0, 0, 0, 0.6),
-    transparent
-  );
-  bottom: 0;
-  left: 0;
-  padding: 20px;
   position: absolute;
-  right: 0;
+  inset: 0;
+
+  display: flex;
+  align-items: flex-end;
+
+  padding: 20px;
+
+  background: linear-gradient(
+    180deg,
+    rgba(40, 34, 112, 0.3) 0%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
 }
 
 .title {
   color: #fff;
   font-family: var(--font-telex);
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 400;
+ 
 }
 
 @media (max-width: 1024px) {

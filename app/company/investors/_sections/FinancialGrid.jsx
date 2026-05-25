@@ -66,10 +66,10 @@ function CategoryTabs({
         categories.map((category) => (
 
           <button
-            key={category._id}
+            key={category.id}
             onClick={() => onTabChange(category)}
             className={`${styles.tab} ${
-              activeTab?._id === category._id
+              activeTab?.id === category.id
                 ? styles.tabActive
                 : ""
             }`}
@@ -98,7 +98,7 @@ export default function FinancialsGrid() {
 
     const categoryId = tab === "All"
       ? ""
-      : tab._id;
+      : tab.id;
 
     const nextUrl = categoryId
       ? `/company/investors?category=${categoryId}#financialGrid`
@@ -118,7 +118,7 @@ export default function FinancialsGrid() {
           .get("category");
 
         const selectedCategory = data.find(
-          (category) => category._id === categoryId
+          (category) => category.id === categoryId
         );
 
         if (selectedCategory) {
@@ -141,13 +141,13 @@ export default function FinancialsGrid() {
           for (const category of categories) {
 
             const res = await fetch(
-              `/api/folders/${category._id}`
+              `/api/folders/${category.id}`
             );
 
             const data = await res.json();
 
             const formatted = data.map((folder) => ({
-              id: folder._id,
+              id: folder.id,
               title: folder.name,
               category: category.name
             }));
@@ -163,13 +163,13 @@ export default function FinancialsGrid() {
         } else {
 
           const res = await fetch(
-            `/api/folders/${activeTab._id}`
+            `/api/folders/${activeTab.id}`
           );
 
           const data = await res.json();
 
           const formatted = data.map((folder) => ({
-            id: folder._id,
+            id: folder.id,
             title: folder.name,
             category: activeTab.name
           }));

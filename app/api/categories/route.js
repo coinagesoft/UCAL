@@ -1,30 +1,21 @@
-import connectDb from "@/lib/db";
-import Category from "@/models/Categories";
+import db from "@/lib/db.js"
 
-import { NextResponse } from "next/server";
+import {NextResponse} from "next/server";
 
 export const dynamic = "force-dynamic";
-export const runtime = "nodejs";
 
-export async function GET() {
-  try {
-    await connectDb();
+export async function GET(){
+    try{
+      const [categories] = await db.query(
+        "SELECT * FROM categories ORDER BY created_at DESC"
+      )
 
-    const categories = await Category.find().sort({
-      createdAt: -1,
-    });
+      return NextResponse.json(categories);
 
-    return NextResponse.json(categories);
-  }catch (error) {
-    console.log(error);
-
-    return NextResponse.json(
-        {
-            error: error.message
-        },
-        {
-            status: 500
-        }
-    );
-}
+    }catch(err){
+      console.error(err);
+      return NextResponse.json({
+        error: err.message
+      }, {status: 500});
+    }
 }

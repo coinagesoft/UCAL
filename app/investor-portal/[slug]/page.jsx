@@ -133,17 +133,17 @@ function CategoryTabs({
         {
           categories.map((category) => {
 
-            const firstFolder = categoryFolders[category._id]?.[0];
+            const firstFolder = categoryFolders[category.id]?.[0];
 
             return (
 
               <Link
-                key={category._id}
+                key={category.id}
                 href={firstFolder
-                  ? `/investor-portal/${firstFolder._id}`
-                  : `/company/investors?category=${category._id}#financialGrid`
+                  ? `/investor-portal/${firstFolder.id}`
+                  : `/company/investors?category=${category.id}#financialGrid`
                 }
-                className={`${styles.tab} ${activeCategoryId === category._id
+                className={`${styles.tab} ${activeCategoryId === category.id
                   ? styles.tabActive
                   : ""
                   }`}
@@ -240,7 +240,7 @@ function FilesTable({ files, folderId }) {
             files.map((file) => (
 
               <tr
-                key={file._id}
+                key={file.id}
                 className={styles.row}
               >
 
@@ -257,7 +257,7 @@ function FilesTable({ files, folderId }) {
                     <div>
 
                       <div className={styles.fileName}>
-                        {file.title}
+                        {file.name}
                       </div>
 
                       <div className={styles.fileType}>
@@ -281,7 +281,7 @@ function FilesTable({ files, folderId }) {
                 <td className={styles.td}>
 
                   <a
-                    href={getDownloadUrl(folderId, file._id)}
+                    href={getDownloadUrl(folderId, file.id)}
                     target="_blank"
                     rel="noopener noreferrer"
                     className={styles.downloadButton}
@@ -371,7 +371,7 @@ export default function InvestorFilePortal({ params }) {
         for (const category of nextCategories) {
 
           const foldersRes = await fetch(
-            `/api/folders/${category._id}`
+            `/api/folders/${category.id}`
           );
 
           const foldersData = await foldersRes.json();
@@ -380,10 +380,10 @@ export default function InvestorFilePortal({ params }) {
             ? foldersData
             : [];
 
-          foldersByCategory[category._id] = folders;
+          foldersByCategory[category.id] = folders;
 
           const folder = folders.find(
-            (item) => item._id === slug
+            (item) => String(item.id) === slug
           );
 
           if (folder) {

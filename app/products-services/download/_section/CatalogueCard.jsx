@@ -1,4 +1,4 @@
-// components/CatalogueCard.jsx
+// app/products-services/download/_section/CatalogueCard.jsx
 
 "use client";
 import Image from "next/image";
@@ -13,13 +13,13 @@ export default function CatalogueCard({
 }) {
   return (
     <div className={styles.card}>
-      <div>
+      <div className={styles.wrapper}>
         <div className={styles.iconBox}>
           <Image
             src="/media/img67.png"
             alt="document icon"
-            width={16}
-            height={16}
+            width={42}
+            height={42}
             className={styles.icon}
           />
         </div>
@@ -33,11 +33,11 @@ export default function CatalogueCard({
         <div className={styles.divider} />
 
         <div className={styles.actions}>
-          <button className={`${styles.button} ${styles.requestButton}`}>
+          <button className={styles.requestBtnBlue}>
             {requestText}
           </button>
 
-          <button className={`${styles.button} ${styles.downloadButton}`}>
+          <button className={styles.downloadBtnGreen}>
             <DownloadIcon />
             {downloadText}
           </button>

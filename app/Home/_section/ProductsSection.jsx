@@ -49,9 +49,9 @@ export default function ProductsSection() {
           </div>
 
           <div className={styles.right}>
-            <p className={styles.tag}>/ Products</p>
+            <p className="gHeading">/ Products</p>
 
-            <h2 className={styles.heading}>
+            <h2 className="main-heading">
               Precision Components <br />
               Performance Assured.
             </h2>
@@ -62,14 +62,14 @@ export default function ProductsSection() {
                 className={styles.controlButton}
                 onClick={prev}
               >
-                &#8592;
+              <i className="ri-arrow-left-line"></i>
               </button>
 
               <button
                 className={styles.controlButton}
                 onClick={next}
               >
-                &#8594;
+               <i className="ri-arrow-right-line"></i>
               </button>
 
             </div>

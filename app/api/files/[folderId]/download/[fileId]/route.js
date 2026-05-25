@@ -1,139 +1,76 @@
-import { readFile, stat } from "fs/promises";
-
-import crypto from "crypto";
-
 import path from "path";
 
-import connectDb from "@/lib/db";
+import { readFile, stat } from "fs/promises";
 
-import Folder from "@/models/Folders";
+import db from "@/lib/db";
 
 import { NextResponse } from "next/server";
 
 export const dynamic = "force-dynamic";
-
 export const runtime = "nodejs";
 
-function getSafeFileName(file) {
+const CONTENT_TYPES = {
+    ".pdf": "application/pdf",
+    ".png": "image/png",
+    ".jpg": "image/jpeg",
+    ".jpeg": "image/jpeg",
+    ".gif": "image/gif",
+    ".webp": "image/webp"
+};
 
-    return (file.title || path.basename(file.publicId || file.fileUrl || "download"))
-        .replace(/[\\/:*?"<>|]+/g, "-");
-}
+function getPublicFilePath(fileUrl) {
 
-function getLocalPublicPath(fileUrl) {
-
-    try {
-        const url = new URL(fileUrl);
-
-        if (url.hostname !== "localhost" && url.hostname !== "127.0.0.1") {
-            return null;
-        }
-
-        const parts = decodeURIComponent(url.pathname)
-            .split("/")
-            .filter(Boolean);
-
-        if (!parts.length || parts.some((part) => part === "..")) {
-            return null;
-        }
-
-        return path.join(process.cwd(), "public", ...parts);
-    } catch {
-        return null;
-    }
-}
-
-function getFileExtension(filename) {
-
-    const extension = filename?.split(".").pop();
-
-    return extension && extension !== filename
-        ? extension.toLowerCase().replace(/[^a-z0-9]/g, "")
-        : undefined;
-}
-
-function getSignedCloudinaryUrl(file) {
-
-    if (!file.publicId) {
+    if (!fileUrl) {
         return null;
     }
 
-    const cloudName = process.env.CLOUDINARY_CLOUD_NAME;
+    const normalizedUrl = String(fileUrl).replace(/\\/g, "/");
 
-    const apiKey = process.env.CLOUDINARY_API_KEY;
-
-    const apiSecret = process.env.CLOUDINARY_API_SECRET;
-
-    if (!cloudName || !apiKey || !apiSecret) {
+    if (/^https?:\/\//i.test(normalizedUrl)) {
         return null;
     }
 
-    const params = {
-        attachment: "false",
-        expires_at: String(Math.floor(Date.now() / 1000) + 300),
-        format: getFileExtension(file.title) || "pdf",
-        public_id: file.publicId,
-        timestamp: String(Math.floor(Date.now() / 1000)),
-        type: "upload"
-    };
+    const relativePath = normalizedUrl
+        .replace(/^\/+/, "")
+        .replace(/^public\//, "");
 
-    const signaturePayload = Object.keys(params)
-        .sort()
-        .map((key) => `${key}=${params[key]}`)
-        .join("&");
+    const publicDir = path.join(process.cwd(), "public");
+    const filePath = path.join(publicDir, relativePath);
+    const relativeToPublic = path.relative(publicDir, filePath);
 
-    const signature = crypto
-        .createHash("sha1")
-        .update(`${signaturePayload}${apiSecret}`)
-        .digest("hex");
+    if (
+        relativeToPublic.startsWith("..") ||
+        path.isAbsolute(relativeToPublic)
+    ) {
+        return null;
+    }
 
-    const searchParams = new URLSearchParams({
-        ...params,
-        signature,
-        api_key: apiKey
-    });
-
-    return `https://api.cloudinary.com/v1_1/${cloudName}/raw/download?${searchParams.toString()}`;
+    return filePath;
 }
 
-async function fileExists(filePath) {
+function getDownloadFileName(file) {
 
-    try {
-        const fileStat = await stat(filePath);
-
-        return fileStat.isFile();
-    } catch {
-        return false;
-    }
+    return String(file.name || "download")
+        .replace(/["\r\n]/g, "");
 }
 
 export async function GET(request, context) {
 
     try {
 
-        await connectDb();
-
         const { folderId, fileId } = await context.params;
 
-        const folder = await Folder.findById(folderId).lean();
-
-        if (!folder) {
-
-            return NextResponse.json(
-                {
-                    error: "Folder not found"
-                },
-                {
-                    status: 404
-                }
-            );
-        }
-
-        const file = (folder.files || []).find(
-            (item) => item._id?.toString() === fileId
+        // Get file directly
+        const [files] = await db.query(
+            `
+            SELECT *
+            FROM files
+            WHERE id = ?
+            `,
+            [fileId]
         );
 
-        if (!file) {
+        if (files.length === 0) {
 
             return NextResponse.json(
                 {
@@ -143,56 +80,69 @@ export async function GET(request, context) {
                     status: 404
                 }
             );
+
         }
 
-        const localPath = getLocalPublicPath(file.fileUrl);
+        const file = files[0];
 
-        const cloudinaryUrl = getSignedCloudinaryUrl(file);
+        // IMPORTANT
+        // Check folder matches
+        if (String(file.folder_id) !== String(folderId)) {
 
-        if (cloudinaryUrl) {
-
-            const cloudinaryResponse = await fetch(cloudinaryUrl);
-
-            if (cloudinaryResponse.ok && cloudinaryResponse.body) {
-
-                return new Response(cloudinaryResponse.body, {
-                    status: 200,
-                    headers: {
-                        "Content-Type": file.fileType || cloudinaryResponse.headers.get("content-type") || "application/octet-stream",
-                        "Content-Disposition": `attachment; filename="${getSafeFileName(file)}"`,
-                        "Cache-Control": "private, no-store"
-                    }
-                });
-            }
-        }
-
-        if (localPath && await fileExists(localPath)) {
-
-            const body = await readFile(localPath);
-
-            return new Response(body, {
-                headers: {
-                    "Content-Type": file.fileType || "application/octet-stream",
-                    "Content-Disposition": `attachment; filename="${getSafeFileName(file)}"`
+            return NextResponse.json(
+                {
+                    error: "Folder mismatch"
+                },
+                {
+                    status: 404
                 }
-            });
+            );
+
         }
 
-        if (file.fileUrl && !localPath) {
-            return NextResponse.redirect(file.fileUrl);
+        const filePath = getPublicFilePath(file.file_url);
+
+        if (!filePath) {
+
+            return NextResponse.json(
+                {
+                    error: "File path is invalid or not local"
+                },
+                {
+                    status: 404
+                }
+            );
+
         }
 
-        return NextResponse.json(
-            {
-                error: "File is not available on this server",
-                details: file.publicId
-                    ? "This file has a Cloudinary publicId, but this app is missing CLOUDINARY_CLOUD_NAME, CLOUDINARY_API_KEY, or CLOUDINARY_API_SECRET. Add those values to .env and restart the dev server."
-                    : "This file record points to a local upload path, but the PDF is not present in the Next.js public folder. Re-upload the file or move it into public using the same path."
-            },
-            {
-                status: 404
+        try {
+            await stat(filePath);
+        } catch {
+
+            return NextResponse.json(
+                {
+                    error: "File is missing from local storage"
+                },
+                {
+                    status: 404
+                }
+            );
+
+        }
+
+        // Read local file
+        const fileBuffer = await readFile(filePath);
+        const extension = path.extname(filePath).toLowerCase();
+        const fileName = getDownloadFileName(file);
+
+        return new Response(fileBuffer, {
+            status: 200,
+            headers: {
+                "Content-Type": CONTENT_TYPES[extension] || "application/octet-stream",
+                "Content-Disposition":
+                    `attachment; filename="${fileName}"`
             }
-        );
+        });
 
     } catch (error) {
 
@@ -206,5 +156,7 @@ export async function GET(request, context) {
                 status: 500
             }
         );
+
     }
+
 }

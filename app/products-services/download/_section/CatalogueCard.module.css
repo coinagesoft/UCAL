@@ -7,9 +7,10 @@
   justify-content: space-between;
   min-height: 253px;
   padding: 22px 18px;
-  width: 100%;
+  width: 413px;
+  /* gap: 10px; */
 }
-
+/* 
 .iconBox {
   align-items: center;
   background: #f4f3fa;
@@ -19,7 +20,7 @@
   justify-content: center;
   margin-bottom: 18px;
   width: 36px;
-}
+} */
 
 .icon {
   object-fit: contain;
@@ -28,18 +29,18 @@
 .title {
   color: #2d2d2d;
   font-family: Poppins, sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
   margin: 0 0 8px;
 }
 
 .description {
   color: #666666;
-  font-family: Poppins, sans-serif;
+  font-family: 'Telex';
   font-size: 14px;
   font-weight: 400;
-  line-height: 26px;
+  line-height: 20px;
   margin: 0;
 }
 
@@ -81,3 +82,60 @@
   gap: 6px;
   padding: 0 22px;
 }
+
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+
+.downloadBtnGreen  {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  padding: 9px 24px;
+  height: 32px;
+  /* width: 186px; */
+
+  background: #73B33F33;
+  color: #73B33F;
+
+  border: none;
+  border-bottom: 3px solid #51862633; /* 🔥 Figma bottom border */
+  border-radius: 50px;
+
+  font-size: 12px;
+  font-weight: 600;
+  font-family: "Telex";
+
+  cursor: pointer;
+}
+
+.requestBtnBlue  {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  padding: 14px 24px;
+  height: 32px;
+  /* width: 186px; */
+
+  background: #28227033;
+  color: #282270;
+
+  border: none;
+  border-bottom: 3px solid #3F3B6D33;
+  border-radius: 50px;
+
+  font-size: 12px;
+  font-weight: 600;
+  font-family: "Telex";
+
+  cursor: pointer;
+}
+

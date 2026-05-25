@@ -24,24 +24,29 @@ export default function WhyUCAL() {
     <section className={styles.section}>
       <div className={styles.container}>
         <div className={styles.left}>
-          <p className={styles.eyebrow}>/ Why UCAL</p>
+          <div className={styles.textWrap}>
+            <p className="gHeading">/ Why UCAL</p>
 
-          <h2 className={styles.title}>
-            Global Standards.
-            <br />
-            Local Trust.
-            Scalable <br /> Solutions.
-          </h2>
+            <h2 className="main-heading">
+              Global Standards.
+              <br />
+              Local Trust.
+              Scalable <br /> Solutions.
+            </h2>
 
-          <p className={styles.description}>
-            UCAL delivers precision, performance, and innovation <br />
-            for the world's most trusted mobility systems.
-          </p>
+            <p className="sub-heading">
+              UCAL delivers precision, performance, and innovation <br />
+              for the world's most trusted mobility systems.
+            </p>
 
-          <button className="custom-btn">See Our Capabilities</button>
+            <button className="custom-btn">See Our Capabilities</button>
+          </div>
 
-          <div className={styles.imageWrap}>
-            <img src="/media/img9.png" alt="" className={styles.carImage} />
+          <div
+            className={styles.WhyImage}
+            
+          >
+            {/* <img src="/media/img9.png" alt="" className={styles.carImage} /> */}
           </div>
         </div>
 
