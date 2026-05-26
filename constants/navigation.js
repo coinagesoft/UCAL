@@ -13,6 +13,7 @@ export const productServiceLinks = [
     href: "/products-services/manufacturing-services",
   },
   { label: "Download", href: "/products-services/download" },
+  { label: "NewsRoom", href: "/products-services/newsroom" },
 ];
 
 export const primaryNavLinks = [

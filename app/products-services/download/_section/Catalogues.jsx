@@ -22,7 +22,7 @@ export default function Catalogues() {
           ))}
         </div>
       </div>
-           <div className={styles.container } style={{ marginTop: "80px" }} >
+      <div className={styles.container} style={{ marginTop: "80px" }} >
         <h3 className={styles.afterMarketTitle}  >Aftermarket Products</h3>
 
         <div className={styles.grid}>

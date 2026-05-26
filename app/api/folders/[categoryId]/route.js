@@ -13,7 +13,12 @@ export async function GET(request, context) {
         const [folders] = await db.query(
             `SELECT * 
             FROM folders 
-            WHERE category_id = ?`,
+            WHERE category_id = ?
+            AND (
+                parent_folder_id IS NULL
+                OR parent_folder_id = 0
+            )
+            ORDER BY created_at DESC`,
             [categoryId]
         )
         return NextResponse.json(folders);

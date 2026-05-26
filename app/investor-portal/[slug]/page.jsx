@@ -26,6 +26,11 @@ function getDownloadUrl(folderId, fileId) {
   return `/api/files/${folderId}/download/${fileId}`;
 }
 
+function getFolderCategoryId(folder) {
+
+  return folder?.categoryId || folder?.category_id || null;
+}
+
 function ActionButton({
   children,
   variant = "secondary"
@@ -143,7 +148,7 @@ function CategoryTabs({
                   ? `/investor-portal/${firstFolder.id}`
                   : `/company/investors?category=${category.id}#financialGrid`
                 }
-                className={`${styles.tab} ${activeCategoryId === category.id
+                className={`${styles.tab} ${String(activeCategoryId) === String(category.id)
                   ? styles.tabActive
                   : ""
                   }`}
@@ -160,14 +165,21 @@ function CategoryTabs({
   );
 }
 
-function Breadcrumb({ folderName }) {
+function Breadcrumb({
+  breadcrumb,
+  categoryId
+}) {
+
+  const folderGridHref = categoryId
+    ? `/company/investors?category=${categoryId}#financialGrid`
+    : "/company/investors#financialGrid";
 
   return (
 
     <div className={styles.breadcrumb}>
 
       <Link
-        href="/company/investors#financialGrid"
+        href={folderGridHref}
         className={styles.breadcrumbLink}
       >
 
@@ -178,26 +190,80 @@ function Breadcrumb({ folderName }) {
         />
 
         <span className={styles.hideMobile}>
-          UFSL - Investor Portal Online
+          {/* Folder Grid */}
         </span>
 
       </Link>
 
       {
-        folderName
-          ? (
+        breadcrumb.map((item) => (
 
-            <>
+          <div
+            key={item.id}
+            className={styles.breadcrumbItem}
+          >
 
-              <span>/</span>
+            <span>/</span>
 
-              <span className={styles.currentBreadcrumb}>
-                {folderName}
+            <Link
+              href={`/investor-portal/${item.id}`}
+              className={styles.breadcrumbLink}
+            >
+              {item.name}
+            </Link>
+
+          </div>
+
+        ))
+      }
+
+    </div>
+  );
+}
+function FolderGrid({ folders }) {
+
+  if (!folders.length) {
+    return null;
+  }
+
+  return (
+
+    <div className={styles.grid}>
+
+      {
+        folders.map((folder) => (
+
+          <Link
+            key={folder.id}
+            href={`/investor-portal/${folder.id}`}
+            className={styles.cardLink}
+          >
+
+            <div className={styles.folderCard}>
+
+              <div className={styles.folderContent}>
+
+                <img
+                  src="/media/img53.png"
+                  alt="Folder"
+                  className={styles.folderIcon}
+                />
+
+                <h3 className={styles.folderTitle}>
+                  {folder.name}
+                </h3>
+
+              </div>
+
+              <span className={styles.category}>
+                Folder
               </span>
 
-            </>
-          )
-          : null
+            </div>
+
+          </Link>
+
+        ))
       }
 
     </div>
@@ -316,29 +382,64 @@ export default function InvestorFilePortal({ params }) {
 
   const [files, setFiles] = useState([]);
 
+  const [childFolders, setChildFolders] = useState([]);
+
+  const [breadcrumb, setBreadcrumb] = useState([]);
+
+  const [currentFolder, setCurrentFolder] = useState(null);
   const [categories, setCategories] = useState([]);
 
   const [categoryFolders, setCategoryFolders] = useState({});
 
-  const [currentFolder, setCurrentFolder] = useState(null);
+
+
+  // useEffect(() => {
+
+  //   async function fetchFiles() {
+
+  //     try {
+
+  //       const res = await fetch(
+  //         `/api/files/${slug}`
+  //       );
+
+  //       const data = await res.json();
+
+  //       setFiles(
+  //         Array.isArray(data)
+  //           ? data
+  //           : []
+  //       );
+
+  //     } catch (error) {
+
+  //       console.log(error);
+  //     }
+  //   }
+
+  //   fetchFiles();
+
+  // }, [slug]);
 
   useEffect(() => {
 
-    async function fetchFiles() {
+    async function fetchFolderData() {
 
       try {
 
         const res = await fetch(
-          `/api/files/${slug}`
+          `/api/folders/view/${slug}`
         );
 
         const data = await res.json();
 
-        setFiles(
-          Array.isArray(data)
-            ? data
-            : []
-        );
+        setFiles(data.files || []);
+
+        setChildFolders(data.childFolders || []);
+
+        setBreadcrumb(data.breadcrumb || []);
+
+        setCurrentFolder(data.folder || null);
 
       } catch (error) {
 
@@ -346,10 +447,9 @@ export default function InvestorFilePortal({ params }) {
       }
     }
 
-    fetchFiles();
+    fetchFolderData();
 
   }, [slug]);
-
   useEffect(() => {
 
     async function fetchNavigationData() {
@@ -395,7 +495,9 @@ export default function InvestorFilePortal({ params }) {
 
         setCategoryFolders(foldersByCategory);
 
-        setCurrentFolder(matchedFolder);
+        if (matchedFolder) {
+          setCurrentFolder(matchedFolder);
+        }
 
       } catch (error) {
 
@@ -419,7 +521,7 @@ export default function InvestorFilePortal({ params }) {
 
         <CategoryTabs
           categories={categories}
-          activeCategoryId={currentFolder?.categoryId}
+          activeCategoryId={getFolderCategoryId(currentFolder)}
           categoryFolders={categoryFolders}
         />
 
@@ -428,13 +530,67 @@ export default function InvestorFilePortal({ params }) {
       <main className={styles.main}>
 
         <Breadcrumb
-          folderName={currentFolder?.name}
+          breadcrumb={breadcrumb}
+          categoryId={getFolderCategoryId(currentFolder)}
         />
 
-        <FilesTable
-          files={files}
-          folderId={slug}
-        />
+        <div className={styles.contentSection}>
+
+          {
+            childFolders.length > 0 && (
+
+              <>
+                <div className={styles.divider}>
+
+                  <span className={styles.dividerLabel}>
+                    Folders
+                  </span>
+
+                  <div className={styles.dividerLine} />
+
+                </div>
+
+                <FolderGrid folders={childFolders} />
+
+              </>
+            )
+          }
+
+          {
+            files.length > 0 && (
+
+              <>
+                <div className={styles.divider}>
+
+                  <span className={styles.dividerLabel}>
+                    Files
+                  </span>
+
+                  <div className={styles.dividerLine} />
+
+                </div>
+
+                <FilesTable
+                  files={files}
+                  folderId={slug}
+                />
+
+              </>
+            )
+          }
+
+          {
+            childFolders.length === 0 &&
+            files.length === 0 && (
+
+              <div className={styles.emptyState}>
+                No folders or files inside this folder.
+              </div>
+
+            )
+          }
+
+        </div>
 
       </main>
 

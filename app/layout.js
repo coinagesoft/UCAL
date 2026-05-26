@@ -28,10 +28,12 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
-      <link
-  href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css"
-  rel="stylesheet"
-/>
+      <head>
+        <link
+          href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css"
+          rel="stylesheet"
+        />
+      </head>
       <body className={`${urbanist.variable} ${telex.variable}`}>
         <Navbar />
         {children}

@@ -1,6 +1,7 @@
 import HeroDownload from "./_section/HeroDownload.jsx";
 import Catalogues from "./_section/Catalogues.jsx";
 import SpecSheet from "./_section/SpecSheet.jsx";
+import Certification from "./_section/Certification.jsx";
 
 export default function DownloadPage() {
   return (
@@ -8,6 +9,7 @@ export default function DownloadPage() {
       <HeroDownload />
         <Catalogues />
         <SpecSheet />
+        <Certification/>
     </div>
   );
 }

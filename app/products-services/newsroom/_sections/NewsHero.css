@@ -1,0 +1,13 @@
+.news-hero {
+    width: 100%;
+    min-height: 648px;
+    margin-top: 88px;
+
+    display: flex;
+    align-items: center;
+
+    background-image: url("/media/n1.webp");
+    background-size: cover;
+    background-position: left center;
+    background-repeat: no-repeat;
+}

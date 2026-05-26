@@ -1,0 +1,92 @@
+.card{
+    width: 100%;
+    height: 120px;
+
+    background: #FFFFFF;
+
+    border: 1px solid #E4E8EF;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 20px 16px;
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+}
+
+.left{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width: 56px;
+    height: 56px;
+    object-fit: contain;
+}
+
+.content{
+    flex: 1;
+    margin-left: 16px;
+    margin-top: 10px;
+}
+
+.content h2{
+    font-size: 18px;
+    font-weight: 600;
+
+    color: #2F2F2F;
+
+    margin-bottom: 6px;
+
+    line-height: 26px;
+
+    display: -webkit-box;
+
+    -webkit-line-clamp: 2;
+
+    -webkit-box-orient: vertical;
+
+    overflow: hidden;
+}
+.content p{
+    font-size: 15px;
+
+    color: #666;
+
+    line-height: 22px;
+
+    display: -webkit-box;
+
+    -webkit-line-clamp: 2;
+
+    -webkit-box-orient: vertical;
+
+    overflow: hidden;
+}
+
+.downloadBtn{
+    width: 36px;
+    height: 36px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #7BC043;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    flex-shrink: 0;
+}
+
+.downloadBtn img{
+    width: 16px;
+    height: 16px;
+}

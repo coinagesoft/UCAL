@@ -212,6 +212,7 @@ p, li, span, a {
   color: #555855;
   Font-family: "Telex";
   line-height: 22px;
+  text-align: center;
 }
 
 .sub-heading{
@@ -219,4 +220,45 @@ p, li, span, a {
   font-size: 18px;
   font-weight: 400;
   line-height: 33px;
+}
+
+
+
+.banner-content {
+  /* margin-top: 70px; */
+  margin-left: 80px;
+  max-width: 695px;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.banner-title {
+  margin: 0;
+
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 110%;
+  
+
+  color: #fff;  
+}
+
+.banner-description {
+  margin: 0;
+
+  max-width: 520px;
+
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
