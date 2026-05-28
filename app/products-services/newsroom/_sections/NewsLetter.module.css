@@ -1,0 +1,167 @@
+.grid{
+    display: grid;
+    grid-template-rows: repeat(4 , 135px);
+    width: 652px;
+    gap : 19px
+}
+
+.left{
+    margin: 0px;
+}
+
+.card{
+    display: grid;
+    grid-template-columns: 60px 1fr 40px;
+    border: 1px solid #E4E8EF;
+    justify-content: center;
+    align-items: center;
+    padding: 22px 22px 22px 24px;
+}
+
+.quarter{
+    font-size: 12px;
+    font-family: "Telex";
+    font-weight: 400;
+    color:#73B33F
+}
+
+.title{
+    font-size: 18px;
+    font-family: "Urbanist";
+    font-weight: 600;
+    color:#333333
+}
+
+.description{
+    font-size: 14px;
+    font-weight: 400;
+    color: #555855D9;
+    font-family: "Telex";
+}
+
+.leftRight{
+    padding: 80px;
+    justify-content: center;
+    display: flex;
+    gap:48px
+}
+
+.right{
+    background-image: url("/media/n18.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 581px;
+    height: 598px;
+
+    padding: 48px;
+
+    position: relative;
+}
+
+.newsContent{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.newsContent h2{
+    font-size: 24px;
+    line-height: 100%;
+    font-weight: 600;
+
+    color: white;
+
+    margin-bottom: 24px;
+}
+
+.newsDesc{
+    font-size: 16px;
+    line-height: 33px;
+    font-weight: 400;
+
+    color: rgba(255,255,255,0.85);
+
+    margin-bottom: 48px;
+}
+
+.newsForm{
+    display: flex;
+    flex-direction: column;
+
+    gap: 28px;
+}
+
+.inputGroup{
+    display: flex;
+    flex-direction: column;
+    
+
+    gap: 10px;
+}
+
+.inputGroup label{
+    font-size: 14px;
+    font-weight: 500;
+
+    color: #FFFFFFB2;
+}
+
+.inputGroup input{
+    width: 100%;
+    height: 44px;
+
+    border: none;
+    outline: none;
+
+    border-radius: 6px;
+
+    padding: 0 20px;
+
+    background: #F6F8FAB2;
+
+    font-size: 16px;
+}
+
+.inputGroup input::placeholder{
+    font-size: 14px;
+    color: #555855;
+}
+
+/* .newsForm button{
+    width: 100%;
+    height: 62px;
+
+    border: none;
+    border-radius: 999px;
+
+    background: #74B42C;
+
+    color: white;
+
+    font-size: 18px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    margin-top: 12px;
+
+    transition: 0.3s ease;
+} */
+
+/* .newsForm button:hover{
+    background: #659d25;
+} */
+
+.bottomText{
+    text-align: center;
+
+    color: rgba(255,255,255,0.75);
+
+    font-size: 14px;
+
+    margin-top: 32px;
+}

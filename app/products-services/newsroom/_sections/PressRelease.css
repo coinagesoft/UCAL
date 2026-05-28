@@ -1,3 +1,11 @@
 .section{
+    margin: 80px 0px 80px  0px;
+}
+
+.grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 413px);
+    justify-content: center;
     margin-top: 80px;
 }

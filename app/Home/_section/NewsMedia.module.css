@@ -1,7 +1,7 @@
 .section {
   background: #f6f7f8;
-  padding: 100px 20px;
-  text-align: center;
+  padding: 80px 20px;
+  /* text-align: center; */
 }
 
 .header h4 {
@@ -24,90 +24,86 @@
   max-width: 620px;
 }
 
+
 .grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
-  margin-top: 60px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 413px);
+    justify-content: center;
+    margin-top: 80px;
+}
+.card{
+    /* width: 413px; */
+    height: 535px;
+    border: solid 1px #E4E8EF;
+     border-radius: 0;
+     transition: all 0.3s ease;
+     width: 413px;
+     
 }
 
-.card {
-  background: #fff;
-  border: 1px solid #e5e7eb;
-  border-radius: 6px;
-  display: flex;
-  flex-direction: column;
-  height: 520px;
-  padding: 20px;
-  text-align: left;
-  transition: all 0.3s ease;
-  width: 400px;
+.cardContent{
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap:20px
 }
 
-.card:hover {
-  border: 2px solid #7ec342;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+.cardImg{
+    height: 194px;
+    width: 365px;
 }
 
-.imageWrap {
-  border-radius: 4px;
-  margin-bottom: 18px;
-  overflow: hidden;
+.calender{
+    display: flex;
+    /* justify-content: center; */
+    gap: 5px;
 }
 
-.image {
-  height: 200px;
-  object-fit: cover;
-  width: 100%;
+.cardText h2{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    font-family: "Urbanist";
 }
 
-.content {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+.cardText p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.5px;
+    font-family: "Telex";
+    color: #555855;
 }
 
-.meta {
-  color: #7a7a7a;
-  font-size: 13px;
-  margin-bottom: 5px;
+.calender img{
+    height: 20px;
+    width: 20px;
+    /* padding-right: 5px; */
 }
 
-.tag {
-  display: none;
+.readMore a{
+    text-decoration: none;
+    color: #73B33F; 
+    font-size: 600;
+    font-size: 16px;
+    line-height: 19.5px;
+
 }
 
-.content h3 {
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 1.5;
+.readMore img{
+    width: 13px;
+    height: 10px;
 }
 
-.content p {
-  color: #6b6f76;
-  font-size: 14px;
-  line-height: 1.6;
+.readMore{
+    display: inline-flex;
+    gap:5px;
+    justify-content:start;
+    align-items: center;
+      border-bottom: 1px solid #78BE20;
 }
 
-.readMore {
-  align-items: center;
-  color: #7ec342;
-  display: inline-flex;
-  font-weight: 500;
-  gap: 6px;
-  margin-top: auto;
-  position: relative;
-  text-decoration: none;
-  width: fit-content;
-}
-
-.readMore::after {
-  background: #7ec342;
-  bottom: -4px;
-  content: "";
-  height: 1px;
-  left: 0;
-  position: absolute;
-  width: 100%;
+.card:hover{
+    border-color: #78BE20;
+    background-color: #f5f8ef;
 }

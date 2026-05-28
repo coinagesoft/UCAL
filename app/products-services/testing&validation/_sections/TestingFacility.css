@@ -1,0 +1,271 @@
+/* TestingFacility.css */
+
+.testing-facility {
+  position: relative;
+
+  width: 100%;
+  padding: 90px 0;
+
+  overflow: hidden;
+
+  background-image: url("/media/aaa1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.testing-overlay {
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    90deg,
+    rgba(235, 255, 233, 0.90) 0%,
+    rgba(228, 255, 247, 0.82) 100%
+  );
+}
+
+.testing-wrapper {
+  position: relative;
+  z-index: 2;
+
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* Heading */
+
+.testing-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 18px;
+
+  margin-bottom: 70px;
+}
+
+.testing-title {
+  color: #333333;
+  text-align: center;
+}
+
+.testing-description {
+  max-width: 760px;
+
+  text-align: center !important;
+
+  color: #666666;
+  line-height: 33px;
+}
+
+/* Rows */
+
+.testing-row {
+  display: flex;
+align-items: center;  /* justify-self: center; */
+justify-content: flex-start;
+  gap: 46px;
+
+  margin-bottom: 80px;
+}
+
+.testing-row.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Images */
+
+.testing-image {
+  width: 650px;
+  height: 422px;
+
+  overflow: hidden;
+
+  flex-shrink: 0;
+}
+
+.testing-row:nth-child(3) .testing-image{
+    height: 324px;
+}
+.testing-row:nth-child(4) .testing-image {
+  height: 324px;
+}
+
+.testing-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  display: block;
+}
+
+/* Specs */
+
+.testing-spec-box {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  /* margin-bottom: 80px; */
+}
+
+.testing-spec-box h3 {
+  margin: 0 0 24px 0;
+
+  font-family: "Urbanist";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 100%;
+
+  color: #333333;
+}
+
+.testing-spec-list {
+  width: 100%;
+}
+
+.testing-spec {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 14px 0;
+
+  border-bottom: 1px solid #dfe8df;
+}
+
+.testing-spec:last-child {
+  border-bottom: none;
+}
+
+.testing-spec span {
+  font-family: "Telex";
+  font-size: 12px;
+  font-weight: 400;
+
+  color: #333333B2;
+}
+
+.testing-spec p {
+  margin: 0;
+
+  font-family: "Telex";
+  font-size: 14px;
+  font-weight: 600;
+
+  color: #333333;
+}
+
+/* Other Testing */
+
+.other-testing-box {
+  margin-top: 30px;
+
+  background: #ffffff;
+  height: 216px;
+
+  padding: 32px 24px 42px 24px;
+}
+
+.other-testing-box h3 {
+  margin: 0 0 28px 0;
+
+  font-family: "Urbanist";
+  font-size: 24px;
+  font-weight: 600;
+
+  color: #333333;
+}
+
+.other-testing-list {
+  display: grid;
+
+  grid-template-columns: repeat(4, 35vh);
+
+  row-gap: 10px;
+  column-gap: 10px;
+}
+
+.other-testing-list p {
+  margin: 0;
+
+  position: relative;
+
+  padding-left: 14px;
+
+  font-family: "Telex";
+  font-size: 14px;
+  line-height: 100%;
+
+  color: #282270;
+}
+
+.other-testing-list p::before {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  top: 7px;
+
+  width: 6px;
+  height: 6px;
+
+  border-radius: 50%;
+
+  background: #282270;
+}
+
+/* Responsive */
+
+@media (max-width: 1200px) {
+
+  .testing-wrapper {
+    padding: 0 24px;
+  }
+
+  .testing-row,
+  .testing-row.reverse {
+    flex-direction: column;
+  }
+
+  .testing-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .other-testing-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+
+  .testing-facility {
+    padding: 60px 0;
+  }
+
+  .testing-title {
+    font-size: 40px;
+  }
+
+  .testing-description {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .other-testing-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .testing-title {
+    font-size: 32px;
+  }
+
+  .testing-spec-box h3 {
+    font-size: 22px;
+  }
+}

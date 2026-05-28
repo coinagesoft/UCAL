@@ -1,5 +1,5 @@
 .section {
-  background-color: #f5f5f5;
+  /* background-color: #f5f5f5; */
   display: flex;
   justify-content: center;
   padding: clamp(80px, 10vw, 40px) 20px;

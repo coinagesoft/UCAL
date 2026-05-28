@@ -1,5 +1,5 @@
 .section {
-  background-color: #f8f9fa;
+  /* background-color: #f8f9fa;  */
   font-family: Inter, sans-serif;
   padding: clamp(60px, 8vw, 100px) clamp(20px, 6vw, 80px);
 }
@@ -66,7 +66,7 @@
 .line {
   background-color: #e0e0e0;
   bottom: 0;
-  left: 20px;
+  left: 0px;
   position: absolute;
   top: 0;
   width: 2px;
@@ -83,7 +83,7 @@
   background-color: #7ec342;
   border-radius: 50%;
   height: 14px;
-  left: 13px;
+  left: -6px;
   position: absolute;
   top: 60px;
   width: 14px;
@@ -111,7 +111,7 @@
 .reasonImage {
   background-position: center;
   background-size: cover;
-  height: 135px;
+  height: 125px;
   margin-left: 130px;
   width: 164px;
 }
@@ -158,10 +158,10 @@
 
   margin-top: 0px;
 
-  background-image: url("/media/img9.png");
+  background-image: url("/media/homeWhy.svg");
   background-repeat: no-repeat;
 
-  background-size: 724px 500px;
+  background-size: 724px 300px;
 
   background-position: center;
     margin-left: -80px;

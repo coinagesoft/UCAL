@@ -3,6 +3,9 @@ import Catalogues from "./_section/Catalogues.jsx";
 import SpecSheet from "./_section/SpecSheet.jsx";
 import Certification from "./_section/Certification.jsx";
 
+
+
+
 export default function DownloadPage() {
   return (
     <div>
@@ -10,6 +13,7 @@ export default function DownloadPage() {
         <Catalogues />
         <SpecSheet />
         <Certification/>
+      
     </div>
   );
 }

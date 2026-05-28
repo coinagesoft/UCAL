@@ -5,7 +5,7 @@ import WhyUCAL from "./_section/WhyUCAL";
 import ProductsSection from "./_section/ProductsSection";
 import ServicesSection from "./_section/ServicesSection";
 import CapabilitiesSection from "./_section/CapabilitiesSection";
-import Global from "./_section/Global";
+import AfterMarket from "./_section/AfterMarket";
 import TrustedPartners from "./_section/TrustedPartners";
 import TestimonialsSection from "./_section/TestimonialsSection";
 import GlobalPresence from "./_section/GlobalPresence";
@@ -21,7 +21,7 @@ export default function HomeSections() {
       <ProductsSection />
       <ServicesSection />
       <CapabilitiesSection />
-      <Global />
+      <AfterMarket />
       <TrustedPartners />
       <TestimonialsSection />
       <GlobalPresence />

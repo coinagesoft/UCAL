@@ -1,0 +1,165 @@
+.banner{
+    margin-top: 88px;
+    background-image: url("/media/contactBanner.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    width: 100%;
+    height:560px;
+}
+
+
+.contactHeader{
+    margin-top: 80px;
+}
+
+
+
+.enquiry-tabs{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    justify-content: center;
+    margin-top: 80px;
+
+    width: fit-content;
+    padding: 7px;
+
+    background: #73B33F1A;
+    border: 1px solid #E4E8EF;
+    border-radius: 50px;
+     margin: 0 auto
+}
+
+.enquiry-tab{
+    padding: 14px 28px;
+    border-radius: 40px;
+
+    font-size: 16px;
+    font-weight: 600;
+    color: #555855;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* hover */
+.enquiry-tab:hover{
+    background: #73B33F;
+    color: #fff;
+}
+
+/* active tab */
+.enquiry-tab.active{
+    background: #73B33F;
+    color: #fff;
+}
+
+.formCard{
+    margin-top: 50px;
+    width: 100%;
+    max-width: 800px;
+
+    border: 1px solid #E4E8EF;
+    /* border-radius: 24px; */
+
+    background: #fff;
+
+    box-shadow:
+        0px 32px 64px -16px rgba(0, 0, 0, 0.08),
+        0px 4px 6px -1px rgba(0, 0, 0, 0.05);
+
+    margin: 40px auto;
+    padding: 40px;
+}
+
+.contactForm{
+    width: 100%;
+}
+
+.formGrid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px 24px;
+}
+
+.formGroup{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formGroup label{
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+}
+
+.formGroup input,
+.formGroup select,
+.formGroup textarea{
+    width: 100%;
+
+    padding: 16px 18px;
+
+    border: 1px solid #E4E8EF;
+    border-radius: 6px;
+
+    background: #F8F9FB;
+
+    font-size: 14px;
+    color: #555855;
+
+    outline: none;
+    transition: 0.3s ease;
+}
+
+.formGroup textarea{
+    resize: none;
+}
+
+.formGroup input:focus,
+.formGroup select:focus,
+.formGroup textarea:focus{
+    border-color: #73B33F;
+    background: #fff;
+}
+
+.fullWidth{
+    margin-top: 28px;
+}
+
+.checkboxRow{
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+
+    margin-top: 28px;
+}
+
+.checkboxRow input{
+    margin-top: 4px;
+}
+
+.checkboxRow p{
+    font-size: 15px;
+    line-height: 24px;
+    color: #666;
+}
+
+.contactForm .custom-btn{
+    margin-top: 32px;
+}
+
+@media(max-width:768px){
+
+    .formCard{
+        padding: 24px;
+    }
+
+    .formGrid{
+        grid-template-columns: 1fr;
+    }
+
+}

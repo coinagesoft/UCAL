@@ -1,0 +1,70 @@
+.card{
+    /* width: 413px; */
+    height: 535px;
+    border: solid 1px #E4E8EF;
+     border-radius: 0;
+     transition: all 0.3s ease;
+}
+
+.cardContent{
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap:20px
+}
+
+.cardImg{
+    height: 194px;
+    width: 365px;
+}
+
+.calender{
+    display: flex;
+    /* justify-content: center; */
+    gap: 5px;
+}
+
+.cardText h2{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    font-family: "Urbanist";
+}
+
+.cardText p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    font-family: "Telex";
+}
+
+.calender img{
+    height: 20px;
+    width: 20px;
+    /* padding-right: 5px; */
+}
+
+.readMore a{
+    text-decoration: none;
+    color: #73B33F; 
+    font-size: 600;
+    font-size: 16px;
+
+}
+
+.readMore img{
+    width: 13px;
+    height: 10px;
+}
+
+.readMore{
+    display: inline-flex;
+    gap:5px;
+    justify-content:start;
+    align-items: center;
+      border-bottom: 1px solid #78BE20;
+}
+
+.card:hover{
+    border-color: #78BE20;
+}

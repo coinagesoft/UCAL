@@ -3,35 +3,40 @@ import styles from "./NewsMedia.module.css";
 
 function NewsCard({ img, tag, title, desc }) {
   return (
-    <div className={styles.card}>
-      <div className={`${styles.imageWrap} hero-container`}>
-        <img className={`${styles.image} hero-img`} src={img} alt="news" />
-      </div>
 
-      <div className={styles.content}>
-        <div className={styles.meta}>
-          <span className={styles.tag}>{tag}</span>
-          <span>10 Nov, 2024</span>
+    <div className={styles.card}>
+      <div className={styles.cardContent}>
+        <div className={`${styles.cardImg}hero-container`}>
+          <img src={img} alt="cardImg" className="hero-img" />
+        </div>
+        <div>
+          <div className={styles.calender}>
+            <img src="/media/nCalender.png" alt="calender" />
+            <p>10 Nov , 2024</p>
+          </div>
+          <div className={styles.cardText}>
+            <h2>{title}</h2>
+            <p>{desc}</p>
+          </div>
+          <div className={styles.readMore}>
+            <a href="">Read more</a>
+            <img src="/media/arrow.png" alt="arrow" />
+          </div>
         </div>
 
-        <h3>{title}</h3>
-        <p>{desc}</p>
       </div>
-
-      <a href="#" className={styles.readMore}>
-        Read More →
-      </a>
     </div>
+
   );
 }
 
 export default function NewsMedia() {
   return (
     <section className={styles.section}>
-      <div className={styles.header}>
-        <h4>/ News & Media</h4>
-        <h2>Insights & News</h2>
-        <p>
+      <div className="wrapper">
+        <h4 className="gHeading">/ News & Media</h4>
+        <h2 className="main-heading">Insights & News</h2>
+        <p className="sub-heading">
           It is a long established fact that a reader will be distracted by <br />
           the readable content of a page when looking at its layout.
         </p>

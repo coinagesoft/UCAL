@@ -10,21 +10,21 @@
 }
 
 .card {
-  background-color: #0f1929;
-  border-radius: 16px;
+  background-color: #0E1C32;
+  border-radius: 8px;
   color: #ffffff;
   margin: 0 auto;
-  max-width: 850px;
+  max-width: 825px;
   padding: clamp(30px, 5vw, 50px) 15px;
   position: relative;
 }
 
 .quoteMark,
 .quoteMarkEnd {
-  color: #7ec342;
+  /* color: #7ec342; */
   font-size: clamp(24px, 5vw, 40px);
   font-weight: bold;
-  opacity: 0.6;
+  /* opacity: 0.6; */
   position: absolute;
 }
 
@@ -36,18 +36,20 @@
 .quoteMarkEnd {
   bottom: 10px;
   right: 12px;
-  transform: scaleX(-1);
+  /* transform: scaleX(-1); */
 }
 
 .quote {
   color: #ffffff;
-  font-size: clamp(14px, 2.5vw, 16px);
+  font-size: clamp(14px, 2.5vw, 18px);
   font-style: italic;
-  line-height: 1.7;
+  line-height: 33px;
   margin-bottom: 25px;
+  font-weight: 500;
   margin-inline: auto;
   max-width: 700px;
   padding: 0 10px;
+  color: #FFFFFFD9;
 }
 
 .author {

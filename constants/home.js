@@ -22,11 +22,11 @@ export const homeProducts = [
 ];
 
 export const homeCapabilities = [
-  { id: 1, title: "In-House R&D & Design", image: "/media/img12.png" },
-  { id: 2, title: "Precision Machining", image: "/media/img13.png" },
-  { id: 3, title: "Tool Design & Development", image: "/media/img14.png" },
-  { id: 4, title: "Testing & Validation", image: "/media/img15.png" },
-  { id: 5, title: "Assembly & Packaging Services", image: "/media/img16.png" },
+  { id: 1, title: "In-House R&D & Design", image: "/media/homeService5.svg" },
+  { id: 2, title: "Precision Machining", image: "/media/homeService4.svg" },
+  { id: 3, title: "Tool Design & Development", image: "/media/homeService3.svg" },
+  { id: 4, title: "Testing & Validation", image: "/media/homeService2.svg" },
+  { id: 5, title: "Assembly & Packaging Services", image: "/media/homeService1.svg" },
 ];
 
 export const whyUcalReasons = [
@@ -94,7 +94,7 @@ export const newsItems = [
     tag: "Corporate",
     title: "UCAL Reports Q3 FY25 Revenue Growth of 18% Year-on-Year",
     desc:
-      "Driven by robust demand from two-wheeler OEMs and strong export momentum, UCAL recorded consolidated revenue of â‚¹312 crore for Q3 FY2024â€“25.",
+      "Driven by robust demand from two-wheeler OEMs and strong export momentum, UCAL recorded consolidated revenue of ₹312 crore for Q3 FY2024–25.",
   },
   {
     img: "/media/img24.png",

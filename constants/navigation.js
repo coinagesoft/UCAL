@@ -14,6 +14,9 @@ export const productServiceLinks = [
   },
   { label: "Download", href: "/products-services/download" },
   { label: "NewsRoom", href: "/products-services/newsroom" },
+   { label: "Testing & Validation", href: "/products-services/testing&validation" },
+   { label: "Apply", href: "/products-services/apply" },
+   { label: "Contact Us", href: "/products-services/contactus" },
 ];
 
 export const primaryNavLinks = [

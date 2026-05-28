@@ -9,7 +9,7 @@ function FAQItem({ faq, isExpanded, onToggle }) {
     <div className={styles.item}>
       <button onClick={onToggle} className={styles.question}>
         {faq.question}
-        <span className={styles.icon}>{isExpanded ? "âˆ’" : "+"}</span>
+        <span className={styles.icon}>{isExpanded ? "-" : "+"}</span>
       </button>
 
       {isExpanded && (
@@ -34,14 +34,14 @@ export default function FAQSection() {
       <div className={styles.container}>
         <div className={styles.intro}>
           <div>
-            <h4 className={styles.eyebrow}>/ Faq&apos;s</h4>
+            <h4 className="gHeading">/ Faq&apos;s</h4>
 
-            <h1 className={styles.title}>
+            <h1 className="main-heading">
               Asked Questions <br />
               And Trusted Answers
             </h1>
 
-            <p className={styles.description}>
+            <p className="sub-heading" style={{color:"white"}}>
               It is a long established fact that a reader will be distracted by
               the readable content of a page when looking at its layout.
             </p>

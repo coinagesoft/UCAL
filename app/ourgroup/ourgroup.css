@@ -1,0 +1,221 @@
+.hero-ourgroup {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: 560px;
+ 
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+
+  overflow: hidden;
+
+  background-image: url("/media/OurGroupBanner.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.ourGroupSection{
+    margin-top: 88px;
+}
+
+.grid{
+    display: flex;
+    justify-content: center;
+    gap: 20;
+
+    margin-top: 60px;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 353px;
+    height: 430px;
+
+    background: #fff;
+
+    border: 1px solid #E4E8EF;
+
+    padding: 16px;
+
+    transition: all 0.3s ease;
+
+    margin-left: -1px; 
+    margin-bottom: 80px;
+}
+
+/* .card:hover{
+    position: relative;
+    z-index: 2;
+
+    box-shadow:
+        0px 32px 64px -16px rgba(0, 0, 0, 0.08),
+        0px 4px 6px -1px rgba(0, 0, 0, 0.05);
+} */
+
+.grpImg{
+    width: 321px;
+    height: 220px;
+
+    overflow: hidden;
+}
+
+.grpImg img{
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.4s ease;
+}
+
+/* .card:hover .grpImg img{
+    transform: scale(1.05);
+} */
+
+.grpContent{
+    margin-top: 24px;
+}
+
+.grpContent h2{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+
+    font-family: "Urbanist";
+    color: #333333;
+}
+
+.grpContent p{
+    margin-top: 12px;
+
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+
+    color: #666666;
+}
+.readMore{
+    margin-top: 28px;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    width: fit-content;
+
+    text-decoration: none;
+}
+
+.readMore span{
+    color: #73B33F;
+    font-size: 16px;
+    font-weight: 500;
+
+    border-bottom: 1px solid #73B33F;
+    padding-bottom: 4px;
+}
+
+.arrowCircle{
+    width: 24px;
+    height: 24px;
+
+    border: 1px solid #73B33F;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.3s ease;
+}
+
+.arrowCircle img{
+    width: 10px;
+    height: 10px;
+}
+
+.globalSection{
+    width: 100%;
+
+    padding: 90px 0 120px;
+
+    background-image: url("/media/img65.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    overflow: hidden;
+}
+
+.globalSection .wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.globalTabs{
+    margin-top: 36px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 6px;
+
+    border-radius: 50px;
+
+    border: 1px solid #E4E8EF;
+
+    background: #FFFFFF;
+}
+
+.globalTab{
+    height: 42px;
+
+    padding: 0 22px;
+
+    border: none;
+    outline: none;
+
+    border-radius: 999px;
+
+    background: transparent;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    color: #555855;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.globalTab.active{
+    background: #73B33F;
+    color: #FFFFFF;
+}
+
+.globalTab:hover{
+    background: #73B33F;
+    color: #FFFFFF;
+}
+
+.mapContainer{
+    margin-top: 70px;
+
+    width: 100%;
+    max-width: 900px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.mapContainer img{
+    width: 100%;
+    height: auto;
+
+    object-fit: contain;
+}

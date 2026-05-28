@@ -20,7 +20,7 @@ const slides = [
 
     button: "Explore Our Products",
 
-    image: "/media/img1.png",
+    image: "/media/homeBanner1.svg",
   },
 
   {
@@ -37,7 +37,7 @@ const slides = [
 
     button: "View Polymer Website",
 
-    image: "/media/h1.png",
+    image: "/media/homeBanner2.svg",
   },
 ];
 

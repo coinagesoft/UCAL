@@ -1,26 +1,31 @@
 .section {
-  background-color: #ffffff;
-  padding: 80px 20px;
+  background-color: hsl(0, 0%, 100%);
+  /* padding: 80px 20px; */
 }
 
 .container {
   margin: 0 auto;
-  max-width: 1280px;
-}
+  padding: 80px;
 
-.row {
+}
+.customRow{
+
   align-items: center;
-  row-gap: 80px;
+  column-gap: 80px;
 }
 
 .map {
-  height: 382px;
+  width: 664px;
+  max-width: 664px;
+  height: auto;
   object-fit: contain;
-  width: 100%;
 }
 
 .content {
-  padding-left: 120px;
+  /* padding-left: 120px;  */
+  display: flex;
+  flex-direction: column;
+  gap:18px
 }
 
 .eyebrow {

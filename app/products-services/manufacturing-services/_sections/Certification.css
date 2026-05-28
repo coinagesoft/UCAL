@@ -1,0 +1,28 @@
+.grid{
+    display: grid;
+    grid-template-columns: repeat(5 , 1fr);
+    padding: 80px;
+}
+
+.certImg{
+    width: 146px;
+    height: 128.px;
+}
+
+.content h3{
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Urbanist";
+    line-height: 20px;
+}
+
+.content p{
+    font-size : 14px ;
+    font-family: "Telex";
+    font-weight: 400;
+    color: #555855;
+}
+
+.content{
+    margin-top: 10px;
+}

@@ -24,13 +24,15 @@
 }
 
 .logo {
-  height: 48px; 
+  height: 57px; 
+  width: 59px;
+  /* padding-left: 80px; */
 }
 
 .menu {
   align-items: center;
   flex-direction: row;
-  gap: 50px;
+  gap: 30px;
   font-weight: 500;
 }
 
@@ -38,7 +40,7 @@
   align-items: center;
   display: flex;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
   height: 88px;
   padding: 0 10px;
   position: relative;
@@ -138,4 +140,8 @@
 .dropdownIcon {
   font-size: 28px;
   line-height: 1;
+}
+
+.navbar-brand {
+  padding-left: 80px;
 }

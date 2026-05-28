@@ -116,7 +116,7 @@
             href="/"
           >
             <img
-              src="/media/logo.png"
+              src="/media/mainLogoSvg.svg"
               alt="UCAL Logo"
               className={styles.logo}
             />
