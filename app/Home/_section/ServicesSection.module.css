@@ -41,3 +41,23 @@
   line-height: 1.7;
   max-width: 100%;
 }
+
+@media (max-width: 768px) {
+  .section {
+    padding: 56px 20px;
+  }
+
+  .container {
+    gap: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 48px 18px;
+  }
+
+  .container :global(.custom-btn) {
+    width: 100%;
+  }
+}

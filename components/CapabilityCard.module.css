@@ -66,3 +66,28 @@
   font-size: 12px;
   padding: 6px 12px;
 }
+
+@media (max-width: 900px) {
+  .card,
+  .reverse,
+  .normal {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .imageWrap {
+    height: 280px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    gap: 22px;
+    padding: 18px;
+  }
+
+  .imageWrap {
+    height: 220px;
+  }
+}

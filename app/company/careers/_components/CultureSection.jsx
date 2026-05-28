@@ -1,3 +1,5 @@
+import styles from "./CultureSection.module.css";
+
 export default function CultureSection() {
   const features = [
     {
@@ -23,55 +25,30 @@ export default function CultureSection() {
   ];
 
   return (
-    <section
-      style={{
-        padding: "100px clamp(20px, 6vw, 80px)",
-        display: "flex",
-        gap: "60px",
-        alignItems: "center",
-        justifyContent: "space-between",
-        background: "#ffffff",
-        flexWrap: "wrap",
-      }}
-    >
+    <section className={styles.cultureSection}>
       {/* LEFT IMAGE */}
-      <div style={{ flex: "1 1 45%", minWidth: "300px" }}>
+      <div className={styles.cultureImageWrap}>
         <img
           src="/media/img28.png"
           alt="Culture"
-          style={{
-            width: "100%",
-            height: "auto",
-            maxHeight: "750px",
-            objectFit: "cover",
-          }}
+          className={styles.cultureImage}
         />
       </div>
 
       {/* RIGHT CONTENT */}
-      <div style={{ flex: "1 1 45%", maxWidth: "640px", minWidth: "300px" }}>
-        <p style={{ color: "#7ec342", fontSize: "16px", marginBottom: "10px" }}>
+      <div className={styles.cultureContent}>
+        <p className="gHeading">
           / Culture
         </p>
 
         <h2
-          style={{
-            fontSize: "40px",
-            fontWeight: "600",
-            lineHeight: "1.3",
-            marginBottom: "20px",
-          }}
+          className="main-heading"
         >
           Grow Here. Stay Here. <br /> Build Here.
         </h2>
 
         <p
-          style={{
-            color: "#666",
-            fontSize: "18px",
-            lineHeight: "1.7",
-            marginBottom: "40px",
-          }}
+          className="sub-heading"
         >
           We invest more than 5% of revenue into R&D — which means we invest
           in the people who run those programmes. Growth at UCAL is structured,
@@ -79,54 +56,31 @@ export default function CultureSection() {
         </p>
 
         {/* FEATURES */}
-        <div style={{ display: "flex", flexDirection: "column", gap: "30px" }}>
+        <div className={styles.featureList}>
           {features.map((item, index) => (
             <div
               key={index}
-              style={{
-                display: "flex",
-                gap: "16px",
-                alignItems: "flex-start",
-              }}
+              className={styles.featureItem}
             >
               {/* IMAGE ICON */}
-              <div
-                style={{
-                  width: "42px",
-                  height: "42px",
-                  flexShrink: 0,
-                }}
-              >
+              <div className={styles.featureIconWrap}>
                 <img
                   src={item.icon}
                   alt="icon"
-                  style={{
-                    width: "100%",
-                    height: "100%",
-                    objectFit: "contain",
-                  }}
+                  className={styles.featureIcon}
                 />
               </div>
 
               {/* TEXT */}
               <div>
                 <h4
-                  style={{
-                    fontSize: "20px",
-                    fontWeight: "500",
-                    marginBottom: "6px",
-                  }}
+                  className={styles.featureTitle}
                 >
                   {item.title}
                 </h4>
 
                 <p
-                  style={{
-                    fontSize: "18px",
-                    fontWeight: "400",
-                    color: "#666",
-                    lineHeight: "1.6",
-                  }}
+                  className={styles.featureDescription}
                 >
                   {item.desc}
                 </p>

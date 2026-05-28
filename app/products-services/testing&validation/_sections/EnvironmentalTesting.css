@@ -242,6 +242,10 @@
     padding: 0 24px;
   }
 
+  .env-card {
+    width: 100%;
+  }
+
   .env-bottom-grid {
     grid-template-columns: 1fr;
   }
@@ -292,5 +296,15 @@
 
   .env-card-content h3 {
     font-size: 24px;
+  }
+
+  .env-card {
+    padding: 18px;
+  }
+
+  .env-spec {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 6px;
   }
 }

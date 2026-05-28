@@ -138,3 +138,53 @@
         right: 40px;
         top: 0%;
     }   
+
+@media (max-width: 1320px) {
+    .recSection {
+        padding: 64px 48px;
+    }
+
+    .awardsSection {
+        width: 100%;
+    }
+}
+
+@media (max-width: 900px) {
+    .recSection {
+        padding: 56px 24px;
+    }
+
+    .awardsSection {
+        height: auto;
+    }
+
+    .awardRow {
+        height: auto;
+        grid-template-columns: 42px 1fr;
+        gap: 14px 18px;
+        padding: 22px;
+    }
+
+    .verticalLine,
+    .trophy {
+        display: none;
+    }
+
+    .awardLogo {
+        grid-column: 2;
+    }
+}
+
+@media (max-width: 480px) {
+    .recSection {
+        padding: 48px 18px;
+    }
+
+    .awardRow {
+        grid-template-columns: 1fr;
+    }
+
+    .awardLogo {
+        grid-column: auto;
+    }
+}

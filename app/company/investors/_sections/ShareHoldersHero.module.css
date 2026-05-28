@@ -1,0 +1,90 @@
+.hero {
+  width: 100%;
+  min-height: 440px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  padding: 60px 20px;
+  overflow: hidden;
+  background-color: #020131;
+  font-family: "Urbanist", sans-serif;
+}
+
+.background {
+  position: absolute;
+  inset: 0;
+  background-image: url("/media/img26.png");
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(105deg, rgba(2, 1, 49, 0.9) 0%, rgba(23, 33, 105, 0.8) 45%, rgba(92, 123, 30, 0.7) 100%);
+  z-index: 2;
+}
+
+.content {
+  position: relative;
+  z-index: 3;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #79b933;
+  margin: 0;
+}
+
+.title {
+  font-size: 52px;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+.description {
+  font-size: 18px;
+  line-height: 28px;
+  color: #ffffff;
+  opacity: 0.9;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 360px;
+  }
+
+  .title {
+    font-size: 34px;
+  }
+
+  .description,
+  .label {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 48px 18px;
+  }
+
+  .title {
+    font-size: 29px;
+  }
+}

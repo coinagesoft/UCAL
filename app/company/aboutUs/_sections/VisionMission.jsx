@@ -18,13 +18,13 @@ export default function VisionMission() {
 
             <div className={styles.content}>
               <div className={styles.headingWrap}>
-                <span className={styles.quote} style={{marginRight:"50px"}}>❝</span>
+                <span className={`${styles.quote} ${styles.visionQuote}`}>â</span>
 
-                <h3 className={styles.title}style={{marginRight:"80px"}}>Our Vision</h3>
+                <h3 className={`${styles.title} ${styles.visionTitle}`}>Our Vision</h3>
               </div>
 
-              <p className={styles.description } style={{alignItems:"center"}}>
-                To be a global leader in intelligent mobility solutions—driving 
+              <p className={styles.description}>
+                To be a global leader in intelligent mobility solutionsâ€”driving 
                 the transition from traditional engineering to
                 advanced mechatronics and sustainable technologies.
               </p>
@@ -46,7 +46,7 @@ export default function VisionMission() {
 
               <p className={styles.description}>
                 To engineer high-performance automotive systems that power
-                the future of mobility—through precision manufacturing,
+                the future of mobilityâ€”through precision manufacturing,
                 continuous innovation, and deep collaboration with global
                 partners.
               </p>

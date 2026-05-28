@@ -21,6 +21,14 @@
     margin-top: 88px;
 }
 
+.groupIntro {
+    margin-top: 80px;
+}
+
+.centeredText {
+    text-align: center;
+}
+
 .grid{
     display: flex;
     justify-content: center;
@@ -218,4 +226,137 @@
     height: auto;
 
     object-fit: contain;
+}
+
+@media (max-width: 1024px) {
+    .hero-ourgroup {
+        height: 520px;
+    }
+
+    .hero-ourgroup .banner-content {
+        margin-left: 48px;
+        max-width: 620px;
+    }
+
+    .grid {
+        padding: 0 32px;
+    }
+
+    .card {
+        width: calc(50% - 12px);
+        max-width: 353px;
+    }
+
+    .grpImg {
+        width: 100%;
+    }
+
+    .globalSection {
+        padding: 72px 32px 96px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-ourgroup {
+        height: auto;
+        min-height: 500px;
+        align-items: flex-end;
+        padding: 0 32px 56px;
+        background-position: center;
+    }
+
+    .hero-ourgroup .banner-content {
+        margin-left: 0;
+        max-width: 100%;
+        gap: 24px;
+    }
+
+    .hero-ourgroup .banner-title,
+    .ourGroupSection .main-heading {
+        font-size: 38px;
+        line-height: 1.12;
+    }
+
+    .hero-ourgroup .banner-description,
+    .ourGroupSection .sub-heading {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .ourGroupSection br {
+        display: none;
+    }
+
+    .groupIntro {
+        margin-top: 56px;
+        padding: 0 24px;
+    }
+
+    .grid {
+        margin-top: 44px;
+        padding: 0 24px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 520px;
+        height: auto;
+        margin-bottom: 32px;
+    }
+
+    .grpImg {
+        height: 240px;
+    }
+
+    .globalSection {
+        padding: 60px 24px 72px;
+    }
+
+    .globalTabs {
+        flex-wrap: wrap;
+        justify-content: center;
+        border-radius: 24px;
+    }
+
+    .mapContainer {
+        margin-top: 44px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-ourgroup {
+        min-height: 460px;
+        padding: 0 20px 48px;
+    }
+
+    .hero-ourgroup .banner-title,
+    .ourGroupSection .main-heading {
+        font-size: 31px;
+    }
+
+    .hero-ourgroup .custom-btn {
+        width: 100%;
+    }
+
+    .groupIntro {
+        margin-top: 48px;
+        padding: 0 18px;
+    }
+
+    .grid {
+        padding: 0 18px;
+    }
+
+    .grpImg {
+        height: 210px;
+    }
+
+    .globalSection {
+        padding: 48px 18px 60px;
+    }
+
+    .globalTab {
+        flex: 1 1 auto;
+        padding: 0 16px;
+    }
 }

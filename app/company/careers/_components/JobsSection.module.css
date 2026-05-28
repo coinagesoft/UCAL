@@ -1,0 +1,124 @@
+.jobsSection {
+  padding: 0 clamp(20px, 6vw, 80px) 80px;
+  background: #ffffff;
+  font-family: Urbanist, sans-serif;
+}
+
+.jobsHeader {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.jobRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.jobContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.jobTitle {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: Urbanist;
+  line-height: 100%;
+}
+
+.tagList {
+  display: flex;
+  gap: 12px;
+}
+
+.jobTag {
+  background: #282270;
+  color: #fff;
+  line-height: 100%;
+  font-weight: 400;
+  font-size: 14.57px;
+  padding: 8px 16px;
+}
+
+.jobDescription {
+  font-size: 16px;
+  line-height: 28px;
+  color: #666;
+  max-width: 100%;
+}
+
+.applyButton {
+  margin-top: 8px;
+}
+
+.jobDivider {
+  margin: 30px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+@media (max-width: 1024px) {
+  .jobsSection {
+    padding-bottom: 72px;
+  }
+
+  .jobsHeader {
+    margin-bottom: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .jobsSection {
+    padding-bottom: 60px;
+  }
+
+  .jobsHeader {
+    margin-bottom: 40px;
+  }
+
+  .jobsSubHeading br {
+    display: none;
+  }
+
+  .jobRow {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .applyButton {
+    min-height: 44px;
+  }
+}
+
+@media (max-width: 480px) {
+  .jobsSection {
+    padding-bottom: 48px;
+  }
+
+  .tagList {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .jobTag {
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+
+  .jobTitle {
+    font-size: 21px;
+    line-height: 1.15;
+  }
+
+  .jobDescription {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .applyButton {
+    width: 100%;
+  }
+}

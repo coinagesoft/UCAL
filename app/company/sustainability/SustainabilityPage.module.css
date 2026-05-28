@@ -1,0 +1,105 @@
+.sustainabilityPage {
+  margin-top: 100px;
+}
+
+@media (max-width: 1024px) {
+  .sustainabilityPage :global(section) {
+    height: auto !important;
+    min-height: auto !important;
+    padding-left: 48px !important;
+    padding-right: 48px !important;
+  }
+
+  .sustainabilityPage :global(section > div) {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .sustainabilityPage :global(section div[style*="display: flex"]) {
+    max-width: 100% !important;
+  }
+
+  .sustainabilityPage :global(section img) {
+    max-width: 100% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .sustainabilityPage {
+    margin-top: 88px;
+  }
+
+  .sustainabilityPage :global(section) {
+    padding: 64px 24px !important;
+  }
+
+  .sustainabilityPage :global(section:first-child) {
+    min-height: 500px !important;
+    padding: 0 !important;
+  }
+
+  .sustainabilityPage :global(section:first-child > div:last-child) {
+    left: 32px !important;
+    top: 96px !important;
+    width: calc(100% - 64px) !important;
+    gap: 28px !important;
+  }
+
+  .sustainabilityPage :global(section:first-child h1),
+  .sustainabilityPage :global(section h2) {
+    font-size: 36px !important;
+    line-height: 1.18 !important;
+  }
+
+  .sustainabilityPage :global(section p) {
+    font-size: 16px !important;
+    line-height: 26px !important;
+  }
+
+  .sustainabilityPage :global(section br) {
+    display: none !important;
+  }
+
+  .sustainabilityPage :global(section > div[style*="display: flex"]),
+  .sustainabilityPage :global(section div[style*="gap: 30px"]),
+  .sustainabilityPage :global(section div[style*="gap: \"30px\""]),
+  .sustainabilityPage :global(section div[style*="width: 1277px"]) {
+    flex-direction: column !important;
+  }
+
+  .sustainabilityPage :global(section div[style*="width: \"530px\""]),
+  .sustainabilityPage :global(section div[style*="width: 530px"]),
+  .sustainabilityPage :global(section div[style*="width: \"413px\""]),
+  .sustainabilityPage :global(section div[style*="width: 413px"]) {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .sustainabilityPage :global(section img[style*="width: \"583px\""]),
+  .sustainabilityPage :global(section img[style*="width: 583px"]) {
+    width: 100% !important;
+    height: auto !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .sustainabilityPage :global(section) {
+    padding: 48px 18px !important;
+  }
+
+  .sustainabilityPage :global(section:first-child) {
+    min-height: 460px !important;
+    padding: 0 !important;
+  }
+
+  .sustainabilityPage :global(section:first-child > div:last-child) {
+    left: 20px !important;
+    top: 84px !important;
+    width: calc(100% - 40px) !important;
+  }
+
+  .sustainabilityPage :global(section:first-child h1),
+  .sustainabilityPage :global(section h2) {
+    font-size: 30px !important;
+  }
+}

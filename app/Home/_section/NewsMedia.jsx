@@ -1,7 +1,7 @@
 import { newsItems } from "@/constants/home";
 import styles from "./NewsMedia.module.css";
 
-function NewsCard({ img, tag, title, desc }) {
+function NewsCard({ img, title, desc }) {
   return (
 
     <div className={styles.card}>

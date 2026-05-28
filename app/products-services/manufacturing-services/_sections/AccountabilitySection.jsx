@@ -2,61 +2,31 @@
 
 import React from "react";
 import InfoCard from "@/components/InfoCard";
-// import InfoCard from "../../../../components/InfoCard";
+import styles from "./AccountabilitySection.module.css";
 
 export default function AccountabilitySection() {
   return (
-    <section
-      style={{
-        padding: "80px 0",
-        backgroundColor: "#f7f7f7",
-        textAlign: "center",
-      }}
-    >
+    <section className={styles.section}>
       {/* LABEL */}
-      <p style={{ color: "#79b93c", fontSize: "16px", marginBottom: "20px" }}>
+      <p className={styles.label}>
         / Accountability
       </p>
 
       {/* HEADING */}
-      <h2
-        style={{
-          fontSize: "52px",
-          fontWeight: "600",
-          color: "#333333",
-          lineHeight: "1.3",
-          maxWidth: "900px",
-          margin: "0 auto 20px",
-        }}
-      >
+      <h2 className={styles.title}>
         One Partner. One Quality System. <br />
         One Point of Accountability.
       </h2>
 
       {/* TEXT */}
-      <p
-        style={{
-          fontSize: "1px",
-          color: "#6b6b6b",
-          maxWidth: "700px",
-          margin: "0 auto 60px",
-          lineHeight: "1.7",
-        }}
-      >
-        When a manufacturer controls every step of the full production chain —
-        and holds each step to the same quality standard — the results are
+      <p className={styles.description}>
+        When a manufacturer controls every step of the full production chain â€”
+        and holds each step to the same quality standard â€” the results are
         predictable. That is the UCAL model.
       </p>
 
       {/* CARDS */}
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          gap: "30px",
-          padding: "0 80px",
-        }}
-      >
+      <div className={styles.cards}>
         <InfoCard
           image="/media/img57.png"
           title="Integrated Process Ownership"

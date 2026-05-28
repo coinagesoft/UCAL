@@ -8,7 +8,7 @@ function CapabilityTile({ image, title }) {
     <div className={styles.card}>
       <img className={styles.image} src={image} alt={title} />
       <div className={styles.overlay}>
-        <span className={styles.title}  style={{ width: "70%" }}>
+        <span className={styles.title}>
           {title}
         </span>
       </div>

@@ -49,6 +49,7 @@
   font-family: var(--font-telex);
   font-size: 18px;
   font-weight: 400;
+  width: 70%;
  
 }
 
@@ -71,5 +72,13 @@
 @media (max-width: 480px) {
   .grid {
     grid-template-columns: 1fr;
+  }
+
+  .card {
+    height: 220px;
+  }
+
+  .title {
+    width: 100%;
   }
 }

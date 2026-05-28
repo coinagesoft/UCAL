@@ -1,5 +1,5 @@
 .footer {
-  background-image: url("/media/img25.png");
+  background-image: url("/media/FooterBg.svg");
   background-position: center;
   background-size: cover;
   color: #fff;
@@ -7,25 +7,29 @@
 }
 
 .overlay {
-  background: rgba(0, 0, 0, 0.75);
+  /* background: rgba(0, 0, 0, 0.75); */
   inset: 0;
   position: absolute;
 }
 
 .content {
-  padding: 80px 40px 40px;
+  padding: 80px 0 40px;
   position: relative;
 }
 
 .grid {
   display: grid;
+  grid-template-columns: 1.8fr 1fr 1fr 1.3fr 1fr;
   gap: 40px;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+  padding-left: 80px;
+  padding-right: 80px;
 }
 
 .logo {
   margin-bottom: 20px;
-  width: 60px;
+  width: 81px;
+  height: 77px;
 }
 
 .description,
@@ -37,22 +41,29 @@
 .description {
   line-height: 1.7;
   margin-bottom: 25px;
+  max-width: 320px;
 }
 
 .heading {
   color: #7ec342;
   margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 100%;
 }
 
 .link {
   cursor: pointer;
   font-size: 14px;
   margin-bottom: 10px;
+  color: #FFFFFFB2;
 }
 
 .address {
   font-size: 14px;
-  line-height: 1.8;
+  line-height: 24px;
+  font-weight: 400;
+  color: #FFFFFFCC;
 }
 
 .socialList {
@@ -89,4 +100,110 @@
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
+}
+
+@media (max-width: 1199.98px) {
+  .grid {
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 36px;
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+
+  .bottom {
+    margin-left: 48px;
+    margin-right: 48px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .content {
+    padding-top: 64px;
+    padding-bottom: 32px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 36px 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .description {
+    max-width: none;
+  }
+
+  .bottom {
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .content {
+    padding-top: 52px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .logo {
+    height: 64px;
+    width: 68px;
+  }
+
+  .heading {
+    margin-bottom: 14px;
+  }
+
+  .link {
+    margin-bottom: 8px;
+  }
+
+  .bottom {
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 34px;
+  }
+
+  .legal {
+    gap: 10px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .content {
+    padding-top: 44px;
+    padding-bottom: 28px;
+  }
+
+  .grid {
+    gap: 26px;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .description,
+  .address {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .socialIcon {
+    height: 36px;
+    width: 36px;
+  }
+
+  .bottom {
+    font-size: 12px;
+    margin-left: 18px;
+    margin-right: 18px;
+  }
 }

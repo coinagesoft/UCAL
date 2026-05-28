@@ -9,7 +9,7 @@ export default function Events() {
                 <p className="gHeading">/ Events</p>
 
                 <h2 className="main-heading">
-                    Where You'll Find UCAL Next
+                    Where You&apos;ll Find UCAL Next
                 </h2>
 
                 <p

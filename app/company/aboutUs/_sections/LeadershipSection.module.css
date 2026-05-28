@@ -31,6 +31,14 @@
   padding-top: 40px;
 }
 
+.leadDescription {
+  font-size: 18px;
+}
+
+.rightDescription {
+  font-size: 16px;
+}
+
 .boardTitle {
   font-family: var(--font-urbanist);
   font-size: 48px;
@@ -66,4 +74,58 @@
 
   font-size: 20px;
   cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .section {
+    padding: 80px 24px;
+  }
+
+  .topSection {
+    gap: 40px;
+  }
+
+  .leftContent,
+  .rightContent {
+    width: 50%;
+  }
+
+  .cardsWrap {
+    overflow-x: auto;
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 64px 20px;
+  }
+
+  .topSection {
+    flex-direction: column;
+    margin-bottom: 48px;
+  }
+
+  .leftContent,
+  .rightContent {
+    width: 100%;
+  }
+
+  .rightContent {
+    padding-top: 0;
+  }
+
+  .cardsWrap {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 48px 18px;
+  }
+
+  .boardTitle {
+    font-size: 34px;
+  }
 }

@@ -118,3 +118,56 @@
     background: #F6FFF1;
      border-color: #D6EDC7;
 }
+
+@media (max-width: 1320px) {
+    .grid,
+    .eventsGrid,
+    .eventCard {
+        width: calc(100% - 48px);
+    }
+}
+
+@media (max-width: 768px) {
+    .eventSection {
+        padding: 56px 0;
+    }
+
+    .eventsGrid {
+        margin-top: 48px;
+    }
+
+    .eventCard {
+        align-items: flex-start;
+        flex-direction: column;
+        height: auto;
+        gap: 18px;
+        padding: 24px;
+    }
+
+    .eventMiddle {
+        margin-left: 0;
+    }
+
+    .eventInfo {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .eventBtn,
+    .eventBtn button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .grid,
+    .eventsGrid,
+    .eventCard {
+        width: calc(100% - 36px);
+    }
+
+    .eventCard {
+        padding: 18px;
+    }
+}

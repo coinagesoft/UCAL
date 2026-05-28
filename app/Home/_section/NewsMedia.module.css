@@ -107,3 +107,55 @@
     border-color: #78BE20;
     background-color: #f5f8ef;
 }
+
+@media (max-width: 1320px) {
+  .grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .card,
+  .cardImg {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-top: 56px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    margin-top: 40px;
+  }
+
+  .card {
+    height: auto;
+  }
+
+  .cardImg {
+    height: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 48px 18px;
+  }
+
+  .cardContent {
+    padding: 18px;
+  }
+
+  .cardImg {
+    height: 190px;
+  }
+}

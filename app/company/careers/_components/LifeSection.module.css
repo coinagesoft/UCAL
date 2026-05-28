@@ -1,0 +1,90 @@
+.lifeSection {
+  padding: 100px clamp(20px, 6vw, 80px);
+  background-image: url("/media/bg2.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+
+.lifeTop {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.lifeColumn {
+  flex: 1;
+  min-width: 280px;
+}
+
+.lifeTitle {
+  color: Black;
+}
+
+.lifeText {
+  color: #555855;
+}
+
+.lifeImage {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  animation: floatUpDown 2s ease-in-out infinite;
+}
+
+@keyframes floatUpDown {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@media (max-width: 1024px) {
+  .lifeSection {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .lifeTop {
+    gap: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .lifeSection {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .lifeTop {
+    gap: 28px;
+    margin-bottom: 40px;
+  }
+
+  .lifeColumn {
+    flex: 1 1 100%;
+    min-width: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .lifeSection {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .lifeTop {
+    margin-bottom: 32px;
+  }
+}

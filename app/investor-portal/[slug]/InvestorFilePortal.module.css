@@ -255,21 +255,88 @@
   .breadcrumb {
     gap: 5px;
   }
+
+  .main {
+    max-width: 100%;
+    padding-top: 32px;
+  }
+
+  .tabsContainer {
+    margin-top: 28px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .folderCard {
+    width: 100%;
+  }
 }
 
 @media (max-width: 480px) {
+  .portal {
+    margin-top: 88px;
+  }
+
+  .header {
+    padding: 28px 0;
+  }
+
+  .container,
+  .main {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .title {
+    font-size: 23px;
+    line-height: 1.25;
+  }
+
+  .meta {
+    flex-direction: column;
+    gap: 6px;
+  }
+
   .actions {
     gap: 8px;
   }
 
   .actions button {
-    flex: 1 1 auto;
+    flex: 1 1 100%;
     font-size: 12px;
     padding: 8px 16px;
   }
 
+  .tabs {
+    gap: 8px;
+  }
+
+  .tab {
+    padding: 8px 14px;
+  }
+
   .currentBreadcrumb {
     font-size: 14px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .folderCard {
+    height: auto;
+    min-height: 140px;
+  }
+
+  .table {
+    min-width: 620px;
+  }
+
+  .th,
+  .td {
+    padding: 14px 16px;
   }
 }
 

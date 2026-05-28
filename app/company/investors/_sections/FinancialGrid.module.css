@@ -188,4 +188,16 @@
   .grid {
     grid-template-columns: 1fr;
   }
+
+  .container {
+    padding: 48px 18px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .tabs {
+    justify-content: flex-start;
+  }
 }

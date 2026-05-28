@@ -59,7 +59,32 @@
     text-align: center;
   }
 
+  .container {
+    padding: 64px 32px;
+  }
+
+  .map {
+    max-width: 100%;
+    width: 100%;
+  }
+
   .content {
+    align-items: center;
     padding-left: 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 48px 18px;
+  }
+
+  .content {
+    gap: 14px;
+  }
+
+  .content :global(.custom-btn) {
+    width: 100%;
   }
 }

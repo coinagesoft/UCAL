@@ -7,7 +7,7 @@ export default function Recognition() {
             <div className="wrapper">
                 <p className="gHeading">/ Recognition</p>
                 <h2 className="main-heading">Industry Validation. Customer Confidence.</h2>
-                <p className="sub-heading" style={{ textAlign: "center" }}>Awards don't drive our decisions — but they reflect the consistent effort that does. Here's how the industry <br />has recognised UCAL's work over the years.</p>
+                <p className="sub-heading" style={{ textAlign: "center" }}>Awards don&apos;t drive our decisions â€” but they reflect the consistent effort that does. Here&apos;s how the industry <br />has recognised UCAL&apos;s work over the years.</p>
             </div>
             <div className="awardsSection">
 

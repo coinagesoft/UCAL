@@ -43,7 +43,7 @@ export default function TrustedPartners() {
   return (
     <section className={styles.section}>
       <div className={styles.container}>
-        <div className="wrapper" style={{marginBottom:"60px"}}>
+        <div className={`wrapper ${styles.header}`}>
           <h4 className="gHeading">/ Trusted Partners</h4>
 
           <h1 className="main-heading">Trusted by the World&apos;s Leading OEMs.</h1>

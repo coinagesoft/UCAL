@@ -1,11 +1,12 @@
 .section {
   width: 100%;
-  padding: 90px 0;
+  padding: 80px 0;
 
-  background-image: url("/media/aaa1.png");
+  background-image: url("/media/aboutBg1.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  height: 409px;
 }
 
 .wrapper {
@@ -72,6 +73,14 @@
   top: 6px;
 }
 
+.visionQuote {
+  margin-right: 50px;
+}
+
+.visionTitle {
+  margin-right: 80px;
+}
+
 .title {
   font-family: var(--font-urbanist);
   font-size: 24px;
@@ -102,6 +111,10 @@
 /* RESPONSIVE */
 
 @media (max-width: 992px) {
+  .section {
+    height: auto;
+  }
+
   .wrapper {
     flex-direction: column;
     align-items: center;
@@ -128,5 +141,10 @@
 
   .description {
     font-size: 15px;
+  }
+
+  .visionQuote,
+  .visionTitle {
+    margin-right: 0;
   }
 }

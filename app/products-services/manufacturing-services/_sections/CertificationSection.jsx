@@ -30,39 +30,20 @@ const certData = [
 
 export default function CertificationSection() {
   return (
-    <section
-      style={{
-        padding: "100px 0",
-        backgroundColor: "#f7f7f7",
-        textAlign: "center",
-      }}
-    >
+    <section className="certificationSection">
       {/* LABEL */}
-      <p style="gHeading">
+      <p className="gHeading">
         / Certifications
       </p>
 
       {/* HEADING */}
-      <h2
-        style={{
-          fontSize: "52px",
-          maxWidth: "800px",
-          margin: "0 auto 20px",
-        }}
-      >
+      <h2 className="certificationTitle">
         Certified Across Every Standard <br />
         That Matters to Your Project.
       </h2>
 
       {/* SUBTEXT */}
-      <p
-        style={{
-          maxWidth: "650px",
-          margin: "0 auto 60px",
-          color: "#666",
-          fontSize: "18px",
-        }}
-      >
+      <p className="certificationDescription">
         Our quality certifications are available for download for supplier
         qualification and RFQ processes. All held current and re-issued on
         schedule.

@@ -11,3 +11,16 @@
     background-position: left center;
     background-repeat: no-repeat;
 }
+
+@media (max-width: 768px) {
+    .news-hero {
+        min-height: 520px;
+        background-position: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .news-hero {
+        min-height: 460px;
+    }
+}

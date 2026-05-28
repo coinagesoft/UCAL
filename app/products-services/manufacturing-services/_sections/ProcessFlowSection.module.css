@@ -69,3 +69,54 @@
   text-align: left;
   width: 90%;
 }
+
+@media (max-width: 1024px) {
+  .layout {
+    gap: 40px;
+    padding: 0 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 64px 24px;
+  }
+
+  .layout {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .center,
+  .column {
+    width: 100%;
+  }
+
+  .image {
+    height: auto;
+    max-height: 420px;
+    width: 100%;
+  }
+
+  .finalStep {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 48px 18px;
+  }
+
+  .stepRow {
+    gap: 12px;
+  }
+
+  .stepTitle {
+    font-size: 18px;
+  }
+
+  .stepDescription {
+    font-size: 15px;
+  }
+}

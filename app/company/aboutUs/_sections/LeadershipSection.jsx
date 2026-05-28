@@ -36,18 +36,18 @@ export default function LeadershipSection() {
         <div className={styles.topSection}>
 
           <div className={styles.leftContent}>
-            <span className="heading-main-sub">
+            <span className="gHeading">
               / Leadership
             </span>
 
             <div className="text-group">
-              <h2 className="heading-main">
+              <h2 className="main-heading">
                 Experience You Can
                 <br />
                 Engineer With.
               </h2>
 
-              <p className="sub-heading" style={{fontSize:"16px"}}>
+              <p className={`sub-heading ${styles.leadDescription}`}>
                 Our leadership team brings together decades of experience
                 across engineering, operations, and global business
                 development — people who understand both the shop floor
@@ -57,7 +57,7 @@ export default function LeadershipSection() {
           </div>
 
           <div className={styles.rightContent}>
-            <p className="sub-heading" style={{fontSize:"16px"}}>
+            <p className={`sub-heading ${styles.rightDescription}`}>
               At UCAL, leadership is a standard we hold ourselves to at
               every level of the organisation. Our senior team has guided
               the company through multiple cycles of industry transformation

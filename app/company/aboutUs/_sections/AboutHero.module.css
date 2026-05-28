@@ -1,11 +1,12 @@
 /* AboutHero.module.css */
 
 .heroSection {
+  margin-top: 88px;
   position: relative;
   width: 100%;
   height: 560px;
 
- background-image: url("/media/a1.png");
+ background-image: url("/media/aboutban.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -17,14 +18,14 @@
   position: absolute;
   inset: 0;
 
-  background: linear-gradient(
+  /* background: linear-gradient(
     90deg,
     rgba(40, 34, 112, 0.95) 0%,
     rgba(40, 34, 112, 0.95) 20%,
     rgba(40, 34, 112, 0.8) 45%,
     rgba(40, 34, 112, 0.1) 75%,
     rgba(40, 34, 112, 0.8) 100%
-  );
+  ); */
 
   z-index: 1;
 }

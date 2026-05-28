@@ -268,3 +268,76 @@
     margin: 0;
     color :#555855
 }
+
+@media (max-width: 1320px) {
+  .apply-banner {
+    width: calc(100% - 48px);
+  }
+}
+
+@media (max-width: 900px) {
+  .apply-page {
+    padding-bottom: 72px;
+  }
+
+  .apply-banner {
+    height: 320px;
+    margin-top: 80px;
+  }
+
+  .apply-form-box,
+  .career-form {
+    width: calc(100% - 48px);
+    padding: 32px;
+  }
+
+  .bottom-part {
+    flex-wrap: wrap;
+    margin-top: 56px;
+  }
+}
+
+@media (max-width: 640px) {
+  .apply-banner {
+    height: 260px;
+    width: calc(100% - 36px);
+  }
+
+  .apply-header {
+    margin-top: 48px;
+    padding: 0 18px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .apply-form-box,
+  .career-form {
+    width: calc(100% - 36px);
+    padding: 24px 18px;
+  }
+
+  .bottom-part {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 18px;
+    padding: 0 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .apply-page {
+    padding-bottom: 56px;
+  }
+
+  .apply-banner {
+    height: 220px;
+    margin-top: 64px;
+  }
+
+  .apply-header h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}

@@ -13,3 +13,22 @@
     justify-content: center;
     align-items: center;
 }
+
+@media (max-width: 1024px) {
+    .specSheet {
+        min-height: auto;
+        padding: 64px 48px;
+    }
+}
+
+@media (max-width: 768px) {
+    .specSheet {
+        padding: 56px 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .specSheet {
+        padding: 48px 18px;
+    }
+}

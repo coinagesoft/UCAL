@@ -36,7 +36,7 @@ export default function WhyUCAL() {
 
             <p className="sub-heading">
               UCAL delivers precision, performance, and innovation <br />
-              for the world's most trusted mobility systems.
+              for the world&apos;s most trusted mobility systems.
             </p>
 
             <button className="custom-btn">See Our Capabilities</button>

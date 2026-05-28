@@ -9,3 +9,30 @@
     justify-content: center;
     margin-top: 80px;
 }
+
+@media (max-width: 1320px) {
+  .grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    padding: 0 24px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-top: 56px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    margin: 56px 0;
+  }
+}
+
+@media (max-width: 560px) {
+  .grid {
+    grid-template-columns: 1fr;
+    padding: 0 18px;
+  }
+}

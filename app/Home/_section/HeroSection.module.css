@@ -75,3 +75,65 @@
 .active {
   transform: translateX(0%);
 }
+
+@media (max-width: 1024px) {
+  .section {
+    min-height: 680px;
+  }
+
+  .content {
+    gap: 36px;
+    margin-left: 48px;
+    max-width: 620px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    align-items: flex-end;
+    min-height: 620px;
+    padding: 0 32px 72px;
+  }
+
+  .content {
+    gap: 28px;
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  .title {
+    font-size: 42px;
+    letter-spacing: 0;
+    line-height: 1.08;
+  }
+
+  .description {
+    line-height: 28px;
+    max-width: 440px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    min-height: 560px;
+    padding: 0 20px 56px;
+  }
+
+  .content {
+    gap: 24px;
+  }
+
+  .title {
+    font-size: 34px;
+    line-height: 1.12;
+  }
+
+  .description {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .button {
+    width: 100%;
+  }
+}

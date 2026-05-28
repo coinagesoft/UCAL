@@ -27,3 +27,29 @@
 
     gap: 20px;
 }
+
+@media (max-width: 1320px) {
+    .cardsContainer {
+        width: calc(100% - 48px);
+    }
+}
+
+@media (max-width: 1024px) {
+    .cardsContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .section {
+        margin-top: 56px;
+        padding-bottom: 56px;
+    }
+}
+
+@media (max-width: 560px) {
+    .cardsContainer {
+        grid-template-columns: 1fr;
+        width: calc(100% - 36px);
+    }
+}

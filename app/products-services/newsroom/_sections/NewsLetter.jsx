@@ -7,13 +7,13 @@ export default function NewsLetter() {
             <div className="wrapper">
                 <p className="gHeading">/  Newsletter</p>
                 <h2 className="main-heading">Stayed Informed. Stay Connected</h2>
-                <p className="sub-heading" style={{ textAlign: "center" }}>UCAL's periodic newsletter covers product launches, technology updates, events, and <br /> engineering insights — curated for the community we serve.</p>
+                <p className="sub-heading" style={{ textAlign: "center" }}>UCAL&apos;s periodic newsletter covers product launches, technology updates, events, and <br /> engineering insights â€” curated for the community we serve.</p>
             </div>
             <div className={styles.leftRight}>
                 <div className={styles.left}>
                     <div className={styles.grid}>
-                        {newsletterData.map((item, index) => (
-                            <div className={styles.card}>
+                        {newsletterData.map((item) => (
+                            <div className={styles.card} key={item.id}>
                                 <div>
                                     {item.id}
                                 </div>
@@ -23,7 +23,7 @@ export default function NewsLetter() {
                                     <p className={styles.description}>{item.tags}</p>
                                 </div>
                                 <div>
-                                    <img src="/media/arrow.png" alt="" style={{ width: "16px", height: '16px' }} />
+                                    <img src="/media/arrow.png" alt="" className={styles.arrowIcon} />
                                 </div>
 
                             </div>
@@ -42,7 +42,7 @@ export default function NewsLetter() {
                         <p className={styles.newsDesc}>
                             Join engineers, OEM procurement teams,
                             and mobility professionals who follow
-                            UCAL's work.
+                            UCAL&apos;s work.
                         </p>
 
                         <form className={styles.newsForm}>

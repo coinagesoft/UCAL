@@ -5,11 +5,12 @@ import Manufacturing from "./_sections/Manufacturing";
 import StatsSection from "./_sections/StatsSection";
 import TimelineSection from "./_sections/TimelineSection";
 import VisionMission from "./_sections/VisionMission";
+import styles from "./AboutUsPage.module.css";
 
 
 export default function AboutUs() {
     return (
-        <main style={{ marginTop: "80px"   }}>
+        <main className={styles.aboutPage}>
             <AboutHero />
             <LegacySection />
             <VisionMission />

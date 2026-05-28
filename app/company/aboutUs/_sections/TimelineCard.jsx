@@ -18,7 +18,7 @@ export default function TimelineCard({ item }) {
 
         {/* LEFT CONTENT */}
         <div className={styles.content}>
-          <div className="text-group">
+          <div className={styles.textContent}>
 
             <span className={styles.label}>
               {item.label}

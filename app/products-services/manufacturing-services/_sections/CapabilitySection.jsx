@@ -1,6 +1,7 @@
 "use client";
 
 import CapabilityCard from "@/components/CapabilityCard";
+import styles from "./CapabilitySection.module.css";
 
 export default function CapabilitySection() {
   const capabilities = [
@@ -9,8 +10,8 @@ export default function CapabilitySection() {
       subtitle: "ALUMINIUM & ZINC DIE CASTING",
       title: "High Pressure & Vacuum",
       description:
-        "Machines from 180T to 1100T. Cold and hot chamber. In-house trimming, shot blasting, squeeze and jet cooling. Plants 1 and 10 — Maraimalainagar and Bawal. 12 die casting machines across two plants — makes including Toshiba, UBE, Zitai, HMT, Frech, and KTK — with available capacity for new projects across multiple tonnage ranges. Full machine list and capacity data available on request.",
-      tags: ["180T – 1100T", "Cold & Hot Chamber", "Vacuum Die Casting"],
+        "Machines from 180T to 1100T. Cold and hot chamber. In-house trimming, shot blasting, squeeze and jet cooling. Plants 1 and 10 â€” Maraimalainagar and Bawal. 12 die casting machines across two plants â€” makes including Toshiba, UBE, Zitai, HMT, Frech, and KTK â€” with available capacity for new projects across multiple tonnage ranges. Full machine list and capacity data available on request.",
+      tags: ["180T â€“ 1100T", "Cold & Hot Chamber", "Vacuum Die Casting"],
       reverse: false,
     },
     {
@@ -18,7 +19,7 @@ export default function CapabilitySection() {
       subtitle: "CNC MACHINING",
       title: "High-Volume, Tight-Tolerance",
       description:
-        "75 VMC drill-tap centres. 15 CNC turning centres. 150+ SPMs. Mikron micro-drilling. Washing, leak-checking, and high-pressure washing in-line. Our machining floor is set up for sustained volume production — not prototype runs presented as production capability. Fanuc robo-drills, Makino slims, AMS VMCs with 4th-axis, Mazak turning centres, and gun drilling. Every machine operates within a documented SPC and calibration cycle.",
+        "75 VMC drill-tap centres. 15 CNC turning centres. 150+ SPMs. Mikron micro-drilling. Washing, leak-checking, and high-pressure washing in-line. Our machining floor is set up for sustained volume production â€” not prototype runs presented as production capability. Fanuc robo-drills, Makino slims, AMS VMCs with 4th-axis, Mazak turning centres, and gun drilling. Every machine operates within a documented SPC and calibration cycle.",
       tags: ["75 VMC Centres", "15 CNC Turning", "150+ SPMs"],
       reverse: true,
     },
@@ -36,7 +37,7 @@ export default function CapabilitySection() {
       subtitle: "PRECISION MANUFACTURING",
       title: "Elgin, Illinois (UCAL Systems Inc.)",
       description:
-        "Established 1959. Acquired 2005. 12,100 sq.m. 200 employees. IATF 16949:2016 - ISO 14001:2015 - AS 9100:2016. Serving Scania, DENSO, TRW, BorgWarner, Ford, GM, Bombardier. UCAL Systems Inc. extends UCAL's precision manufacturing into the United States — with processes including multi-spindle turning, hydromat rotary transfer, centreless grinding, gear hobbing and shaping, spline rolling, honing, CNC vertical and horizontal machining, and automated assembly and testing. AS 9100:2016 certification qualifies UCAL Systems for aerospace-grade precision components — a standard that demands more than IATF alone.",
+        "Established 1959. Acquired 2005. 12,100 sq.m. 200 employees. IATF 16949:2016 - ISO 14001:2015 - AS 9100:2016. Serving Scania, DENSO, TRW, BorgWarner, Ford, GM, Bombardier. UCAL Systems Inc. extends UCAL's precision manufacturing into the United States â€” with processes including multi-spindle turning, hydromat rotary transfer, centreless grinding, gear hobbing and shaping, spline rolling, honing, CNC vertical and horizontal machining, and automated assembly and testing. AS 9100:2016 certification qualifies UCAL Systems for aerospace-grade precision components â€” a standard that demands more than IATF alone.",
       tags: ["AS 9100:2016", "Multi-Spindle Turning", "Gear Hobbing"],
       reverse: true,
     },
@@ -45,56 +46,30 @@ export default function CapabilitySection() {
       subtitle: "POLYMER PROCESSING",
       title: "Injection, Compression, Welding",
       description:
-        "Vertical and horizontal injection moulding (50T–150T). Compression moulding (100T–200T). Ultrasonic and hot-plate welding. Composites. Moulded plastics and rubbers. Polymer processing at UCAL operates under the same quality management system as our metal processes — not as a standalone function. Components produced here are typically assembled or co-processed with machined metal parts, making in-house polymer capability a direct project advantage rather than an add-on service.",
-      tags: ["50T – 150T Injection", "100T – 200T Compression", "Ultrasonic Welding"],
+        "Vertical and horizontal injection moulding (50Tâ€“150T). Compression moulding (100Tâ€“200T). Ultrasonic and hot-plate welding. Composites. Moulded plastics and rubbers. Polymer processing at UCAL operates under the same quality management system as our metal processes â€” not as a standalone function. Components produced here are typically assembled or co-processed with machined metal parts, making in-house polymer capability a direct project advantage rather than an add-on service.",
+      tags: ["50T â€“ 150T Injection", "100T â€“ 200T Compression", "Ultrasonic Welding"],
       reverse: false,
     },
   ];
 
   return (
-    <section
-      style={{
-        padding: "80px 0",
-        backgroundColor: "#f7f7f7",
-        textAlign: "center",
-      }}
-    >
+    <section className={styles.section}>
       {/* HEADER */}
-      <p style={{ color: "#79b93c", marginBottom: "20px" }}>
+      <p className={styles.label}>
         / Capability Area
       </p>
 
-      <h2
-        style={{
-          fontSize: "52px",
-          marginBottom: "20px",
-          maxWidth: "900px",
-          marginInline: "auto",
-        }}
-      >
+      <h2 className={styles.title}>
         Eight Process Capabilities. One Manufacturing Roof.
       </h2>
 
-      <p
-        style={{
-          maxWidth: "700px",
-          margin: "0 auto 60px",
-          color: "#666",
-        }}
-      >
-        When a manufacturer controls every step of the full production chain —
-        and holds each step to the same quality standard — the results are predictable.
+      <p className={styles.description}>
+        When a manufacturer controls every step of the full production chain â€”
+        and holds each step to the same quality standard â€” the results are predictable.
       </p>
 
       {/* CARDS */}
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          gap: "30px",
-          padding: "0 80px",
-        }}
-      >
+      <div className={styles.cards}>
         {capabilities.map((item, index) => (
           <CapabilityCard
             key={index}

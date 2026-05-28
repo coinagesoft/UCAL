@@ -52,6 +52,10 @@
   max-width: 100%;
 }
 
+.descriptionText {
+  color: white;
+}
+
 .image {
   height: 325px;
   object-fit: cover;
@@ -114,10 +118,60 @@
 
 @media (max-width: 768px) {
   .container {
+    gap: 40px;
     grid-template-columns: 1fr;
+    padding: 64px 32px;
   }
 
   .title {
     font-size: 28px;
+  }
+
+  .image {
+    height: auto;
+    width: 100%;
+  }
+
+  .question {
+    font-size: 18px;
+    gap: 18px;
+    padding: 22px 24px;
+  }
+
+  .answer {
+    font-size: 16px;
+    padding: 0 24px 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    gap: 32px;
+    padding: 48px 18px;
+  }
+
+  .intro {
+    gap: 18px;
+  }
+
+  .list {
+    margin-top: 0;
+  }
+
+  .question {
+    font-size: 16px;
+    padding: 18px;
+  }
+
+  .icon {
+    flex: 0 0 28px;
+    height: 28px;
+    width: 28px;
+  }
+
+  .answer {
+    font-size: 15px;
+    line-height: 24px;
+    padding: 0 18px 20px;
   }
 }

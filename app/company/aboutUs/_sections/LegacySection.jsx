@@ -4,7 +4,7 @@ import styles from "./LegacySection.module.css";
 export default function LegacySection() {
   return (
     <section className={styles.legacySection}>
-      <div className="container">
+      {/* <div className="container"> */}
         <div className={styles.wrapper}>
           
           {/* LEFT IMAGE */}
@@ -25,9 +25,9 @@ export default function LegacySection() {
 
           {/* RIGHT CONTENT */}
           <div className={styles.content}>
-            <span className={styles.subHeading}>/ Legacy</span>
+            <span className="gHeading">/ Legacy</span>
 
-            <h2 className={styles.heading}>
+            <h2 className="main-heading">
               Built on Precision. Grown
               <br />
               on Partnership.
@@ -52,7 +52,7 @@ export default function LegacySection() {
             </p>
           </div>
         </div>
-      </div>
+      {/* </div> */}
     </section>
   );
 }

@@ -24,7 +24,38 @@
 .rightSection{
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 15px;
     padding: 50px 0px 0px 80px;
     align-items: flex-start;
+}
+
+.description {
+    text-align: left;
+}
+
+@media (max-width: 992px) {
+    .section {
+        min-height: auto;
+        padding: 0 24px 64px;
+    }
+
+    .leftColumn {
+        width: 100%;
+        height: 420px;
+    }
+
+    .rightSection {
+        padding: 40px 0 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .section {
+        margin-top: 48px;
+        padding: 0 18px 48px;
+    }
+
+    .leftColumn {
+        height: 300px;
+    }
 }

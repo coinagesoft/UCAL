@@ -1,98 +1,68 @@
+import styles from "./JobsSection.module.css";
+
 export default function JobsSection() {
   const jobs = [
     {
-      title: "STRATEGY CONSULTANT",
-      desc: "Join our core consulting team to lead strategic planning, market analysis, and growth initiatives for corporate clients. Ideal for sharp thinkers with 3–5 years of experience in strategy or management consulting.",
+      title: "Strategy Consultant",
+      desc: "Join our core consulting team to lead strategic planning, market analysis, and growth initiatives for corporate clients. Ideal for sharp thinkers with 3â€“5 years of experience in strategy or management consulting.",
     },
     {
-      title: "OPERATIONS ANALYST",
+      title: "Operations Analyst",
       desc: "Support our clients in optimizing systems and processes. You'll work on performance mapping, process design, and KPI tracking. Perfect for analytical minds with a passion for efficiency.",
     },
     {
-      title: "ORGANIZATIONAL CHANGE MANAGER",
+      title: "Organizational Change Manager",
       desc: "Help clients navigate transformation with empathy and structure. This role focuses on change strategy, internal alignment, and communication planning. Ideal for experienced professionals in HR transformation or leadership consulting.",
     },
     {
-      title: "DIGITAL STRATEGY CONSULTANT",
-      desc: "Work with clients to integrate digital tools into their business model. From automation to customer journey mapping, you'll guide transformation across platforms.",
+      title: "Digital Strategy Consultant",
+      desc: "Work with clients to integrate digital tools into their business model. From automation to customer journey mapping, you'll guide transformation across platforms. Strong digital acumen and consulting experience preferred.",
     },
     {
-      title: "CLIENT ENGAGEMENT SPECIALIST",
-      desc: "Be the connection between clients and our internal team — ensuring alignment, communication, and project momentum.",
+      title: "Client Engagement Specialist",
+      desc: "Be the connection between clients and our internal team â€” ensuring alignment, communication, and project momentum. Excellent for those with project coordination and client service experience.",
+    },
+    {
+      title: "Research & Insights Associate",
+      desc: "Support strategy projects with competitive research, market trends, and insight reporting. Great entry-level role for recent grads in business, data, or economics with strong analytical skills.",
     },
   ];
 
   return (
-    <section
-      style={{
-        padding: "100px clamp(20px, 6vw, 80px)",
-        background: "#ffffff",
-        fontFamily: "Urbanist, sans-serif", // ✅ font match
-      }}
-    >
+    <section className={styles.jobsSection}>
       {/* HEADER */}
-      <div style={{ textAlign: "center", marginBottom: "60px" }}>
-        <p style={{ color: "#7ec342", fontSize: "16px" }}>/ Open Roles</p>
+      <div className={styles.jobsHeader}>
+        <p className="gHeading">/ Open Roles</p>
 
         <h2
-          style={{
-            fontSize: "40px",
-            fontWeight: "600",
-            marginBottom: "10px",
-          }}
+         className="main-heading"
         >
           Join the UCAL Team
         </h2>
 
-        <p style={{ color: "#666", maxWidth: "600px", margin: "0 auto" }}>
+        <p className={`sub-heading ${styles.jobsSubHeading}`}>
           We keep our culture collaborative, respectful, and transparent. We
-          work hard, stay curious, and celebrate progress — together.
+          work hard, stay <br /> curious, and celebrate progress â€” together.
         </p>
       </div>
 
       {/* JOB LIST */}
       {jobs.map((job, index) => (
         <div key={index}>
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "space-between",
-              alignItems: "flex-start",
-              gap: "20px",
-            }}
-          >
+          <div className={styles.jobRow}>
             {/* LEFT CONTENT */}
-            <div
-              style={{
-                flex: 1,
-                display: "flex",
-                flexDirection: "column",
-                gap: "12px",
-              }}
-            >
+            <div className={styles.jobContent}>
               {/* TITLE */}
-              <h3
-                style={{
-                  fontSize: "24px", // ✅ FIXED
-                  fontWeight: "500",
-                  textTransform: "uppercase",
-                }}
-              >
+              <h3 className={styles.jobTitle}>
                 {job.title}
               </h3>
 
               {/* TAGS */}
-              <div style={{ display: "flex", gap: "12px" }}>
+              <div className={styles.tagList}>
                 {["Remote", "Chennai", "New York"].map((tag, i) => (
                   <span
                     key={i}
-                    style={{
-                      background: "#282270",
-                      color: "#fff",
-                      fontSize: "12px",
-                      padding: "8px 16px",
-                      borderRadius: "6px",
-                    }}
+                    className={styles.jobTag}
                   >
                     {tag}
                   </span>
@@ -100,33 +70,14 @@ export default function JobsSection() {
               </div>
 
               {/* DESCRIPTION */}
-              <p
-                style={{
-                  fontSize: "16px",
-                  lineHeight: "28px",
-                  color: "#666",
-                  maxWidth: "100%",
-                }}
-              >
+              <p className={styles.jobDescription}>
                 {job.desc}
               </p>
             </div>
 
             {/* BUTTON */}
             <button
-              style={{
-                marginTop: "8px",
-                // background: "#7ec342",
-                // border: "none",
-                // padding: "10px 16px", // ✅ FIXED
-                // borderRadius: "6px", // ✅ FIXED
-                // color: "#fff",
-                // fontSize: "13px",
-                // cursor: "pointer",
-                // whiteSpace: "nowrap",
-                // boxShadow: "0 4px 12px rgba(126,195,66,0.3)",
-              }}
-              className="custom-btn"
+              className={`custom-btn ${styles.applyButton}`}
             >
               Apply For This Role
             </button>
@@ -134,12 +85,7 @@ export default function JobsSection() {
 
           {/* DIVIDER */}
           {index !== jobs.length - 1 && (
-            <div
-              style={{
-                margin: "30px 0",
-                borderBottom: "1px solid #e5e5e5",
-              }}
-            />
+            <div className={styles.jobDivider} />
           )}
         </div>
       ))}

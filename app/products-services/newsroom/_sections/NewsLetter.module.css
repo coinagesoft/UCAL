@@ -39,6 +39,11 @@
     font-family: "Telex";
 }
 
+.arrowIcon {
+    width: 16px;
+    height: 16px;
+}
+
 .leftRight{
     padding: 80px;
     justify-content: center;
@@ -164,4 +169,53 @@
     font-size: 14px;
 
     margin-top: 32px;
+}
+
+@media (max-width: 1200px) {
+    .leftRight {
+        padding: 64px 48px;
+    }
+
+    .grid,
+    .right {
+        width: 50%;
+    }
+}
+
+@media (max-width: 900px) {
+    .leftRight {
+        flex-direction: column;
+        padding: 56px 32px;
+    }
+
+    .grid,
+    .right {
+        width: 100%;
+    }
+}
+
+@media (max-width: 560px) {
+    .leftRight {
+        padding: 48px 18px;
+    }
+
+    .grid {
+        grid-template-rows: none;
+    }
+
+    .card {
+        grid-template-columns: 1fr 32px;
+        gap: 12px;
+        padding: 18px;
+    }
+
+    .quarter {
+        grid-column: 1 / -1;
+    }
+
+    .right {
+        height: auto;
+        min-height: 560px;
+        padding: 28px 20px;
+    }
 }

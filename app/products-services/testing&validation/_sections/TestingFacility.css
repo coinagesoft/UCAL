@@ -237,6 +237,10 @@ justify-content: flex-start;
   .other-testing-list {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .other-testing-box {
+    height: auto;
+  }
 }
 
 @media (max-width: 768px) {
@@ -267,5 +271,15 @@ justify-content: flex-start;
 
   .testing-spec-box h3 {
     font-size: 22px;
+  }
+
+  .testing-spec {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .other-testing-box {
+    padding: 24px 18px;
   }
 }

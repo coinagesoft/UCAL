@@ -116,20 +116,6 @@
   width: 164px;
 }
 
-@media (max-width: 768px) {
-  .container,
-  .reason {
-    flex-direction: column;
-  }
-
-  .line,
-  .dot,
-  .carImage {
-    display: none;
-  }
-}
-
-
 .textWrap{
   display: flex;
   flex-direction: column;
@@ -165,4 +151,78 @@
 
   background-position: center;
     margin-left: -80px;
+}
+
+@media (max-width: 768px) {
+  .container,
+  .reason {
+    flex-direction: column;
+  }
+
+  .line,
+  .dot,
+  .carImage {
+    display: none;
+  }
+
+  .left,
+  .timeline {
+    flex: 1 1 100%;
+    min-width: 0;
+    width: 100%;
+  }
+
+  .textWrap {
+    gap: 28px;
+  }
+
+  .WhyImage {
+    height: 220px;
+    margin-left: 0;
+    width: 100%;
+    background-size: contain;
+  }
+
+  .reason {
+    align-items: flex-start;
+    margin-bottom: 28px;
+  }
+
+  .reasonText {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .reasonImage {
+    height: 180px;
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .textWrap {
+    gap: 22px;
+  }
+
+  .WhyImage {
+    height: 170px;
+  }
+
+  .number {
+    font-size: 20px;
+  }
+
+  .reasonTitle {
+    font-size: 18px;
+  }
+
+  .reasonImage {
+    height: 150px;
+  }
 }

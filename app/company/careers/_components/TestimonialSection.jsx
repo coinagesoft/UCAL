@@ -1,140 +1,145 @@
+"use client";
+
+import { useState } from "react";
+import styles from "./TestimonialsSection.module.css";
+
+const testimonials = [
+  {
+    quote:
+      "At UCAL, I don’t just build products—I build the future of mobility, backed by a team that values people, ideas, and growth every single day.",
+
+    name: "Rohan Sharma",
+
+    designation: "Senior Design Engineer",
+
+    image: "/media/img30.png",
+  },
+
+  {
+    quote:
+      "From learning to leading, my journey at UCAL has been powered by innovation, mentorship, and a culture where people truly come first.",
+
+    name: "Neha Gupta",
+
+    designation: "Product Development Manager",
+
+    image: "/media/nehaGupta.png",
+  },
+  {
+    quote:
+      "“Every day at UCAL feels like progress—solving real-world challenges with a team that blends technology, passion, and purpose.”",
+
+    name: "Debasis Dash",
+
+    designation: "Software Engineer",
+
+    image: "/media/Debasis.png",
+  },
+  {
+    quote:
+      "“UCAL gave me more than a job—it gave me a platform to innovate, grow, and be part of something bigger than myself.”",
+
+    name: "Sagar Sharma",
+
+    designation: "Quality Assurance Lead",
+
+    image: "/media/Sagar.png",
+  },
+];
+
 export default function TestimonialsSection() {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const activeCard = testimonials[activeIndex];
+
+  const prevSlide = () => {
+    setActiveIndex((prev) =>
+      prev === 0 ? testimonials.length - 1 : prev - 1
+    );
+  };
+
+  const nextSlide = () => {
+    setActiveIndex((prev) =>
+      prev === testimonials.length - 1 ? 0 : prev + 1
+    );
+  };
+
   return (
-    <section
-      style={{
-        padding: "100px clamp(20px, 6vw, 80px)",
-        background: "#f5f5f5",
-        textAlign: "center",
-      }}
-    >
-      {/* TOP TEXT */}
-      <p style={{ color: "#7ec342", fontSize: "16px" }}>
-        / Our People
-      </p>
+    <section className={styles.testimonialSection}>
 
-      <h2
-        style={{
-          fontSize: "52px",
-          fontWeight: "600",
-          marginBottom: "20px",
-        }}
-      >
-        Hear It From Those Who Built UCAL.
-      </h2>
+      {/* TOP */}
 
-      <p
-        style={{
-          maxWidth: "700px",
-          margin: "0 auto 60px",
-          color: "#666",
-          lineHeight: "1.6",
-          fontSize: "18px",
-        }}
-      >
-        Real stories from the people who design our products and represent UCAL.
-      </p>
+      <div className={styles.topText}>
+        <p className="gHeading">
+          / Our People
+        </p>
 
-      {/* TESTIMONIAL CARD */}
-      <div
-        style={{
-          maxWidth: "1100px",
-          margin: "0 auto",
-          position: "relative",
-          height: "320px",
-          borderRadius: "8px",
-          overflow: "hidden",
-          background:
-            "linear-gradient(135deg, #1f1b5e 0%, #2b2270 100%)",
-          display: "flex",
-          // alignItems: "center",  
-          padding: "40px",
-        }}
-      >
-        {/* TEXT CONTENT */}
-        <div
-          style={{
-            maxWidth: "60%",
-            color: "#fff",
-            height: "100%",
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "space-between",
-          }}
-        >
-          {/* QUOTE */}
-          <p
-            style={{
-              fontSize: "24px",
-              lineHeight: "1.7",
-              fontStyle: "italic",
-              fontWeight: "500",
-              textAlign: "left",
+        <h2 className="main-heading">
+          Hear It From Those Who Built UCAL.
+        </h2>
 
-            }}
-          >
-            “At UCAL, I don’t just build products—I build the future of mobility, backed by a team that values people, ideas, and growth every single day.”
+        <p className="sub-heading">
+          Real stories from the people who design our
+          products and represent UCAL.
+        </p>
+      </div>
+
+      {/* CARD */}
+
+      <div className={styles.testimonialCard}>
+
+        {/* LEFT CONTENT */}
+
+        <div className={styles.testimonialContent}>
+
+          <p className={styles.quote}>
+            “{activeCard.quote}”
           </p>
 
-          {/* NAME LEFT */}
-          <div style={{ textAlign: "left" }}>
-            <h4 style={{ marginBottom: "5px" , fontSize: "18px" }}>Rohan Sharma</h4>
-            <p style={{ fontSize: "14px", color: "#cbd5e1" }}>
-              Senior Design Engineer
+          <div className={styles.userInfo}>
+
+            <h4 className={styles.userName}>
+              {activeCard.name}
+            </h4>
+
+            <p className={styles.userDesignation}>
+              {activeCard.designation}
             </p>
+
           </div>
+
         </div>
 
         {/* IMAGE */}
+
         <img
-          src="/media/img30.png"
-          alt="Person"
-          style={{
-            position: "absolute",
-            right: "0px",
-            bottom: "0",
-            height: "320px",
-            objectFit: "contain",
-          }}
+          src={activeCard.image}
+          alt={activeCard.name}
+          className={styles.personImage}
         />
+
       </div>
 
-      {/* ARROWS */}
-      <div
-        style={{
-          marginTop: "30px",
-          display: "flex",
-          justifyContent: "center",
-          gap: "15px",
-        }}
-      >
+      {/* CONTROLS */}
+
+      <div className={styles.controls}>
+
         <button
-          style={{
-            width: "40px",
-            height: "40px",
-            borderRadius: "50%",
-            border: "none",
-            background: "#7ec342",
-            color: "#fff",
-            cursor: "pointer",
-          }}
+          onClick={prevSlide}
+          className={styles.arrowBtn}
         >
           ←
         </button>
 
         <button
-          style={{
-            width: "40px",
-            height: "40px",
-            borderRadius: "50%",
-            border: "none",
-            background: "#7ec342",
-            color: "#fff",
-            cursor: "pointer",
-          }}
+          onClick={nextSlide}
+          className={styles.arrowBtn}
         >
           →
         </button>
+
       </div>
+
     </section>
   );
 }

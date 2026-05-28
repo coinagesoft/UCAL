@@ -1,0 +1,154 @@
+.careersHero {
+  margin-top: 88px;
+  min-height: 560px;
+  display: flex;
+  align-items: center;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 120px;
+  padding-bottom: 80px;
+  background-image: url("/media/careersBanner.svg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  font-family: Urbanist, sans-serif;
+}
+
+.careersHeroContent {
+  width: 695px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.careersHeroTextGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.careersHeroTitle {
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 100%;
+  margin: 0;
+}
+
+.careersHeroDescription {
+  font-size: 18px;
+  line-height: 28px;
+  color: #d1d5db;
+  margin: 0;
+  max-width: 600px;
+}
+
+.careersHeroButton {
+  width: fit-content;
+}
+
+@media (max-width: 1024px) {
+  .careersHero {
+    min-height: 520px;
+    padding-left: 48px;
+    padding-right: 48px;
+    padding-top: 96px;
+    padding-bottom: 64px;
+  }
+
+  .careersHeroContent {
+    width: 620px;
+    max-width: 100%;
+    gap: 40px;
+  }
+
+  .careersHeroTitle {
+    font-size: 44px;
+    line-height: 1.05;
+  }
+
+  .careersHeroDescription {
+    font-size: 17px;
+    line-height: 27px;
+    max-width: 560px;
+  }
+}
+
+@media (max-width: 768px) {
+  .careersHero {
+    min-height: 500px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 88px;
+    padding-bottom: 56px;
+    background-position: center center;
+  }
+
+  .careersHeroContent {
+    width: 100%;
+    gap: 32px;
+  }
+
+  .careersHeroTitle {
+    font-size: 38px;
+    line-height: 1.08;
+  }
+
+  .careersHeroDescription {
+    font-size: 16px;
+    line-height: 25px;
+    max-width: 100%;
+  }
+
+  .careersHeroDescription br {
+    display: none;
+  }
+
+  .careersHero :global(.custom-btn) {
+    min-height: 44px;
+  }
+}
+
+@media (max-width: 480px) {
+  .careersHero {
+    min-height: 460px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 76px;
+    padding-bottom: 44px;
+  }
+
+  .careersHeroContent {
+    gap: 28px;
+  }
+
+  .careersHeroTitle {
+    font-size: 32px;
+    line-height: 1.12;
+  }
+
+  .careersHeroDescription {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .careersHero :global(.custom-btn) {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 360px) {
+  .careersHero {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .careersHeroTitle {
+    font-size: 29px;
+  }
+
+  .careersHeroDescription {
+    font-size: 14px;
+    line-height: 23px;
+  }
+}

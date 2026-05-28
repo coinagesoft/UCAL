@@ -34,3 +34,28 @@
   max-width: 650px;
   color: #FFFFFFD9;
 }
+
+@media (max-width: 768px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .container {
+    gap: 26px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 48px 18px;
+  }
+
+  .description {
+    line-height: 26px;
+  }
+
+  .container :global(.custom-btn) {
+    width: 100%;
+  }
+}

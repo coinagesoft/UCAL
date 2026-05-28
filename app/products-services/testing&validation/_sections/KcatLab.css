@@ -175,4 +175,12 @@
   .kcat-title {
     font-size: 32px;
   }
+
+  .kcat-wrapper {
+    padding: 0 18px;
+  }
+
+  .kcat-info-box {
+    padding: 18px;
+  }
 }

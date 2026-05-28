@@ -287,4 +287,19 @@
   .vibration-spec-box h3 {
     font-size: 24px;
   }
+
+  .vibration-spec-list {
+    width: 100%;
+  }
+
+  .vibration-spec {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .vibration-capability,
+  .vibration-standard {
+    padding: 24px 18px;
+  }
 }

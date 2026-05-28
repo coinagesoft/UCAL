@@ -32,10 +32,10 @@ export default function OurGroup(){
       </div>
     </div>
     <div>
-      <div className="wrapper" style={{marginTop:"80px"}}>
+      <div className="wrapper groupIntro">
         <p className="gHeading"> / Group</p>
         <h2 className="main-heading">Three Companies. One Standard.</h2>
-        <p className="sub-heading" style={{textAlign:"center"}}>Three specialized companies, united to deliver reliable, high-performance <br /> aftermarket parts with precision and consistency.</p>
+        <p className="sub-heading centeredText">Three specialized companies, united to deliver reliable, high-performance <br /> aftermarket parts with precision and consistency.</p>
       </div>
 
       <div className="grid">
@@ -73,11 +73,10 @@ export default function OurGroup(){
         </h2>
 
         <p
-            className="sub-heading"
-            style={{ textAlign: "center" }}
+            className="sub-heading centeredText"
         >
             Serving customers worldwide with a strong network of manufacturing <br />
-            and distribution, delivering quality parts wherever they're needed.
+            and distribution, delivering quality parts wherever they&apos;re needed.
         </p>
 
         <div className="globalTabs">

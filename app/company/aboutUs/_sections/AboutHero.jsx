@@ -7,19 +7,19 @@ export default function AboutHero() {
 
       <div className={styles.content}>
         <div className={styles.textGroup}>
-          <h1 className={styles.heading}>
+          <h1 className="banner-title">
             Decades of Engineering.
             <br />
             One Clear Mission
           </h1>
 
-          <p className={styles.description}>
+          <p className="banner-description">
             From a single plant in Chennai to eight manufacturing facilities
             across India and the United States — UCAL has spent over three
             decades engineering the components that keep the world moving.
           </p>
 
-          <button className={styles.customBtn}>
+          <button className="custom-btn">
             Explore Our Journey
           </button>
         </div>

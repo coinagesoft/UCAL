@@ -139,3 +139,20 @@
   cursor: pointer;
 }
 
+@media (max-width: 1024px) {
+  .card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .downloadBtnGreen,
+  .requestBtnBlue {
+    width: 100%;
+  }
+}

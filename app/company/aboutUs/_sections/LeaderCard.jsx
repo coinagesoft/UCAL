@@ -13,7 +13,7 @@ export default function LeaderCard({ leader }) {
       <div className={styles.overlay}></div>
 
       <div className={styles.content}>
-        <div className="text-group">
+        <div className={styles.Leadergroup}>
 
           <h3 className={styles.name}>
             {leader.name}

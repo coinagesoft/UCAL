@@ -3,11 +3,12 @@ import AccountabilitySection from "./_sections/AccountabilitySection";
 import CapabilitySection from "./_sections/CapabilitySection";
 import ProcessFlowSection from "./_sections/ProcessFlowSection";
 import CertificationSection from "./_sections/CertificationSection";
+import styles from "./ManufacturingServicesPage.module.css";
 
 
 export default function ManufacturingServices() {
     return (
-        <div style={{ marginTop: "00px" }}>
+        <div className={styles.manufacturingServicesPage}>
             <Hero />
             <AccountabilitySection />
             <CapabilitySection />       

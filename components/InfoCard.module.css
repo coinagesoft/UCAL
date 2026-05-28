@@ -33,3 +33,27 @@
   line-height: 1.6;
   width: 80%;
 }
+
+@media (max-width: 1024px) {
+  .card {
+    width: 100%;
+  }
+
+  .image {
+    max-width: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 18px;
+  }
+
+  .image {
+    height: 220px;
+  }
+
+  .description {
+    width: 100%;
+  }
+}
