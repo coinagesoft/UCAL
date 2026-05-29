@@ -19,7 +19,7 @@ export default function VisionMission() {
             <div className={styles.content}>
               <div className={styles.headingWrap}>
                 <span className={`${styles.quote} ${styles.visionQuote}`}>
-                  <img src="/about/aboutquote.png" alt="" />
+                  <img src="/about/aboutquote.png" alt="" style={{width:"30px"}} />
                 </span>
 
                 <h3 className={`${styles.title} ${styles.visionTitle}`}>Our Vision</h3>

@@ -48,7 +48,7 @@ const carInfo = [
   {
     image: "/home/mercedes.webp",
     name: "Mercedes",
-  }
+  },
 ];
 
 export default function TrustedPartners() {
@@ -66,7 +66,7 @@ export default function TrustedPartners() {
         </div>
 
         <div className={styles.grid}>
-          {carInfo.map((item, index) => (
+          {carInfo.map((item) => (
             <div className={styles.logoCard} key={item.name}>
               <img src={item.image} alt={item.name} />
             </div>

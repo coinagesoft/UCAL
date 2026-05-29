@@ -85,11 +85,11 @@ export default function LeadershipSection() {
         {/* ARROWS */}
         <div className={styles.controls}>
           <button className={styles.arrowBtn}>
-            ←
+           <img src="/media/arrowLeft.png" alt="" />
           </button>
 
           <button className={styles.arrowBtn}>
-            →
+            <img src="/media/arrowRight.png" alt="" />
           </button>
         </div>
 
