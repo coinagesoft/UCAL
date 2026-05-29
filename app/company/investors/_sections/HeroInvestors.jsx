@@ -12,17 +12,14 @@ export default function HeroInvestors() {
       <div className={styles.contentOuter}>
         <div className={styles.content}>
           {/* TITLE */}
-          <h1 className={styles.title}>
+          <h1 className="banner-title">
             Transparent.Accountable.<br />
             Built for the Long Term.
           </h1>
 
           {/* DESCRIPTION */}
-          <p className={styles.description}>
-            UCAL is a publicly listed automotive component manufacturer 
-            committed to governance that matches the quality standards we 
-            hold in our plants â€” rigorous, documented, and consistently 
-            delivered.
+          <p className="banner-description">
+          UCAL is a publicly listed automotive component manufacturer committed to governance that matches the quality standards we hold in our plants — rigorous, documented, and consistently delivered.
           </p>
 
           {/* BUTTON */}

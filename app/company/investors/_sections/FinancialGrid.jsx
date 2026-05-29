@@ -19,11 +19,13 @@ function FolderCard({ title, category, id }) {
 
         <div className={styles.folderContent}>
 
-          <img
-            src="/media/img53.png"
-            alt="Folder"
-            className={styles.folderIcon}
-          />
+          <span className={styles.folderIconWrap}>
+            <img
+              src="/media/folder.png"
+              alt=""
+              className={styles.folderIcon}
+            />
+          </span>
 
           <h3 className={styles.folderTitle}>
             {title}

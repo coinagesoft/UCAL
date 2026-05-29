@@ -11,18 +11,19 @@ export default function ShareholdersHero() {
       {/* CONTENT BLOCK */}
       <div className={styles.content}>
         {/* SUB-TAG */}
-        <p className={styles.label}>
+        <p className="gHeading">
           / Shareholders
         </p>
 
         {/* MAIN TITLE */}
-        <h2 className={styles.title}>
+        <h2 className="main-heading" color="">
           Everything Your Shareholders Need, In One Place.
         </h2>
 
         {/* DESCRIPTION */}
-        <p className={styles.description}>
-          From shareholding patterns to registrar details â€” all the information that matters to UCAL&apos;s shareholders is structured for clarity and quick access
+        <p className="sub-heading">
+          From shareholding patterns to registrar details — all the information that matters to UCAL's shareholders is <br />
+          structured for clarity and quick access
         </p>
       </div>
     </section>

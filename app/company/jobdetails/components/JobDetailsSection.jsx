@@ -3,6 +3,11 @@
 import "./JobDetailsSection.css";
 
 export default function JobDetailsSection() {
+  const teamImages = [1, 2, 3, 4].map((item) => ({
+    src: `/jobdetails/job${item}.webp`,
+    alt: `Team and office life ${item}`,
+  }));
+
   return (
     <section className="jobDetailsSection">
       <div className="jobCard">
@@ -232,11 +237,16 @@ export default function JobDetailsSection() {
             Team & Office Life
           </h3>
 
-          <img
-            src="/jobdetails/job1.webp"
-            alt="team"
-            className="teamImage"
-          />
+          <div className="teamImageGrid">
+            {teamImages.map((image) => (
+              <img
+                key={image.src}
+                src={image.src}
+                alt={image.alt}
+                className="teamImage"
+              />
+            ))}
+          </div>
         </div>
       </div>
 

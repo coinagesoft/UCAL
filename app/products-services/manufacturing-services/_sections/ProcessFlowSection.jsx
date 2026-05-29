@@ -1,6 +1,5 @@
 "use client";
 
-import SectionHeader from "@/components/common/SectionHeader";
 import {
   finalProcessStep,
   leftProcessSteps,
@@ -13,6 +12,7 @@ function ProcessStep({ no, title, desc }) {
     <div className={styles.step}>
       <div className={styles.stepRow}>
         <span className={styles.stepNumber}>{no}</span>
+
         <div>
           <h4 className={styles.stepTitle}>{title}</h4>
           <p className={styles.stepDescription}>{desc}</p>
@@ -34,24 +34,30 @@ function ProcessColumn({ steps }) {
 
 export default function ProcessFlowSection() {
   return (
-    <section className={styles.section}>
-      <SectionHeader
-        eyebrow="/ Process Flow"
-        title={
-          <>
-            From Concept to Validated Delivery <br />
-            Every Step In-House
-          </>
-        }
-        description="The UCAL full production chain is designed to remove uncertainty at every stage â€” through in-house ownership, not through adding supplier oversight."
-        titleClassName={styles.title}
-      />
+    <section className={styles.section} >
+      <div className="wrapper" style={{paddingBottom:"60px"}}>
+        <p className="gHeading">/ Process Flow</p>
+        <h2 className="main-heading">
+          From Concept to Validated Delivery <br />
+          Every Step In-House
+        </h2>
+
+        <p className="sub-heading">
+          The UCAL full production chain is designed to remove uncertainty at
+          every stage — through in- <br /> house ownership, not through adding supplier
+          oversight.
+        </p>
+      </div>
 
       <div className={styles.layout}>
         <ProcessColumn steps={leftProcessSteps} />
 
         <div className={styles.center}>
-          <img src="/media/img63.gif" alt="process" className={styles.image} />
+          <img
+            src="/media/img63.gif"
+            alt="process"
+            className={styles.image}
+          />
 
           <div className={styles.finalStep}>
             <ProcessStep {...finalProcessStep} />

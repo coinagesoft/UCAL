@@ -16,7 +16,7 @@
 .background {
   position: absolute;
   inset: 0;
-  background-image: url("/media/img26.png");
+  background-image: url("/media/backGround2.webp");
   background-size: cover;
   background-position: center;
   z-index: 1;
@@ -25,7 +25,7 @@
 .overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(105deg, rgba(2, 1, 49, 0.9) 0%, rgba(23, 33, 105, 0.8) 45%, rgba(92, 123, 30, 0.7) 100%);
+  /* background: linear-gradient(105deg, rgba(2, 1, 49, 0.9) 0%, rgba(23, 33, 105, 0.8) 45%, rgba(92, 123, 30, 0.7) 100%); */
   z-index: 2;
 }
 

@@ -16,7 +16,7 @@ export default function CatalogueCard({
       <div className={styles.wrapper}>
         <div className={styles.iconBox}>
           <Image
-            src="/media/img67.png"
+            src="/media/downloadFile.png"
             alt="document icon"
             width={42}
             height={42}

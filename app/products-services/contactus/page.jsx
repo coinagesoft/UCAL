@@ -2,8 +2,8 @@ import "./contact.css"
 
 export default function Contact() {
     return (
-        <div style={{marginBottom:"80px", marginTop:"88px"}}>
-            <div className="banner">
+        <div className="contactPage">
+            <div className="contactBanner">
                 <div className="banner-content contactHeader ">
                     <h2 className="banner-title">Precision Parts. Real Conversations</h2>
                     <p className="banner-description">Have a requirement, query, or partnership idea? Connect with our team for reliable automobile spare parts manufacturing solutions backed by quality, technology, and timely delivery.</p>

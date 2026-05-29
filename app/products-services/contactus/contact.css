@@ -1,5 +1,9 @@
-.banner{
+.contactPage {
+    margin-bottom: 80px;
     margin-top: 88px;
+}
+
+.contactBanner{
     background-image: url("/media/contactBanner.webp");
     background-position: center;
     background-size: cover;
@@ -153,7 +157,7 @@
 }
 
 @media(max-width:768px){
-    .banner {
+    .contactBanner {
         height: 460px;
         background-position: center;
     }
@@ -186,7 +190,7 @@
 }
 
 @media(max-width:480px){
-    .banner {
+    .contactBanner {
         height: 400px;
     }
 

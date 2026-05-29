@@ -10,7 +10,7 @@ export default function PressCard({ img, title, description }) {
                 <div className="cardBody">
                     <div className="calender">
                         <img  src="/media/nCalender.png" alt="calender" />
-                        <p>10 Nov , 2024</p>
+                        <p style={{margin:"0px"}}>10 Nov , 2024</p>
                     </div>
                     <div className="cardText">
                         <h2>{title}</h2>

@@ -1,191 +1,67 @@
-// ✅ STYLES
-const sectionStyle = {
-  width: "100%",
-  padding: "100px 0",
-  background: "#f3f5f4",
-  position: "relative",
-  overflow: "hidden",
-};
+import styles from "./ResponsibleManufacturing.module.css";
 
-const container = {
-  width: "1440px",
-  margin: "0 auto",
-  position: "relative",
-  zIndex: 2,
-};
+const cards = [
+  {
+    image: "/Sustainability/img47.webp",
+    title: "ISO 14001:2015 Certified",
+    description: "Environmental Management across operations",
+  },
+  {
+    image: "/Sustainability/img48.webp",
+    title: "Rainwater Harvesting",
+    description: "Sustainable water conservation at our plants",
+  },
+  {
+    image: "/Sustainability/img49.webp",
+    title: "Lead-Free Manufacturing",
+    description: "SMT processes without harmful lead at UCAL",
+  },
+  {
+    image: "/Sustainability/img50.webp",
+    title: "Vacuum Die Casting",
+    description: "Reducing material waste through advanced technology",
+  },
+  {
+    image: "/Sustainability/img51.webp",
+    title: "Process Optimization",
+    description: "Efficiency programs to minimize scrap rates",
+  },
+];
 
-const textWrap = {
-  maxWidth: "720px",
-  margin: "0 auto",
-  textAlign: "center",
-};
-
-const cardsWrap = {
-  width: "1080px",
-  margin: "50px auto 0",
-  display: "flex",
-  flexDirection: "column",
-  gap: "20px",
-};
-
-const row = {
-  display: "flex",
-  gap: "20px",
-};
-
-const card = {
-  width: "530px",
-  height: "106px",
-  background: "rgba(255,255,255,0.55)", // ✅ transparent
-  backdropFilter: "blur(10px)",         // ✅ glass effect
-  WebkitBackdropFilter: "blur(10px)",
-  border: "1px solid rgba(228,232,239,0.6)",
-  display: "flex",
-  alignItems: "center",
-  gap: "16px",
-  padding: "16px 20px",
-//   borderRadius: "10px",
-};
-
-const icon = {
-  width: "50px",
-  height: "50px",
-};
-
-const cardTitle = {
-  fontSize: "18px",
-  fontWeight: 600,
-  marginBottom: "4px",
-};
-
-const cardDesc = {
-  fontSize: "14px",
-  color: "#6b6b6b",
-};
-
-// ✅ COMPONENT
 export default function ResponsibleManufacturing() {
   return (
-    <section style={ { ...sectionStyle, marginBottom: "150px"} }>
-
-      {/* ✅ RIGHT IMAGE WITH FADE */}
-      <div
-        style={{
-          position: "absolute",
-          right: 0,
-          bottom: 0,
-          width: "900px",
-          height: "560px",
-          background: `
-            // linear-gradient(to left, rgba(243,245,244,0) 60%, #f3f5f4 100%),
-            url('/Sustainability/sus1.webp')
-          `,
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "contain",
-          backgroundPosition: "right bottom",
-          zIndex: 1,
-        }}
+    <section className={styles.section}>
+      <img
+        className={styles.machineImage}
+        src="/Sustainability/sus1.webp"
+        alt=""
       />
 
-      <div style={container}>
+      <div className={styles.container}>
+        <div className={styles.textWrap}>
+          <span className={styles.label}>/ Responsible Manufacturing</span>
 
-        {/* TEXT */}
-        <div style={textWrap}>
-          <span style={{ color: "#6DBE45", fontSize: "16px" }}>
-            / Responsible Manufacturing
-          </span>
+          <h2>Efficiency In. Waste Out. Always.</h2>
 
-          <h2
-            style={{
-              fontSize: "52px",
-              fontWeight: 600,
-              margin: "12px 0",
-              color: "#2c2c2c",
-            }}
-          >
-            Efficiency In. Waste Out. Always.
-          </h2>
-
-          <p
-            style={{
-              maxWidth: "620px",
-              margin: "0 auto",
-              color: "#6b6b6b",
-              fontSize: "18 px",
-              lineHeight: "1.7",
-            }}
-          >
-            Making manufacturing leaner is not just good for the planet — it&apos;s
+          <p>
+            Making manufacturing leaner is not just good for the planet - it&apos;s
             good engineering. UCAL&apos;s operational sustainability efforts focus on
             reducing material waste, energy intensity, and environmental impact
             across all facilities.
           </p>
         </div>
 
-        {/* CARDS */}
-        <div style={cardsWrap}>
-
-          {/* ROW 1 */}
-          <div style={row}>
-            <div style={card}>
-              <img src="/Sustainability/img47.webp" style={icon} />
+        <div className={styles.cards}>
+          {cards.map((card) => (
+            <article className={styles.card} key={card.title}>
+              <img src={card.image} alt="" />
               <div>
-                <div style={cardTitle}>ISO 14001:2015 Certified</div>
-                <div style={cardDesc}>
-                  Environmental Management across operations
-                </div>
+                <h3>{card.title}</h3>
+                <p>{card.description}</p>
               </div>
-            </div>
-
-            <div style={card}>
-              <img src="/Sustainability/img48.webp" style={icon} />
-              <div>
-                <div style={cardTitle}>Rainwater Harvesting</div>
-                <div style={cardDesc}>
-                  Sustainable water conservation at our plants
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* ROW 2 */}
-          <div style={row}>
-            <div style={card}>
-              <img src="/Sustainability/img49.webp" style={icon} />
-              <div>
-                <div style={cardTitle}>Lead-Free Manufacturing</div>
-                <div style={cardDesc}>
-                  SMT processes without harmful lead at UCAL
-                </div>
-              </div>
-            </div>
-
-            <div style={card}>
-              <img src="/Sustainability/img50.webp" style={icon} />
-              <div>
-                <div style={cardTitle}>Vacuum Die Casting</div>
-                <div style={cardDesc}>
-                  Reducing material waste through advanced technology
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* ROW 3 */}
-          <div style={row}>
-            <div style={card}>
-              <img src="/Sustainability/img51.webp" style={icon} />
-              <div>
-                <div style={cardTitle}>Process Optimization</div>
-                <div style={cardDesc}>
-                  Efficiency programs to minimize scrap rates
-                </div>
-              </div>
-            </div>
-          </div>
-
+            </article>
+          ))}
         </div>
-
       </div>
     </section>
   );

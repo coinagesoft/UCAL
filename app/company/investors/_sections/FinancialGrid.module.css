@@ -67,13 +67,13 @@
   align-items: center;
   display: flex;
   gap: 15px;
-  margin-bottom: 30px;
+  margin-bottom: 42px;
 }
 
 .dividerLabel {
-  color: #9ca3af;
+  color: #333333;
   font-size: 11px;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
@@ -113,27 +113,46 @@
   cursor: pointer;
   display: flex;
   flex-direction: column;
-  height: 155px;
-  padding: 17px;
+  height: 150px;
+  padding: 17px 16px;
   transition: all 0.2s ease;
-  width: 250px;
+  width: 245px;
 }
 
 .folderCard:hover {
-  border-color: #79b933;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.04);
+  border-color: #73b33f;
 }
 
 .folderContent {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 13px;
+}
+
+.folderIconWrap {
+  align-items: center;
+  background-color: #f0f2fb;
+  border-radius: 8px;
+  display: inline-flex;
+  height: 42px;
+  justify-content: center;
+  transition: background-color 0.2s ease;
+  width: 42px;
 }
 
 .folderIcon {
-  height: 42px;
-  object-fit: cover;
-  width: 42px;
+  height: 18px;
+  object-fit: contain;
+  transition: filter 0.2s ease;
+  width: 18px;
+}
+
+.folderCard:hover .folderIconWrap {
+  background-color: #73b33f;
+}
+
+.folderCard:hover .folderIcon {
+  filter: brightness(0) invert(1);
 }
 
 .folderTitle {
@@ -141,9 +160,9 @@
   -webkit-line-clamp: 2;
   color: #333333;
   display: -webkit-box;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
-  line-height: 1.4;
+  line-height: 18px;
   margin: 0;
   overflow: hidden;
 }
@@ -151,11 +170,12 @@
 .category {
   background-color: #f0f9eb;
   border-radius: 6px;
-  color: #79b933;
-  font-size: 12px;
-  font-weight: 600;
-  margin-top: 15px;
-  padding: 3px 10px;
+  color: #73b33f;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 15px;
+  margin-top: 13px;
+  padding: 3px 8px;
   width: fit-content;
 }
 
