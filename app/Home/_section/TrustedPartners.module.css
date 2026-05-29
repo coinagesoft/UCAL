@@ -1,12 +1,12 @@
 .section {
   background-color: #ffffff;
-  padding: 80px 20px 20px 0;
+  padding: 78px 20px 18px;
   text-align: center;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 1060px;
+  max-width: 1120px;
 }
 
 .eyebrow {
@@ -38,7 +38,7 @@
 }
 
 .header {
-  margin-bottom: 60px;
+  margin-bottom: 56px;
 }
 
 .logoWrap {
@@ -53,23 +53,37 @@
 }
 
 
-.grid{
+.grid {
   display: grid;
-  grid-template-columns: repeat(6 , 1fr);
-  /* grid-template-rows: repeat(2 , 1fr); */
-  row-gap: 41.68px  ;
-
+  gap: 26px 34px;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  margin: 0 auto;
+  max-width: 1076px;
 }
 
-.grid img {
+.logoCard {
+  align-items: center;
+  /* background: #3f3a98; */
+  border-radius: 8px;
+  display: flex;
+  height: 72px;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.logoCard img {
+  display: block;
   height: auto;
+  max-height: 64px;
   max-width: 100%;
+  object-fit: contain;
+  width: 100%;
 }
 
 @media (max-width: 1024px) {
   .grid {
     grid-template-columns: repeat(4, 1fr);
-    padding-left: 20px;
+    max-width: 760px;
   }
 }
 
@@ -85,7 +99,11 @@
 
   .grid {
     grid-template-columns: repeat(3, 1fr);
-    gap: 28px 20px;
+    gap: 20px;
+  }
+
+  .logoCard {
+    height: 62px;
   }
 }
 
@@ -96,6 +114,10 @@
 
   .grid {
     grid-template-columns: repeat(2, 1fr);
-    row-gap: 24px;
+    gap: 16px;
+  }
+
+  .logoCard {
+    height: 56px;
   }
 }

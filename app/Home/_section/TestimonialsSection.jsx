@@ -12,13 +12,17 @@ export default function TestimonialsSection() {
     <section className={styles.section}>
       <div className={styles.container}>
         <div className={styles.card}>
-          <div className={styles.quoteMark}><img src="/home/up.png" alt="quotes" /></div>
+          <div className={styles.quoteMark}>
+            <img src="/home/up.png" alt="quotes" />
+          </div>
 
           <p className={styles.quote}>{testimonial.quote}</p>
 
-          <p className={styles.author}>— {testimonial.author}</p>
+          <p className={styles.author}>&mdash; {testimonial.author}</p>
 
-          <div className={styles.quoteMarkEnd}><img src="/home/down.png" alt="quotes" /></div>
+          <div className={styles.quoteMarkEnd}>
+            <img src="/home/down.png" alt="quotes" />
+          </div>
         </div>
 
         <div className={styles.dots}>
@@ -29,6 +33,8 @@ export default function TestimonialsSection() {
               className={`${styles.dot} ${
                 index === currentSlide ? styles.dotActive : styles.dotInactive
               }`}
+              aria-label={`Show testimonial ${index + 1}`}
+              type="button"
             />
           ))}
         </div>

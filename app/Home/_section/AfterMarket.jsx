@@ -22,7 +22,7 @@ export default function Global() {
         </div>
 
         <div className={`hero-container ${styles.imageWrap}`}>
-          <img src="/media/img20.png" alt="Aftermarket" className={`${styles.image} hero-img`} />
+          <img src="/home/img20.webp" alt="Aftermarket" className={`${styles.image} hero-img`} />
         </div>
       </div>
     </section>
