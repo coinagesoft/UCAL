@@ -4,10 +4,10 @@ export default function PressCard({ img, title, description }) {
     return (
         <div className="card">
             <div className="cardContent">
-                <div className="cardImg hero-container">
-                    <img src={img} alt="cardImg" className="hero-img" />
+                <div className="cardImg ">
+                    <img src={img} alt="cardImg"  />
                 </div>
-                <div>
+                <div className="cardBody">
                     <div className="calender">
                         <img  src="/media/nCalender.png" alt="calender" />
                         <p>10 Nov , 2024</p>

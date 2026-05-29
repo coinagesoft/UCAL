@@ -12,7 +12,7 @@ const timelineData = [
     description2:
       "Closely tied to the automotive industry, UCAL has always understood customer needs deeply. The family continues its legacy through active involvement in leading automotive bodies and UCAL businesses.",
 
-    image: "/media/a5.png",
+    image: "/about/a5.webp",
 
     tags: [
       "Standard Motors India",
@@ -31,7 +31,7 @@ const timelineData = [
     description2:
       "UFSL Plant 1 Opened in Chennai with Ganapathy Homum (Pictured)",
 
-    image: "/media/a6.png",
+    image: "/about/a6.webp",
 
     tags: [
       "Mikuni JV",
@@ -50,7 +50,7 @@ const timelineData = [
     description2:
       "UCAL Polymer Industries (UPIL) founded to add in-house rubbers & plastic injection moulding. Exports to global OEMs begin.",
 
-    image: "/media/a6.png",
+    image: "/about/a7.webp",
 
     tags: [
       "Krishnamurthy Centre",
@@ -69,7 +69,7 @@ const timelineData = [
   description2:
     "Product expansion into Pumps, Throttle Bodies, Valves & other Engine Control Systems.",
 
-  image: "/media/a7.png",
+  image: "/about/a8.webp",
 
   tags: [
     "UCAL Systems Inc",
@@ -90,7 +90,7 @@ const timelineData = [
   description2:
     "Expanding value beyond components into full engineering partnership.",
 
-  image: "/media/a8.png",
+  image: "/about/a9.webp",
 
   tags: [
     "Mechatronics",
@@ -110,7 +110,7 @@ const timelineData = [
   description2:
     "The e-Carb System ships 1 million units in its first year, and more than 4 million units to date.",
 
-  image: "/media/a9.png",
+  image: "/about/a10.webp",
 
   tags: [
     "150M+ Products Shipped",

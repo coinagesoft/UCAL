@@ -33,7 +33,7 @@ export default function LifeSection() {
       {/* IMAGE WITH FLOAT ANIMATION */}
       <div>
         <img
-          src="/media/img29.png"
+          src="/careers/img29.webp"
           alt="Life at UCAL"
           className={styles.lifeImage}
         />

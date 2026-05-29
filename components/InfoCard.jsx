@@ -10,4 +10,5 @@ export default function InfoCard({ image, title, description }) {
       <p className={styles.description}>{description}</p>
     </div>
   );
-}
+} 
+ 

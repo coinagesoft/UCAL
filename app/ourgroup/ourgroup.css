@@ -11,7 +11,7 @@
 
   overflow: hidden;
 
-  background-image: url("/media/OurGroupBanner.svg");
+  background-image: url("/OurGroup/ourGrpBanner.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -29,16 +29,15 @@
     text-align: center;
 }
 
-.grid{
-    display: flex;
+.groupGrid{
+    display: grid;
     justify-content: center;
-    gap: 20;
-
+    gap: 20px;
+    grid-template-columns: repeat(3, 353px);
     margin-top: 60px;
-    flex-wrap: wrap;
 }
 
-.card{
+.groupCard{
     width: 353px;
     height: 430px;
 
@@ -48,9 +47,11 @@
 
     padding: 16px;
 
+    display: flex;
+    flex-direction: column;
+
     transition: all 0.3s ease;
 
-    margin-left: -1px; 
     margin-bottom: 80px;
 }
 
@@ -64,7 +65,7 @@
 } */
 
 .grpImg{
-    width: 321px;
+    width: 100%;
     height: 220px;
 
     overflow: hidden;
@@ -105,8 +106,8 @@
 
     color: #666666;
 }
-.readMore{
-    margin-top: 28px;
+.groupReadMore{
+    margin-top: auto;
 
     display: flex;
     align-items: center;
@@ -117,7 +118,7 @@
     text-decoration: none;
 }
 
-.readMore span{
+.groupReadMore span{
     color: #73B33F;
     font-size: 16px;
     font-weight: 500;
@@ -238,12 +239,13 @@
         max-width: 620px;
     }
 
-    .grid {
+    .groupGrid {
+        grid-template-columns: repeat(2, minmax(0, 353px));
         padding: 0 32px;
     }
 
-    .card {
-        width: calc(50% - 12px);
+    .groupCard {
+        width: 100%;
         max-width: 353px;
     }
 
@@ -292,12 +294,13 @@
         padding: 0 24px;
     }
 
-    .grid {
+    .groupGrid {
+        grid-template-columns: minmax(0, 520px);
         margin-top: 44px;
         padding: 0 24px;
     }
 
-    .card {
+    .groupCard {
         width: 100%;
         max-width: 520px;
         height: auto;
@@ -343,7 +346,7 @@
         padding: 0 18px;
     }
 
-    .grid {
+    .groupGrid {
         padding: 0 18px;
     }
 

@@ -8,7 +8,7 @@ import Certification from "./_section/Certification.jsx";
 
 export default function DownloadPage() {
   return (
-    <div>
+    <div style={{marginTop:"88px"}}>
       <HeroDownload />
         <Catalogues />
         <SpecSheet />

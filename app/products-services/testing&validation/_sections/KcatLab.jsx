@@ -6,7 +6,7 @@ export default function KcatLab() {
       <div className="kcat-wrapper">
 
         <div className="kcat-image hero-container">
-          <img src="/media/t1.svg" alt="KCAT Lab" className="hero-img" />
+          <img src="/testingValidation/tv2.webp" alt="KCAT Lab" className="hero-img" />
         </div>
 
         <div className="kcat-content">

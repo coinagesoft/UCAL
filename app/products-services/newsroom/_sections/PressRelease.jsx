@@ -11,7 +11,7 @@ export default function PressRelease() {
                 <h2 className="main-heading">Official Announcements, Directly from UCAL.</h2>
                 <p className="sub-heading" style={{ textAlign: "center" }}>All official statements, business updates, partnership announcements, and product launches — published <br /> here first and updated as they happen.</p>
             </div>
-            <div className="grid">
+            <div className="pressGrid">
                 {pressData.map((item, index) => (
                     <PressCard
                         key={index}

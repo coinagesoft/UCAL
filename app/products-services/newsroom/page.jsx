@@ -7,12 +7,12 @@ import NewsLetter from "./_sections/NewsLetter";
 
 export default function NewsRoom(){
     return (
-       <>
+       <div style={{marginTop:"88px"}}>
         <NewsHero/>
         <PressRelease/>
         <Recognition/>
         <Events/>
         <NewsLetter/>
-       </>
+       </div>
     )
 }

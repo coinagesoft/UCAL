@@ -2,40 +2,40 @@ import styles from "./TrustedPartners.module.css";
 
 const carInfo = [
   {
-    "image": "/media/volkswagen.svg"
+    "image": "/home/volkswagen.webp"
   },
   {
-    "image": "/media/nissan.svg"
+    "image": "/home/nissan.webp"
   },
   {
-    "image": "/media/ford.svg"
+    "image": "/home/ford.webp"
   },
   {
-    "image": "/media/mini.svg"
+    "image": "/home/mini.webp"
   },
   {
-    "image": "/media/datsun.svg"
+    "image": "/home/datsun.webp"
   },
   {
-    "image": "/media/honda.svg"
+    "image": "/home/honda.webp"
   },
   {
-    "image": "/media/lexus.svg"
+    "image": "/home/lexus.webp"
   },
   {
-    "image": "/media/toyota.svg"
+    "image": "/home/toyota.webp"
   },
   {
-    "image": "/media/jeep.svg"
+    "image": "/home/jeep.webp"
   },
   {
-    "image": "/media/bmw.svg"
+    "image": "/home/bmw.webp"
   },
   {
-    "image": "/media/audi.svg"
+    "image": "/home/audi.webp"
   },
   {
-    "image": "/media/mercedes.svg"
+    "image": "/home/mercedes.webp"
   }
 ]
 

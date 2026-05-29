@@ -5,19 +5,19 @@ const groupData =[
     "id": 1,
     "title": "UCAL Limited",
     "description": "It is a long established fact that a reader will be distracted by the readable content of a page.",
-    "image": "/media/grp1.svg"
+    "image": "/OurGroup/OurGrp1.webp"
   },
   {
     "id": 2,
     "title": "UCAL Polymers",
     "description": "It is a long established fact that a reader will be distracted by the readable content of a page.",
-    "image": "/media/grp2.svg"
+    "image": "/OurGroup/OurGrp2.webp"
   },
   {
     "id": 3,
     "title": "UCAL Electronics",
     "description": "It is a long established fact that a reader will be distracted by the readable content of a page.",
-    "image": "/media/grp3.svg"
+    "image": "/OurGroup/OurGrp3.webp"
   }
 ]
 
@@ -38,9 +38,9 @@ export default function OurGroup(){
         <p className="sub-heading centeredText">Three specialized companies, united to deliver reliable, high-performance <br /> aftermarket parts with precision and consistency.</p>
       </div>
 
-      <div className="grid">
+      <div className="groupGrid">
     {groupData.map((item) => (
-        <div className="card" key={item.id}>
+        <div className="groupCard" key={item.id}>
 
             <div className="grpImg">
                 <img src={item.image} alt={item.title} />
@@ -51,7 +51,7 @@ export default function OurGroup(){
                 <p>{item.description}</p>
             </div>
 
-            <a href="" className="readMore">
+            <a href="" className="groupReadMore">
                 <span>Read More</span>
 
                 <img src="/media/arrowCircle.svg" alt="arrow" />

@@ -10,7 +10,7 @@ export default function VisionMission() {
           <div className={styles.card}>
             <div className={styles.iconWrapper}>
               <img
-                src="/media/a3.png"
+                src="/about/a3.webp"
                 alt="Vision Icon"
                 className={styles.iconImage}
               />
@@ -18,7 +18,9 @@ export default function VisionMission() {
 
             <div className={styles.content}>
               <div className={styles.headingWrap}>
-                <span className={`${styles.quote} ${styles.visionQuote}`}>â</span>
+                <span className={`${styles.quote} ${styles.visionQuote}`}>
+                  <img src="/about/aboutquote.png" alt="" />
+                </span>
 
                 <h3 className={`${styles.title} ${styles.visionTitle}`}>Our Vision</h3>
               </div>
@@ -35,7 +37,7 @@ export default function VisionMission() {
           <div className={styles.card}>
             <div className={styles.iconWrapper}>
               <img
-                src="/media/a4.png"
+                src="/about/a4.webp"
                 alt="Mission Icon"
                 className={styles.iconImage}
               />

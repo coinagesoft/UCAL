@@ -1,27 +1,57 @@
 .card{
-    /* width: 413px; */
+    width: 100%;
     height: 535px;
     border: solid 1px #E4E8EF;
-     border-radius: 0;
-     transition: all 0.3s ease;
+    border-radius: 0;
+    transition: all 0.3s ease;
+    overflow: hidden;
 }
 
 .cardContent{
+    height: 100%;
     padding: 24px;
     display: flex;
     flex-direction: column;
-    gap:20px
+    gap:20px;
 }
 
-.cardImg{
+.cardImg{   
     height: 194px;
-    width: 365px;
+    width: 100%;
+    flex: 0 0 194px;
+    overflow: hidden;
+}
+
+.cardImg img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
 }
 
 .calender{
     display: flex;
-    /* justify-content: center; */
+    align-items: center;
     gap: 5px;
+}
+
+.cardBody {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+}
+
+.calender p {
+    font-size: 14px;
+    line-height: 20px;
+    color: #555855;
+}
+
+.cardText {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .cardText h2{
@@ -29,6 +59,7 @@
     font-weight: 600;
     line-height: 28px;
     font-family: "Urbanist";
+    margin: 0;
 }
 
 .cardText p{
@@ -36,6 +67,7 @@
     font-weight: 400;
     line-height: 28px;
     font-family: "Telex";
+    margin: 0;
 }
 
 .calender img{
@@ -47,7 +79,7 @@
 .readMore a{
     text-decoration: none;
     color: #73B33F; 
-    font-size: 600;
+    font-weight: 600;
     font-size: 16px;
 
 }
@@ -58,20 +90,23 @@
 }
 
 .readMore{
+    width: fit-content;
+    margin-top: auto;
     display: inline-flex;
     gap:5px;
     justify-content:start;
     align-items: center;
-      border-bottom: 1px solid #78BE20;
+    border-bottom: 1px solid #78BE20;
 }
 
 .card:hover{
     border-color: #78BE20;
 }
 
-@media (max-width: 1320px) {
-    .cardImg {
-        width: 100%;
+@media (max-width: 1024px) {
+    .card {
+        min-height: 535px;
+        height: auto;
     }
 }
 
@@ -84,9 +119,20 @@
 @media (max-width: 480px) {
     .cardContent {
         padding: 18px;
+        gap: 16px;
     }
 
     .cardImg {
         height: 190px;
+        flex-basis: 190px;
+    }
+
+    .cardText h2 {
+        font-size: 17px;
+        line-height: 26px;
+    }
+
+    .cardText p {
+        line-height: 25px;
     }
 }

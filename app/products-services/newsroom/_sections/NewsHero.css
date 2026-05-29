@@ -1,7 +1,7 @@
 .news-hero {
     width: 100%;
-    min-height: 648px;
-    margin-top: 88px;
+    min-height: 560px;
+    /* margin-top: 88px; */
 
     display: flex;
     align-items: center;

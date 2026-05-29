@@ -47,7 +47,7 @@ export default function VibrationTesting() {
         <div className="vibration-row">
 
           <div className="vibration-image hero-container">
-            <img src="/media/t5.svg" alt="" className="hero-img" />
+            <img src="/testingValidation/tv5.webp" alt="" className="hero-img" />
           </div>
 
           <div className="vibration-spec-box">
@@ -83,7 +83,7 @@ export default function VibrationTesting() {
           </div>
 
           <div className="vibration-image large-image hero-container">
-            <img src="/media/t6.svg" alt="" className="hero-img" />
+            <img src="/testingValidation/tv6.webp" alt="" className="hero-img" />
           </div>
 
         </div>

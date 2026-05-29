@@ -5,7 +5,7 @@ export default function HeroJob() {
     <section className="hero-job">
       <div className="hero-job__image-wrap">
         <img
-          src="/media/img32.png"
+          src="/jobdetails/jobdetailsBanner.webp "
           alt="Security Banner"
           className="hero-job__image"
         />

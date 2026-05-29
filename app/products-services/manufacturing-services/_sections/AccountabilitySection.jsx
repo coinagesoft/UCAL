@@ -28,13 +28,13 @@ export default function AccountabilitySection() {
       {/* CARDS */}
       <div className={styles.cards}>
         <InfoCard
-          image="/media/img57.png"
+          image="/manufacturing/img57.webp"
           title="Integrated Process Ownership"
           description="UCAL's in-house chain covers die design, casting, machining, electronics assembly, surface treatment, testing, and final dispatch. Removing third-party handoffs eliminates the quality and schedule risk that accumulates at every supplier boundary."
         />
 
         <InfoCard
-          image="/media/img56.png"
+          image="/manufacturing/img56.webp"
           title="Quality Systems Built for OEM Scrutiny"
           description="IATF 16949:2016 certification. SPC across machining processes. PPAP documentation as standard. FMEA and control plan support from the design stage. UCAL's quality infrastructure is built for the rigour of major OEM supplier qualification."
         />

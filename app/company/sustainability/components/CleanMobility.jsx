@@ -55,7 +55,7 @@ export default function CleanMobility() {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        backgroundImage: "url('/media/img26.png')",
+        backgroundImage: "url('/media/backGround1.webp')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
@@ -113,7 +113,7 @@ export default function CleanMobility() {
           <div style={cardStyle}>
             <div>
               <img
-                src="/media/img44.png"
+                src="/Sustainability/img44.webp"
                 alt="icon"
                 style={{ marginBottom: "16px" }}
               />
@@ -139,7 +139,7 @@ export default function CleanMobility() {
           <div style={cardStyle}>
             <div>
               <img
-                src="/media/img45.png"
+                src="/Sustainability/img45.webp"
                 alt="icon"
                 style={{ marginBottom: "16px" }}
               />
@@ -165,7 +165,7 @@ export default function CleanMobility() {
           <div style={cardStyle}>
             <div>
               <img
-                src="/media/img46.png"
+                src="/Sustainability/img46.webp"
                 alt="icon"
                 style={{ marginBottom: "16px" }}
               />

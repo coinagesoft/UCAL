@@ -1,6 +1,6 @@
 export const homeProducts = [
   {
-    image: "/media/img10.png",
+    image: "/home/img10.webp",
     title: "Sensors",
     details: [
       "Flex fuel solutions",
@@ -10,7 +10,7 @@ export const homeProducts = [
     ],
   },
   {
-    image: "/media/img11.png",
+    image: "/home/img11.webp",
     title: "Fuel Systems",
     details: [
       "High-performance parts",
@@ -22,19 +22,19 @@ export const homeProducts = [
 ];
 
 export const homeCapabilities = [
-  { id: 1, title: "In-House R&D & Design", image: "/media/homeService5.svg" },
-  { id: 2, title: "Precision Machining", image: "/media/homeService4.svg" },
-  { id: 3, title: "Tool Design & Development", image: "/media/homeService3.svg" },
-  { id: 4, title: "Testing & Validation", image: "/media/homeService2.svg" },
-  { id: 5, title: "Assembly & Packaging Services", image: "/media/homeService1.svg" },
+  { id: 1, title: "In-House R&D & Design", image: "/home/hservice5.webp" },
+  { id: 2, title: "Precision Machining", image: "/home/hservice4.webp" },
+  { id: 3, title: "Tool Design & Development", image: "/home/hservice3.webp" },
+  { id: 4, title: "Testing & Validation", image: "/home/hservice2.webp" },
+  { id: 5, title: "Assembly & Packaging Services", image: "/home/hservice1.webp" },
 ];
 
 export const whyUcalReasons = [
-  { id: 1, title: "40 years of expertise", image: "/media/img3.png" },
-  { id: 2, title: "Global footprint", image: "/media/img4.png" },
-  { id: 3, title: "Quality standards", image: "/media/img5.png" },
-  { id: 4, title: "Full-stack capability", image: "/media/img6.png" },
-  { id: 5, title: "Long-term OEM relations", image: "/media/img7.png" },
+  { id: 1, title: "40 years of expertise", image: "/home/img3.webp" },
+  { id: 2, title: "Global footprint", image: "/home/img4.webp" },
+  { id: 3, title: "Quality standards", image: "/home/img5.webp" },
+  { id: 4, title: "Full-stack capability", image: "/home/img6.webp" },
+  { id: 5, title: "Long-term OEM relations", image: "/home/img7.webp" },
 ];
 
 export const homeFaqs = [
@@ -83,21 +83,21 @@ export const homeTestimonials = [
 
 export const newsItems = [
   {
-    img: "/media/img22.png",
+    img: "/home/img22.webp",
     tag: "Product launch",
     title: "UCAL Launches Next-Generation EFI System for Two-Wheeler Segment",
     desc:
       "UCAL unveils its advanced Electronic Fuel Injection platform engineered for BS-VI emission norms, delivering 12% improved fuel efficiency across sub-125cc engine applications.",
   },
   {
-    img: "/media/img23.png",
+    img: "/home/img23.webp",
     tag: "Corporate",
     title: "UCAL Reports Q3 FY25 Revenue Growth of 18% Year-on-Year",
     desc:
       "Driven by robust demand from two-wheeler OEMs and strong export momentum, UCAL recorded consolidated revenue of ₹312 crore for Q3 FY2024–25.",
   },
   {
-    img: "/media/img24.png",
+    img: "/home/img24.webp",
     tag: "Partnership",
     title:
       "UCAL Signs Strategic Agreement with Tier-1 European OEM for CNG Components",

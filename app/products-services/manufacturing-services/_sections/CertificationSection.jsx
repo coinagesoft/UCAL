@@ -2,27 +2,27 @@
 import "./Certification.css"
 const certData = [
   {
-    "image": "/media/cert1.svg",
+    "image": "/manufacturing/cert1.webp",
     "title": "IATF 16949:2016",
     "subtitle": "Automotive Quality Management"
   },
   {
-    "image": "/media/cert2.svg",
+    "image": "/manufacturing/cert2.webp",
     "title": "ISO 9001:2015",
     "subtitle": "Quality Management System"
   },
   {
-    "image": "/media/cert3.svg",
+    "image": "/manufacturing/cert3.webp",
     "title": "ISO 14001:2015",
     "subtitle": "Environmental Management"
   },
   {
-    "image": "/media/cert4.svg",
+    "image": "/manufacturing/cert5.webp",
     "title": "AS 9100:2016",
     "subtitle": "Aerospace Quality (UCAL Systems Inc.)"
   },
   {
-    "image": "/media/cert5.svg",
+    "image": "/manufacturing/cert6.webp",
     "title": "NABL Accreditation TC-15475",
     "subtitle": "Testing Laboratory (ISO/IEC 17025)"
   }

@@ -5,22 +5,22 @@ export default function CultureSection() {
     {
       title: "TRAINING & MENTORING",
       desc: "Structured onboarding, domain-specific training, and mentoring programmes that connect new talent with experienced practitioners.",
-      icon: "/media/img34.png",
+      icon: "/careers/img34.webp",
     },
     {
       title: "SKILL DEVELOPMENT",
       desc: "Cross-functional exposure and technical upskilling aligned to UCAL’s expanding product portfolio — from traditional powertrain to EV systems.",
-      icon: "/media/img35.png",
+      icon: "/careers/img35.webp",
     },
     {
       title: "KNOWLEDGE SHARING",
       desc: "Internal technical talks, inter-facility collaboration, and access to UCAL’s decades of institutional engineering knowledge.",
-      icon: "/media/img36.png",
+      icon: "/careers/img36.webp",
     },
     {
       title: "COUNSELING SUPPORT",
       desc: "Professional counseling and guidance programmes that support employees through career transitions and personal challenges.",
-      icon: "/media/img37.png",
+      icon: "/careers/img37.webp",
     },
   ];
 
@@ -29,7 +29,7 @@ export default function CultureSection() {
       {/* LEFT IMAGE */}
       <div className={styles.cultureImageWrap}>
         <img
-          src="/media/img28.png"
+          src="/careers/img28.webp"
           alt="Culture"
           className={styles.cultureImage}
         />

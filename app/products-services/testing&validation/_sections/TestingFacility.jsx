@@ -2,7 +2,7 @@ import "./TestingFacility.css";
 
 const facilityData = [
   {
-    image: "/media/t7.svg",
+    image: "/testingValidation/tv7.webp",
     title: "2 wheeler chassis dynamometer",
     specs: [
       ["CAPACITY", "55KW DYNAMOMETER"],
@@ -16,7 +16,7 @@ const facilityData = [
   },
 
   {
-    image: "/media/t8.svg",
+    image: "/testingValidation/tv8.webp",
     title: "Horiba mass emission analyzer",
     reverse: true,
     specs: [
@@ -29,7 +29,7 @@ const facilityData = [
   },
 
   {
-    image: "/media/t7.svg",
+    image: "/testingValidation/tv9.webp",
     title: "3 wheeler chassis dynamometer",
     specs: [
       ["CAPACITY", "30KW DYNAMOMETER"],

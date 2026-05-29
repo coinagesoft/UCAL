@@ -20,7 +20,7 @@ export default function CommitmentSection() {
       >
         {/* LEFT IMAGE */}
         <img
-          src="/media/img40.png"
+          src="/Sustainability/img40.webp"
           alt="commitment"
           style={{
             width: "583px",

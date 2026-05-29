@@ -3,49 +3,49 @@ import StatCard from "./StatCard";
 
 const statsData = [
     {
-        icon: "/media/aa1.png",
+        icon: "/about/aa1.webp",
         value: "4,000+",
         label: "EMPLOYEES",
     },
 
     {
-        icon: "/media/aa2.png",
+        icon: "/about/aa2.webp",
         value: "8",
         label: "MANUFACTURING FACILITIES",
     },
 
     {
-        icon: "/media/aa3.png",
+        icon: "/about/aa3.webp",
         value: "35+",
         label: "OEM CUSTOMERS",
     },
 
     {
-        icon: "/media/aa4.png",
+        icon: "/about/aa4.webp",
         value: "70M+",
         label: "CARBURETTORS SUPPLIED",
     },
 
     {
-        icon: "/media/aa5.png",
+        icon: "/about/aa5.webp",
         value: "10M+",
         label: "PUMPS SUPPLIED",
     },
 
     {
-        icon: "/media/aa6.png",
+        icon: "/about/aa6.webp",
         value: "150+",
         label: "GLOBAL DISTRIBUTION POINTS",
     },
 
     {
-        icon: "/media/aa7.png",
+        icon: "/about/aa7.webp",
         value: ">5%",
         label: "REVENUE INVESTED IN R&D",
     },
 
     {
-        icon: "/media/aa8.png",
+        icon: "/about/aa8.webp",
         value: "2",
         label: "DEDICATED R&D CENTRES",
     },

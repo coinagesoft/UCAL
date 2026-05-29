@@ -2,7 +2,7 @@ import "./EnvironmentalTesting.css";
 
 const chamberData = [
   {
-    image: "/media/t1.svg",
+    image: "/testingValidation/tv1.webp",
     title: "Environmental Test",
     volume: "340 LTS",
     temperature: "-50 °C TO 170 °C",
@@ -10,7 +10,7 @@ const chamberData = [
     size: "0.72M X 0.55M X 0.75M",
   },
   {
-    image: "/media/t2.svg",
+    image: "/testingValidation/tv3.webp",
     title: "Thermal Shock Chamber",
     volume: "125 LTS",
     temperature: "-40 °C TO 150 °C",
@@ -18,7 +18,7 @@ const chamberData = [
     size: "0.5M X 0.5M X 0.5M",
   },
   {
-    image: "/media/t3.svg",
+    image: "/testingValidation/tv4.webp",
     title: "Walk in Chamber",
     volume: "11470 LTS",
     temperature: "-10 °C TO 70 °C",

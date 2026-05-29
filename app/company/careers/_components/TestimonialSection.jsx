@@ -12,7 +12,7 @@ const testimonials = [
 
     designation: "Senior Design Engineer",
 
-    image: "/media/img30.png",
+    image: "/careers/img30.webp",
   },
 
   {
@@ -23,7 +23,7 @@ const testimonials = [
 
     designation: "Product Development Manager",
 
-    image: "/media/nehaGupta.png",
+    image: "/careers/nehaGupta.webp",
   },
   {
     quote:
@@ -33,7 +33,7 @@ const testimonials = [
 
     designation: "Software Engineer",
 
-    image: "/media/Debasis.png",
+    image: "/careers/Debasis.webp",
   },
   {
     quote:
@@ -43,7 +43,7 @@ const testimonials = [
 
     designation: "Quality Assurance Lead",
 
-    image: "/media/Sagar.png",
+    image: "/careers/Sagar.webp",
   },
 ];
 

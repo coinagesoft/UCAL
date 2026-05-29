@@ -47,7 +47,7 @@ export default function FAQSection() {
             </p>
           </div>
 
-          <img src="/media/img21.png" alt="faq" className={styles.image} />
+          <img src="/home/img21.webp" alt="faq" className={styles.image} />
         </div>
 
         <div className={styles.list}>

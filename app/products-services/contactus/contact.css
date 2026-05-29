@@ -1,6 +1,6 @@
 .banner{
     margin-top: 88px;
-    background-image: url("/media/contactBanner.svg");
+    background-image: url("/media/contactBanner.webp");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -11,7 +11,7 @@
 
 
 .contactHeader{
-    margin-top: 80px;
+    margin-top: 88px;
 }
 
 

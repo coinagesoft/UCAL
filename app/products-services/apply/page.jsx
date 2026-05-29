@@ -5,7 +5,7 @@ export default function ApplyForm() {
         <section className="apply-page">
 
             <div className="apply-banner">
-                <img src="/media/applybanner.svg" alt="Apply Banner" />
+                <img src="/apply/applyBanner.webp" alt="Apply Banner" />
             </div>
 
             <div className="apply-header">
@@ -91,7 +91,7 @@ export default function ApplyForm() {
 
                         <div className="upload-box">
 
-                            <img src="/media/fileUpload.svg" alt="Upload File" />
+                            <img src="/apply/fileUpload.png" alt="Upload File" />
 
                             <p>
                                 <span>Click to upload</span> or drag and drop

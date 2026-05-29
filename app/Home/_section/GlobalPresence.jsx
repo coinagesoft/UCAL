@@ -7,7 +7,7 @@ export default function GlobalPresence() {
         <div className={`row justify-content-between align-items-center`}>
           <div className="col-12 col-md-5">
             <img
-              src="/media/img19.png"
+              src="/home/img19.webp"
               alt="Global Presence Map"
               className={styles.map}
             />

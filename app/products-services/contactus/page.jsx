@@ -2,7 +2,7 @@ import "./contact.css"
 
 export default function Contact() {
     return (
-        <div style={{marginBottom:"80px"}}>
+        <div style={{marginBottom:"80px", marginTop:"88px"}}>
             <div className="banner">
                 <div className="banner-content contactHeader ">
                     <h2 className="banner-title">Precision Parts. Real Conversations</h2>

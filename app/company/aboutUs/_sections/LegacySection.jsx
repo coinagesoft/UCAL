@@ -10,7 +10,7 @@ export default function LegacySection() {
           {/* LEFT IMAGE */}
           <div className={styles.imageWrapper}>
             <Image
-              src="/media/a2.png"
+              src="/about/about1.webp"
               alt="Manufacturing"
               width={583}
               height={475}

@@ -109,7 +109,7 @@ export default function CommunitySection() {
         <div style={cardRow}>
           {/* CARD 1 */}
           <div style={card}>
-            <img src="/media/img41.png" style={imgStyle} />
+            <img src="/Sustainability/img41.webp" style={imgStyle} />
 
             <div style={overlay}>
               <div style={cardTitle}>BLOOD DONATION CAMPS</div>
@@ -122,7 +122,7 @@ export default function CommunitySection() {
 
           {/* CARD 2 */}
           <div style={card}>
-            <img src="/media/img42.png" style={imgStyle} />
+            <img src="/Sustainability/img42.webp" style={imgStyle} />
 
             <div style={overlay}>
               <div style={cardTitle}>CAR RALLY FOR THE BLIND</div>
@@ -135,7 +135,7 @@ export default function CommunitySection() {
 
           {/* CARD 3 */}
           <div style={card}>
-            <img src="/media/img43.png" style={imgStyle} />
+            <img src="/Sustainability/img43.webp" style={imgStyle} />
 
             <div style={overlay}>
               <div style={cardTitle}>VILLAGE ADOPTION</div>

@@ -77,8 +77,8 @@ export default function ResponsibleManufacturing() {
           width: "900px",
           height: "560px",
           background: `
-            linear-gradient(to left, rgba(243,245,244,0) 60%, #f3f5f4 100%),
-            url('/media/img39.png')
+            // linear-gradient(to left, rgba(243,245,244,0) 60%, #f3f5f4 100%),
+            url('/Sustainability/sus1.webp')
           `,
           backgroundRepeat: "no-repeat",
           backgroundSize: "contain",
@@ -128,7 +128,7 @@ export default function ResponsibleManufacturing() {
           {/* ROW 1 */}
           <div style={row}>
             <div style={card}>
-              <img src="/media/img47.png" style={icon} />
+              <img src="/Sustainability/img47.webp" style={icon} />
               <div>
                 <div style={cardTitle}>ISO 14001:2015 Certified</div>
                 <div style={cardDesc}>
@@ -138,7 +138,7 @@ export default function ResponsibleManufacturing() {
             </div>
 
             <div style={card}>
-              <img src="/media/img48.png" style={icon} />
+              <img src="/Sustainability/img48.webp" style={icon} />
               <div>
                 <div style={cardTitle}>Rainwater Harvesting</div>
                 <div style={cardDesc}>
@@ -151,7 +151,7 @@ export default function ResponsibleManufacturing() {
           {/* ROW 2 */}
           <div style={row}>
             <div style={card}>
-              <img src="/media/img49.png" style={icon} />
+              <img src="/Sustainability/img49.webp" style={icon} />
               <div>
                 <div style={cardTitle}>Lead-Free Manufacturing</div>
                 <div style={cardDesc}>
@@ -161,7 +161,7 @@ export default function ResponsibleManufacturing() {
             </div>
 
             <div style={card}>
-              <img src="/media/img50.png" style={icon} />
+              <img src="/Sustainability/img50.webp" style={icon} />
               <div>
                 <div style={cardTitle}>Vacuum Die Casting</div>
                 <div style={cardDesc}>
@@ -174,7 +174,7 @@ export default function ResponsibleManufacturing() {
           {/* ROW 3 */}
           <div style={row}>
             <div style={card}>
-              <img src="/media/img51.png" style={icon} />
+              <img src="/Sustainability/img51.webp" style={icon} />
               <div>
                 <div style={cardTitle}>Process Optimization</div>
                 <div style={cardDesc}>

@@ -233,7 +233,7 @@ export default function JobDetailsSection() {
           </h3>
 
           <img
-            src="/media/img31.png"
+            src="/jobdetails/job1.webp"
             alt="team"
             className="teamImage"
           />

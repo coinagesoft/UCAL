@@ -3,7 +3,7 @@ import LeaderCard from "./LeaderCard";
 
 const leaders = [
   {
-    image: "/media/a11.png",
+    image: "/about/a11.webp",
     name: "Mr. Jayakar Krishnamurthy",
     designation: "CHAIRMAN & MANAGING DIRECTOR",
     description:
@@ -11,7 +11,7 @@ const leaders = [
   },
 
   {
-    image: "/media/a12.png",
+    image: "/about/a12.webp",
     name: "Adithya Srivatsa Jayakar",
     designation: "DEPUTY MANAGING DIRECTOR",
     description:
@@ -19,7 +19,7 @@ const leaders = [
   },
 
   {
-    image: "/media/a13.png",
+    image: "/about/a13.webp",
     name: "Ram Ramamurthy",
     designation: "WHOLE-TIME DIRECTOR",
     description:

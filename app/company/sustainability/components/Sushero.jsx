@@ -11,13 +11,13 @@ export default function Sushero() {
     >
       {/* IMAGE */}
       <img
-        src="/media/img38.png"
+        src="/Sustainabilty/susBanner.webp"
         alt="engine"
         style={{
           width: "100%",
           height: "100%",
-          objectFit: "cover",          // ✅ fills container properly
-          objectPosition: "bottom center", // ✅ keeps engine on right side
+          objectFit: "cover",          //
+          objectPosition: "bottom center",
         }}
       />
 
